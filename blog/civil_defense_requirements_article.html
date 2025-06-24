@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://trusted.cdn.com www.google-analytics.com www.googletagmanager.com www.google.com www.gstatic.com *.googleapis.com;
+    style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+    font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com data:;
+    img-src 'self' data: https:;
+    connect-src 'self' https://api.trusted.com www.google-analytics.com stats.g.doubleclick.net www.googletagmanager.com www.google.com api.google.com *.googleapis.com;
+    frame-src 'self' https://www.youtube.com www.google.com;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+  
+    block-all-mixed-content;
+    upgrade-insecure-requests;
+    
+  ">
+  <meta http-equiv="Report-To" content='{"group":"csp-endpoint","max_age":10886400,"endpoints":[{"url":"https://nazretelebdaa.com/csp-report-endpoint"}]}'>
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية - دليل شامل</title>
+    <meta name="description" content="دليل شامل حول متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية والمنشآت الكبرى، يغطي التراخيص، أنظمة الإنذار والإطفاء، سبل الهروب، والمزيد.">
+    <meta name="keywords" content="متطلبات الدفاع المدني السعودي, أنظمة السلامة, المباني التجارية, ترخيص الدفاع المدني, أنظمة إنذار الحريق, أنظمة إطفاء الحريق, سبل الهروب, الكود السعودي للحماية من الحريق, سلامة المباني, شركة نظرة الإبداع">
+    <link rel="canonical" href="https://nazretelebdaa.com/blog/civil_defense_requirements_article/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://nazretelebdaa.com/assets/img/icon.webp" type="image/png">
+    <meta name="google-site-verification" content="YOz7jMGNDRtCMv4clPRQX9dOPLQjByUAMdoEGFSLj7s" />
+    <meta name="author" content="نظرة الإبداع لأنظمة السلامة">
+    <meta name="robots" content="index, follow">
+    <link rel="home" href="https://nazretelebdaa.com/"> 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        /* Style for the reading progress bar */
+        #progressBarContainer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-color: #eee;
+            z-index: 9999;
+        }
+        #progressBar {
+            height: 100%;
+            background-color: #ef4444; /* Red color */
+            width: 0%;
+            transition: width 0.1s ease-out;
+        }
+        /* Style for the back-to-top button */
+        #backToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ef4444;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            display: none; /* Hidden by default */
+            z-index: 1000;
+            transition: opacity 0.3s, visibility 0.3s;
+            opacity: 0;
+            visibility: hidden;
+        }
+        #backToTopBtn.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            visibility: visible;
+        }
+        /* Accordion styles */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-button.active + .accordion-content {
+            max-height: 1000px; /* Adjust as needed */
+        }
+        .accordion-button svg {
+            transition: transform 0.3s ease-out;
+        }
+        .accordion-button.active svg {
+            transform: rotate(180deg);
+        }
+        /* Add custom styles for improved readability and aesthetics */
+        h1, h2, h3 {
+            color: #b91c1c; /* Darker red for headings */
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            line-height: 1.4;
+        }
+        h1 { font-size: 2.5rem; font-weight: 700; }
+        h2 { font-size: 2rem; font-weight: 700; border-bottom: 2px solid #fee2e2; padding-bottom: 0.3em; }
+        h3 { font-size: 1.5rem; font-weight: 700; }
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #374151; /* Slightly darker gray for text */
+            margin-bottom: 1em;
+        }
+        ul, ol {
+            margin-right: 1.5rem; /* Indentation for lists */
+            margin-bottom: 1em;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        
+        .section-divider {
+            height: 5px;
+            background: linear-gradient(90deg, #c41c1c, #e63e3e, #ff6b35);
+            margin: 3rem 0;
+            border-radius: 5px;
+        }
+        strong {
+            color: #1f2937; /* Darker color for strong text */
+        }
+        a {
+            color: #dc2626; /* Red for links */
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #b91c1c;
+            text-decoration: underline;
+        }
+        blockquote {
+            border-right: 4px solid #ef4444;
+            padding-right: 1rem;
+            margin: 1.5em 0;
+            color: #6b7280;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5em;
+        }
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: right;
+        }
+        th {
+            background-color: #f3f4f6;
+            font-weight: 700;
+            color: #1f2937;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية - دليل شامل",
+      "description": "دليل شامل حول متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية والمنشآت الكبرى، يغطي التراخيص، أنظمة الإنذار والإطفاء، سبل الهروب، والمزيد.",
+      "image": "https://nazretelebdaa.com/assets/img/content/fire-safety-requirements.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "شركة نظرة الإبداع لأنظمة السلامة",
+        "url": "https://nazretelebdaa.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "SA",
+          "addressRegion": "الرياض",
+          "addressLocality": "الرياض",
+          "streetAddress": "الرياض، المملكة العربية السعودية"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+966597212027",
+          "contactType": "customer service",
+          "availableLanguage": "Arabic",
+          "areaServed": "SA"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "شركة نظرة الإبداع لأنظمة السلامة",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://nazretelebdaa.com/assets/img/icon.webp"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "SA",
+          "addressRegion": "Riyadh",
+          "addressLocality": "Riyadh"
+        }
+      },
+      "contentLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "SA",
+          "addressRegion": "Riyadh",
+          "addressLocality": "Riyadh"
+        }
+      },
+      "datePublished": "2025-06-10",
+      "dateModified": "2025-06-10",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://nazretelebdaa.com/blog/civil_defense_requirements_article.html"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "متطلبات الدفاع المدني السعودي"
+      },
+      "keywords": [
+        "متطلبات الدفاع المدني السعودي",
+        "أنظمة السلامة",
+        "المباني التجارية",
+        "ترخيص الدفاع المدني",
+        "أنظمة إنذار الحريق",
+        "أنظمة إطفاء الحريق",
+        "سبل الهروب",
+        "الكود السعودي للحماية من الحريق",
+        "سلامة المباني",
+        "الدفاع المدني السعودي"
+      ],
+      "inLanguage": "ar-SA",
+      "articleSection": "السلامة والوقاية",
+      "articleBody": "محتوى المقال حول متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية..."
+    }
+    </script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Reading Progress Bar -->
+    <div id="progressBarContainer">
+        <div id="progressBar"></div>
+    </div>
+
+    <!-- Header -->
+
+    <nav class="bg-white shadow-md py-4 px-4 sm:px-6 lg:px-8 sticky top-0 z-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <!-- Logo and Site Name -->
+                <a href="/index.html" class="flex items-center" aria-label="Go to Home" title="Go to Home" >
+                    <img src="../assets/img/icon.webp" alt="logo" class="h-10 w-10 ml-2">
+                    <span class="text-xl font-bold text-gray-800">شركة نظرة الإبداع لأنظمة السلامة</span>
+                </a>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8 space-x-reverse">
+                    <a href="/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Home" title="Go to Home">الرئيسية</a>
+                    <a href="/index.html#about" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to About" title="Go to About">من نحن</a>
+                    <a href="/services/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Services" title="Go to Services">خدماتنا</a>
+                    <a href="/consultation/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Consultation" title="Go to Consultation">ارشادات</a>
+                    <!-- Blog Dropdown (Desktop) -->
+                    <div class="relative" x-data="{ open: false }" @keydown.escape="open = false">
+                        <button @click="open = !open" class="flex items-center text-gray-700 hover:text-red-600 font-medium focus:outline-none" :class="{ 'text-red-600': open }" aria-label="Open Blog Menu" title="Open Blog Menu" :aria-expanded="open">
+                            <span>المدونة</span>
+                            <svg class="w-4 h-4 mr-1 transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="open" 
+                             x-transition:enter="transition ease-out duration-100" 
+                             x-transition:enter-start="opacity-0 scale-95" 
+                             x-transition:enter-end="opacity-100 scale-100" 
+                             x-transition:leave="transition ease-in duration-75" 
+                             x-transition:leave-start="opacity-100 scale-100" 
+                             x-transition:leave-end="opacity-0 scale-95"
+                             class="absolute right-0 mt-2 w-72 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50 max-h-96 overflow-y-auto"
+                             @click.away="open = false"
+                             x-ref="dropdown">
+                            <div class="py-1 text-right" role="menu" aria-orientation="vertical" aria-labelledby="blog-menu-button">
+                                <a href="https://nazretelebdaa.com/blog/index.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Blog Main Page">صفحة المدونة الرئيسية</a>
+                                <a href="https://nazretelebdaa.com/blog/civil_defense_requirements_article.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Civil Defense Requirements Article">متطلبات الدفاع المدني</a>
+                                <a href="https://nazretelebdaa.com/blog/enhanced_fire_safety_page.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Enhanced Fire Safety Page">تعزيز السلامة من الحرائق</a>
+                                <a href="https://nazretelebdaa.com/blog/fire_blog/article_1.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Article 1">مقالة المدونة 1</a>
+                                <a href="https://nazretelebdaa.com/blog/smart_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Smart System" aria-label="Go to Smart System">أنظمة الذكية</a>
+                                <a href="https://nazretelebdaa.com/blog/how_to_chose_fire_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to How To Choose Fire System" aria-label="Go to How To Choose Fire System">كيفية اختيار نظام مكافحة الحريق</a>
+                                
+                                <a href="https://nazretelebdaa.com/blog/fire_blog/article_2.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Article 2">مقالة المدونة 2</a>
+                                <a href="https://nazretelebdaa.com/blog/fire_code.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Fire Code">كود الحريق السعودي</a>
+                                <a href="https://nazretelebdaa.com/blog/fire_extinguishing_systems_article.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Fire Extinguishing Systems Article">أنظمة إطفاء الحريق</a>
+                                <a href="https://nazretelebdaa.com/blog/fire_updates.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Fire Updates">آخر تحديثات السلامة</a>
+                                <a href="https://nazretelebdaa.com/blog/how-to-supervise-fire-protection-systems.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to How To Supervise Fire Protection Systems">الإشراف على أنظمة الحماية</a>
+                                <a href="https://nazretelebdaa.com/blog/what-is-a-fire-safety-plan.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to What Is A Fire Safety Plan">ما هي خطة السلامة من الحرائق؟</a>
+                                <a href="https://nazretelebdaa.com/blog/analtics_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Statistics for Fire Fighting Systems">إحصائيات أنظمة مكافحة الحريق</a>
+                                <a href="https://nazretelebdaa.com/blog/updated_fire_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Advanced Early Warning Systems">تقنيات الإنذار المبكر</a>
+                                <a href="https://nazretelebdaa.com/blog/gholf_saftey_report.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Gulf Safety Report">تقرير السلامة في الخليج</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://nazretelebdaa.com/companies/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Companies" title="Go to Companies">الشركات</a>
+                    <a href="https://nazretelebdaa.com/gifts/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Gifts" title="Go to Gifts">الهدايا</a>
+                    <a href="https://nazretelebdaa.com/articles" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Articles" title="Go to Articles">خدمات عامة</a>
+                </div>
+                
+                <!-- Contact Button -->
+                <a href="https://api.whatsapp.com/send/?phone=966597212027&text&type=phone_number&app_absent=0" class="hidden md:block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition" aria-label="Go to Contact" title="Go to Contact">
+                    <i class="fas fa-phone-alt ml-1"></i>اتصل بنا
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-red-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 bg-gray-50 rounded-lg p-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Home" title="Go to Home">الرئيسية</a>
+                    <a href="/index.html#about" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to About" title="Go to About">من نحن</a>
+                    <a href="/services/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Services" title="Go to Services">خدماتنا</a>
+                    <a href="https://nazretelebdaa.com/consultation/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Consultation" title="Go to Consultation">ارشادات</a>
+                    <!-- Mobile Blog Dropdown -->
+                    <div class="w-full" x-data="{ open: false }" @keydown.escape="open = false">
+                        <button @click="open = !open" class="w-full text-gray-700 hover:text-red-600 font-medium flex justify-between items-center py-2" aria-label="Open Blog Menu" title="Open Blog Menu" :aria-expanded="open">
+                            <span>المدونة</span>
+                            <svg class="ml-1 h-5 w-5 transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="open" 
+                             x-transition:enter="transition ease-out duration-100" 
+                             x-transition:enter-start="opacity-0 scale-95" 
+                             x-transition:enter-end="opacity-100 scale-100" 
+                             x-transition:leave="transition ease-in duration-75" 
+                             x-transition:leave-start="opacity-100 scale-100" 
+                             x-transition:leave-end="opacity-0 scale-95"
+                             class="mt-1 space-y-1 pl-4 text-right"
+                             @click.away="open = false"
+                             x-ref="dropdown">
+                            <a href="https://nazretelebdaa.com/blog/index.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Blog Main Page">صفحة المدونة الرئيسية</a>
+                            <!-- <a href="/blog/civil_defense_requirements_article.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Civil Defense Requirements Article">متطلبات الدفاع المدني</a> -->
+                            <a href="https://nazretelebdaa.com/blog/enhanced_fire_safety_page.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Enhanced Fire Safety Page">تعزيز السلامة من الحرائق</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_blog/article_1.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Article 1">مقالة المدونة 1</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_blog/article_2.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Article 2">مقالة المدونة 2</a>
+                            <a href="https://nazretelebdaa.com/blog/smart_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Smart System" aria-label="Go to Smart System">أنظمة الذكية</a>
+                            <a href="https://nazretelebdaa.com/blog/how_to_chose_fire_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to How To Choose Fire System" aria-label="Go to How To Choose Fire System">كيفية اختيار نظام مكافحة الحريق</a>
+                            
+                            <a href="https://nazretelebdaa.com/blog/fire_code.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Fire Code">كود الحريق السعودي</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_extinguishing_systems_article.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Fire Extinguishing Systems Article">أنظمة إطفاء الحريق</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_updates.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Fire Updates">آخر تحديثات السلامة</a>
+                            <a href="https://nazretelebdaa.com/blog/how-to-supervise-fire-protection-systems.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to How To Supervise Fire Protection Systems">الإشراف على أنظمة الحماية</a>
+                            <a href="https://nazretelebdaa.com/blog/what-is-a-fire-safety-plan.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to What Is A Fire Safety Plan">ما هي خطة السلامة من الحرائق؟</a>
+                            <a href="https://nazretelebdaa.com/blog/analtics_system.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Statistics for Fire Fighting Systems">إحصائيات أنظمة مكافحة الحريق</a>
+                            <a href="https://nazretelebdaa.com/blog/updated_fire_system.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Advanced Early Warning Systems">تقنيات الإنذار المبكر</a>
+                            <a href="https://nazretelebdaa.com/blog/gholf_saftey_report.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Gulf Safety Report">تقرير السلامة في الخليج</a>
+                        </div>
+                    </div>
+                    <a href="https://nazretelebdaa.com/companies/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Companies" title="Go to Companies">الشركات</a>
+                    <a href="https://nazretelebdaa.com/gifts/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Gifts" title="Go to Gifts">الهدايا</a>
+                    <a href="https://nazretelebdaa.com/articles" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Articles" title="Go to Articles">خدمات عامة</a>
+                    <a href="https://api.whatsapp.com/send/?phone=966597212027&text&type=phone_number&app_absent=0" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition text-center" aria-label="Go to Contact" title="Go to Contact">
+                        <i class="fas fa-phone-alt ml-1"></i>اتصل بنا
+                    </a>
+                </div>
+            </div>
+        </div>
+    <!-- Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+    
+    <script src="../js/navbar.js"></script>
+    </nav>
+    
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <article class="bg-white p-8 rounded-lg shadow-lg">
+
+            <!-- Article Content Will Be Inserted Here -->
+            <h1>متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية: دليل شامل</h1>
+
+            <p>تمثل <strong>متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية</strong> ركيزة أساسية لضمان سلامة الأرواح والممتلكات في المملكة العربية السعودية. تهدف هذه المتطلبات إلى تقليل مخاطر الحوادث والكوارث، وخاصة الحرائق، من خلال فرض معايير صارمة للتصميم والتنفيذ والصيانة. في هذا الدليل الشامل، سنستعرض بالتفصيل متطلبات الدفاع المدني السعودي للمباني التجارية، مع التركيز على الجوانب التقنية والإجرائية التي يجب على أصحاب المنشآت والمهندسين والمقاولين الالتزام بها.</p>
+
+            <h2>أهمية الالتزام بمتطلبات الدفاع المدني السعودي</h2>
+
+            <p>تكمن أهمية الالتزام بمتطلبات الدفاع المدني السعودي في حماية الأرواح والممتلكات من مخاطر الحرائق والكوارث الأخرى. وفقاً لإحصائيات الدفاع المدني السعودي، فإن تطبيق هذه الاشتراطات قد ساهم في خفض حوادث الحرائق بنسبة تزيد عن 30% خلال السنوات الخمس الماضية. هذا الانخفاض الملحوظ يعكس فعالية هذه المتطلبات في تعزيز السلامة العامة.</p>
+
+            <p>بالإضافة إلى ذلك، يؤدي الالتزام بمتطلبات الدفاع المدني إلى:</p>
+            <ul>
+                <li>تقليل الخسائر البشرية والمادية الناتجة عن الحوادث.</li>
+                <li>تعزيز ثقة العملاء والزوار في المنشآت التجارية.</li>
+                <li>تجنب العقوبات والغرامات المالية المفروضة على المخالفين.</li>
+                <li>تسهيل الحصول على <strong>التراخيص اللازمة لممارسة الأنشطة التجارية</strong> (تصريح الدفاع المدني).</li>
+                <li>خفض تكاليف التأمين على المنشآت.</li>
+            </ul>
+            <p>يجب على جميع المنشآت التجارية في المملكة العربية السعودية الالتزام بمتطلبات الدفاع المدني، سواء كانت مراكز تسوق، مكاتب، مطاعم، فنادق، أو أي نوع آخر من المنشآت التجارية. يتم تحديد هذه المتطلبات من قبل المديرية العامة للدفاع المدني، وتخضع للتحديث المستمر لمواكبة التطورات التقنية والمعايير الدولية.</p>
+
+            <h2>الإطار القانوني والتنظيمي للدفاع المدني السعودي</h2>
+
+            <p>يستند نظام الدفاع المدني السعودي إلى مجموعة من التشريعات والأنظمة التي تنظم جوانب السلامة والوقاية من المخاطر. من أهم هذه التشريعات:</p>
+
+            <h3>نظام الدفاع المدني</h3>
+            <p>صدر نظام الدفاع المدني بالمرسوم الملكي رقم م/10 بتاريخ 10/5/1406هـ، ويعتبر الإطار القانوني الأساسي الذي ينظم جميع أعمال الدفاع المدني في المملكة. يحدد النظام مهام وصلاحيات المديرية العامة للدفاع المدني، بما في ذلك:</p>
+            <ul>
+                <li>وضع خطط ومشروعات أعمال الدفاع المدني وتنفيذها.</li>
+                <li>اتخاذ التدابير اللازمة للوقاية من الكوارث والحد من آثارها.</li>
+                <li>إصدار اللوائح التي تحدد شروط السلامة وقواعدها الواجب توافرها في مختلف الأنشطة.</li>
+                <li>تنظيم أعمال الإطفاء والإنقاذ والإسعاف.</li>
+                <li>تدريب المواطنين على أعمال الدفاع المدني.</li>
+            </ul>
+
+            <h3>لوائح واشتراطات السلامة</h3>
+            <p>استناداً إلى نظام الدفاع المدني، أصدرت المديرية العامة للدفاع المدني مجموعة من اللوائح والاشتراطات التي تحدد متطلبات السلامة للمنشآت المختلفة، ومن أهمها:</p>
+            <ol>
+                <li>لائحة اشتراطات السلامة وسبل الحماية الواجب توافرها في المباني السكنية والإدارية.</li>
+                <li>لائحة شروط السلامة ووسائل الإطفاء والإنذار الواجب توافرها في المنشآت التجارية.</li>
+                <li>لائحة شروط السلامة ووسائل الإطفاء والإنذار الواجب توافرها في المنشآت الصناعية والتخزينية.</li>
+                <li>لائحة شروط السلامة ووسائل الإطفاء والإنذار الواجب توافرها في المنشآت التعليمية.</li>
+                <li>لائحة شروط السلامة ووسائل الإطفاء والإنذار الواجب توافرها في المستشفيات والمراكز الصحية.</li>
+            </ol>
+            <p>تتضمن هذه اللوائح تفاصيل دقيقة حول متطلبات السلامة، بما في ذلك مواصفات <strong>أنظمة الإنذار والإطفاء</strong>، ومخارج الطوارئ، والتهوية، والإضاءة، وغيرها من جوانب السلامة.</p>
+
+            <h3>الكود السعودي للحماية من الحريق (SBC 801)</h3>
+            <p>يعتبر <strong>الكود السعودي للحماية من الحريق</strong> مرجعاً تقنياً شاملاً يحدد المتطلبات الفنية للحماية من الحريق في المباني والمنشآت. تم تطوير هذا الكود بالتعاون مع الهيئة السعودية للمواصفات والمقاييس والجودة واللجنة الوطنية لكود البناء السعودي، ويستند إلى المعايير الدولية مع مراعاة الظروف المحلية في المملكة.</p>
+            <p>يغطي الكود السعودي للحماية من الحريق جوانب متعددة، منها:</p>
+            <ul>
+                <li>تصنيف المباني حسب درجة الخطورة.</li>
+                <li>متطلبات مقاومة الحريق للعناصر الإنشائية.</li>
+                <li>أنظمة الكشف والإنذار من الحريق.</li>
+                <li>أنظمة مكافحة الحريق.</li>
+                <li><strong>سبل الهروب ومخارج الطوارئ</strong>.</li>
+                <li>أنظمة التهوية والتحكم في الدخان.</li>
+            </ul>
+
+            <h2>متطلبات التراخيص والموافقات من الدفاع المدني</h2>
+
+            <p>تخضع جميع المنشآت التجارية في المملكة العربية السعودية لعملية ترخيص صارمة من قبل الدفاع المدني لضمان امتثالها لمتطلبات السلامة. تشمل هذه العملية عدة مراحل:</p>
+
+            <h3>1. مرحلة التصميم والموافقة المبدئية</h3>
+            <p>قبل البدء في إنشاء أي مبنى تجاري، يجب الحصول على موافقة مبدئية من الدفاع المدني على المخططات والتصاميم. تتضمن هذه المرحلة:</p>
+            <ul>
+                <li>تقديم المخططات الهندسية الكاملة للمبنى.</li>
+                <li>تقديم مخططات أنظمة السلامة (الإنذار، الإطفاء، مخارج الطوارئ).</li>
+                <li>تقديم دراسة تقييم المخاطر وخطة الطوارئ والإخلاء.</li>
+            </ul>
+            <p>يقوم الدفاع المدني بمراجعة هذه المستندات للتأكد من مطابقتها للاشتراطات والمعايير المعتمدة.</p>
+
+            <h3>2. مرحلة التنفيذ والإشراف</h3>
+            <p>خلال مرحلة تنفيذ المشروع، يقوم الدفاع المدني بإجراء زيارات تفتيشية دورية للتأكد من التزام المقاول بالمخططات المعتمدة ومتطلبات السلامة.</p>
+
+            <h3>3. مرحلة الاستلام والترخيص النهائي (شهادة إتمام التركيبات)</h3>
+            <p>بعد الانتهاء من تنفيذ المشروع، يتم إجراء تفتيش نهائي شامل من قبل الدفاع المدني للتأكد من استيفاء جميع متطلبات السلامة. تشمل هذه المرحلة اختبار جميع أنظمة السلامة والتأكد من مطابقة التنفيذ للمخططات. في حال الاجتياز، يتم إصدار <strong>ترخيص السلامة (تصريح الدفاع المدني)</strong> الذي يسمح للمنشأة بمزاولة نشاطها.</p>
+
+            <h3>4. التجديد السنوي للترخيص</h3>
+            <p>يجب تجديد ترخيص السلامة سنوياً للتأكد من استمرار التزام المنشأة بمتطلبات السلامة، ويتضمن ذلك التفتيش والتأكد من صيانة الأنظمة وتحديث الخطط.</p>
+
+            <h3>المستندات المطلوبة للحصول على ترخيص الدفاع المدني</h3>
+            <p>للحصول على ترخيص الدفاع المدني، يجب تقديم مستندات تشمل (على سبيل المثال لا الحصر):</p>
+            <ul>
+                <li>صورة من الهوية الوطنية للمالك أو المفوض.</li>
+                <li>صورة من السجل التجاري.</li>
+                <li>نسخة من رخصة البناء.</li>
+                <li>رسم كروكي للموقع.</li>
+                <li><strong>عقد صيانة لأنظمة السلامة</strong> مع شركة معتمدة من الدفاع المدني (مثل <a href="https://nazretelebdaa.com/" target="_blank" rel="noopener noreferrer" aria-label="شركة نظرة الإبداع" title="شركة نظرة الإبداع">شركة نظرة الإبداع</a>).</li>
+                <li>شهادات فحص أنظمة السلامة من مكتب هندسي معتمد.</li>
+                <li>تقرير فني من مكتب متخصص معتمد.</li>
+            </ul>
+
+            <h2>متطلبات أنظمة الإنذار والكشف عن الحريق</h2>
+
+            <p>تعتبر <strong>أنظمة الإنذار والكشف عن الحريق</strong> من أهم متطلبات السلامة في المباني التجارية، حيث تساهم في الكشف المبكر عن الحرائق وتنبيه شاغلي المبنى. تشمل متطلبات الدفاع المدني السعودي لهذه الأنظمة:</p>
+
+            <h3>1. أنواع أنظمة الإنذار المطلوبة</h3>
+            <p>تختلف المتطلبات حسب نوع المنشأة ومساحتها وخطورتها. بشكل عام، تشمل:</p>
+            <ul>
+                <li><strong>نظام الإنذار اليدوي:</strong> نقاط نداء يدوية (أزرار إنذار) موزعة في المبنى. مطلوبة في جميع المباني التجارية.</li>
+                <li><strong>نظام الإنذار التلقائي:</strong> كاشفات تلقائية (دخان، حرارة، لهب) تفعل الإنذار تلقائياً. مطلوبة في المباني الأكبر أو ذات المخاطر الخاصة.</li>
+            </ul>
+
+            <h4>أ. متطلبات تركيب نقاط النداء اليدوية:</h4>
+            <ul>
+                <li>تركيب على ارتفاع مناسب (120-150 سم).</li>
+                <li>توزيع بحيث لا تزيد المسافة عن 30 متراً لأقرب نقطة نداء.</li>
+                <li>تركيب بالقرب من المخارج والممرات.</li>
+                <li>تمييز باللون الأحمر وعلامات إرشادية.</li>
+            </ul>
+
+            <h4>ب. أنواع الكاشفات التلقائية المطلوبة:</h4>
+            <ul>
+                <li><strong>كاشفات الدخان:</strong> للمكاتب، المحلات، الممرات. مسافة لا تزيد عن 9 أمتار، تغطية لا تزيد عن 80 م².</li>
+                <li><strong>كاشفات الحرارة:</strong> للمطابخ، غرف الغلايات، مناطق التخزين. مسافة لا تزيد عن 7 أمتار، تغطية لا تزيد عن 50 م².</li>
+                <li><strong>كاشفات اللهب:</strong> للمناطق ذات الحرائق سريعة الاشتعال.</li>
+            </ul>
+
+            <h4>ج. لوحة التحكم الرئيسية:</h4>
+            <ul>
+                <li>تحديد موقع الحريق بدقة (مناطق).</li>
+                <li>مصدر طاقة احتياطي (بطاريات) لمدة 24 ساعة.</li>
+                <li>القدرة على التحكم في أنظمة أخرى (تهوية، مصاعد).</li>
+                <li>إمكانية الإبلاغ التلقائي للدفاع المدني (للمنشآت الكبيرة).</li>
+                <li>تركيب في مكان يسهل الوصول إليه.</li>
+            </ul>
+
+            <h4>د. أجهزة الإنذار الصوتية والضوئية:</h4>
+            <ul>
+                <li>توزيع لضمان سماعها في جميع الأنحاء (أعلى من الضوضاء بـ 15 ديسيبل).</li>
+                <li>أجهزة ضوئية للمناطق الصاخبة أو لذوي الإعاقة السمعية.</li>
+                <li>نغمة إنذار موحدة.</li>
+                <li>نظام إعلان صوتي للمباني الكبيرة.</li>
+            </ul>
+
+            <h3>2. متطلبات الصيانة والاختبار</h3>
+            <p>لضمان عمل الأنظمة بكفاءة، يجب إجراء صيانة واختبارات دورية (يومية، أسبوعية، شهرية، ربع سنوية، سنوية) وتوثيقها في سجل خاص. يجب إبرام <strong>عقد صيانة مع شركة معتمدة</strong> من الدفاع المدني.</p>
+
+            <h2>متطلبات أنظمة مكافحة الحريق</h2>
+
+            <p>تعتبر <strong>أنظمة مكافحة الحريق</strong> خط الدفاع الثاني، وتساهم في السيطرة على الحرائق. تشمل متطلبات الدفاع المدني:</p>
+
+            <h3>1. أنظمة الرشاشات التلقائية (Sprinkler Systems)</h3>
+            <p>مطلوبة في المباني التجارية الكبيرة (أكثر من 1000 م²) أو العالية (أكثر من 15 م) أو ذات المخاطر الخاصة.</p>
+            <ul>
+                <li><strong>الأنواع:</strong> شبكة رطبة، شبكة جافة، تشغيل مسبق، غمر (حسب الحاجة).</li>
+                <li><strong>التصميم والتركيب:</strong> توزيع لتغطية كاملة، اختيار درجة حرارة مناسبة، مصدر مياه كافٍ (60-90 دقيقة)، صمامات تحكم، وصلة للدفاع المدني.</li>
+                <li><strong>الصيانة والاختبار:</strong> فحوصات دورية (أسبوعية، شهرية، ربع سنوية، سنوية) للمكونات والمضخات وتدفق المياه.</li>
+            </ul>
+
+            <h3>2. شبكة خراطيم الحريق (Fire Hose Systems)</h3>
+            <p>مطلوبة في جميع المباني التجارية.</p>
+            <ul>
+                <li><strong>الأنواع:</strong> قطر 2.5 بوصة (لفرق الإطفاء)، قطر 1.5 بوصة (للشاغلين المدربين).</li>
+                <li><strong>التصميم والتركيب:</strong> توزيع بحيث لا تزيد المسافة عن 30 متراً لأقرب خزانة، تركيب في الممرات وقرب المخارج، ضغط وتدفق كافيين، تمييز باللون الأحمر، خرطوم بطول 30 م وفوهة قابلة للتعديل.</li>
+                <li><strong>الصيانة والاختبار:</strong> فحص شهري، اختبار ضغط وتدفق سنوي.</li>
+            </ul>
+
+            <h3>3. طفايات الحريق اليدوية (Portable Fire Extinguishers)</h3>
+            <p>مطلوبة في جميع المباني التجارية.</p>
+            <ul>
+                <li><strong>الأنواع:</strong> ماء (A)، ثاني أكسيد الكربون (C)، بودرة جافة (ABC/BC)، رغوة (B)، كيميائية رطبة (K) - حسب نوع الخطر.</li>
+                <li><strong>التوزيع والتركيب:</strong> مسافة لا تزيد عن 15 متراً لأقرب طفاية، تركيب على ارتفاع مناسب، علامات إرشادية، اختيار النوع والحجم المناسب.</li>
+                <li><strong>الصيانة والفحص:</strong> فحص شهري، فحص سنوي من شركة معتمدة، إعادة تعبئة بعد الاستخدام، استبدال عند انتهاء الصلاحية.</li>
+            </ul>
+
+            <h3>4. أنظمة مكافحة الحريق المتخصصة</h3>
+            <p>قد تتطلب بعض المنشآت أنظمة متخصصة:</p>
+            <ul>
+                <li><strong>أنظمة الرغوة:</strong> للمناطق التي تحتوي على سوائل قابلة للاشتعال بكميات كبيرة.</li>
+                <li><strong>أنظمة الغازات النظيفة:</strong> للمناطق الحساسة (مراكز بيانات، غرف تحكم).</li>
+                <li><strong>أنظمة مكافحة حريق المطابخ التجارية:</strong> لإطفاء حرائق الزيوت (الفئة K).</li>
+            </ul>
+
+            <h2>متطلبات سبل الهروب ومخارج الطوارئ</h2>
+
+            <p>تعتبر <strong>سبل الهروب ومخارج الطوارئ</strong> حيوية لإخلاء المبنى بأمان. تشمل متطلبات الدفاع المدني:</p>
+
+            <h3>1. عدد ومواقع مخارج الطوارئ</h3>
+            <ul>
+                <li>مخرجان على الأقل لكل طابق (يزداد العدد حسب المساحة والشاغلين).</li>
+                <li>مسافة لا تزيد عن 30-45 متراً لأقرب مخرج.</li>
+                <li>توزيع متباعد للمخارج.</li>
+                <li>تؤدي مباشرة للخارج أو لدرج محمي.</li>
+            </ul>
+
+            <h3>2. مواصفات مخارج الطوارئ</h3>
+            <ul>
+                <li>عرض كافٍ (يبدأ من 90 سم).</li>
+                <li>أبواب تفتح في اتجاه الخروج.</li>
+                <li>أبواب سهلة الفتح (بدون مفتاح).</li>
+                <li>أبواب مقاومة للحريق (ساعة واحدة على الأقل).</li>
+                <li>إضاءة كافية وعلامات إرشادية مضيئة.</li>
+            </ul>
+
+            <h3>3. سلالم الطوارئ</h3>
+            <ul>
+                <li>عرض كافٍ (يبدأ من 120 سم).</li>
+                <li>أبعاد درجات مناسبة ودرابزين.</li>
+                <li>بئر سلم محمي بجدران مقاومة للحريق (ساعتان).</li>
+                <li>أبواب مقاومة للحريق (ساعة واحدة).</li>
+                <li>نظام تهوية لمنع الدخان.</li>
+                <li>إضاءة طوارئ.</li>
+            </ul>
+
+            <h3>4. ممرات الهروب</h3>
+            <ul>
+                <li>عرض كافٍ (120 سم للممرات الرئيسية).</li>
+                <li>خالية من العوائق والمواد القابلة للاشتعال.</li>
+                <li>جدران وأسقف مقاومة للحريق (ساعة واحدة).</li>
+                <li>إضاءة كافية وعلامات إرشادية مضيئة.</li>
+            </ul>
+
+            <h3>5. إضاءة الطوارئ والعلامات الإرشادية</h3>
+            <ul>
+                <li>تعمل تلقائياً عند انقطاع التيار.</li>
+                <li>تستمر لمدة 90 دقيقة.</li>
+                <li>إضاءة كافية (10 لوكس).</li>
+                <li>علامات مضيئة وواضحة تشير لاتجاه الخروج.</li>
+            </ul>
+
+            <h2>متطلبات أنظمة التهوية والتحكم في الدخان</h2>
+
+            <p>الدخان هو القاتل الرئيسي في الحرائق، لذا تولي متطلبات الدفاع المدني أهمية لأنظمة التهوية والتحكم في الدخان:</p>
+
+            <h3>1. أنظمة التهوية العامة</h3>
+            <ul>
+                <li>توفير معدل تهوية كافٍ لتجديد الهواء.</li>
+                <li>فصل أنظمة التهوية بين المناطق المختلفة.</li>
+            </ul>
+
+            <h3>2. أنظمة التحكم في الدخان (للمباني الكبيرة أو العالية)</h3>
+            <ul>
+                <li><strong>أنظمة ضغط السلالم والمصاعد:</strong> لمنع تسرب الدخان إليها بخلق ضغط إيجابي.</li>
+                <li><strong>أنظمة سحب الدخان:</strong> لسحب الدخان من المناطق المتضررة باستخدام مراوح قوية.</li>
+                <li><strong>حواجز الدخان:</strong> لتقسيم المبنى إلى مناطق لمنع انتشار الدخان.</li>
+            </ul>
+
+            <h3>3. أنظمة التهوية في المواقف</h3>
+            <ul>
+                <li>معدل تهوية كافٍ للتخلص من العوادم والتحكم في الدخان (6-10 تغييرات/ساعة).</li>
+                <li>أجهزة كشف أول أكسيد الكربون.</li>
+                <li>مصدر طاقة احتياطي.</li>
+            </ul>
+
+            <h2>متطلبات السلامة الإنشائية ومقاومة الحريق</h2>
+
+            <p>تهدف لضمان صمود المبنى لفترة كافية أثناء الحريق:</p>
+
+            <h3>1. تصنيف المباني حسب نوع الإنشاء</h3>
+            <p>تحدد المتطلبات نوع الإنشاء المطلوب (مقاوم للحريق بالكامل، مقاوم، مقاوم جزئياً، قابل للاحتراق) حسب نوع المبنى ومساحته وارتفاعه.</p>
+
+            <h3>2. متطلبات مقاومة الحريق للعناصر الإنشائية</h3>
+            <p>تحديد مدة مقاومة الحريق المطلوبة للأعمدة، الجدران، الجسور، الأسقف، الفواصل (تتراوح من 30 دقيقة إلى 3 ساعات).</p>
+
+            <h3>3. متطلبات مقاومة الحريق للفتحات والاختراقات</h3>
+            <p>حماية الفتحات (الأبواب، النوافذ، فتحات التهوية) والاختراقات (الأنابيب، الكابلات) بمواد وأجهزة مقاومة للحريق (أبواب مقاومة، مخمدات حريق).</p>
+
+            <h3>4. متطلبات مواد التشطيب والديكور</h3>
+            <p>قيود على استخدام المواد القابلة للاشتعال في التشطيبات (الجدران، الأسقف، الأرضيات، الستائر، العزل) لتقليل سرعة انتشار اللهب.</p>
+
+            <h2>متطلبات التدريب والتوعية</h2>
+
+            <p>تشمل متطلبات الدفاع المدني أيضاً التدريب والتوعية:</p>
+
+            <h3>1. خطة الطوارئ والإخلاء</h3>
+            <p>إعداد خطة تفصيلية للإبلاغ والإخلاء وتحديد المسؤوليات ونقاط التجمع، ومراجعتها سنوياً.</p>
+
+            <h3>2. تدريب العاملين</h3>
+            <p>تدريب جميع العاملين على مخاطر الحريق، استخدام المعدات، إجراءات الإخلاء، والإسعافات الأولية (عند التعيين وسنوياً).</p>
+
+            <h3>3. تمارين الإخلاء</h3>
+            <p>إجراء تمارين إخلاء دورية (كل 6 أشهر على الأقل) لاختبار الخطة وتدريب الشاغلين.</p>
+
+            <h3>4. اللوحات الإرشادية والتوعوية</h3>
+            <p>توفير لوحات واضحة توضح مسارات الهروب، مواقع المعدات، تعليمات الطوارئ، وأرقام الهواتف الهامة.</p>
+
+            <h2>الأسئلة الشائعة حول متطلبات الدفاع المدني السعودي</h2>
+
+            <div class="space-y-4">
+                <div>
+                    <button class="accordion-button w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 rounded-lg focus:outline-none">
+                        <span class="font-semibold text-red-800">ما هي عقوبات مخالفة متطلبات الدفاع المدني؟</span>
+                        <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content p-4 bg-white border border-gray-200 rounded-b-lg">
+                        <p>تختلف العقوبات حسب نوع المخالفة وخطورتها، وتشمل غرامات مالية (قد تصل إلى 50,000 ريال)، إغلاق المنشأة مؤقتاً، إلغاء الترخيص في الحالات الجسيمة، والمسؤولية القانونية في حال وقوع حوادث.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion-button w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 rounded-lg focus:outline-none">
+                        <span class="font-semibold text-red-800">كيف يمكن الحصول على ترخيص الدفاع المدني إلكترونياً؟</span>
+                        <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content p-4 bg-white border border-gray-200 rounded-b-lg">
+                        <p>يمكن الحصول على ترخيص الدفاع المدني وتجديده إلكترونياً من خلال منصة "سلامة" التابعة للمديرية العامة للدفاع المدني. تتضمن العملية التسجيل، تقديم الطلب، إرفاق المستندات، دفع الرسوم، ومتابعة الطلب حتى صدور الترخيص.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="accordion-button w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 rounded-lg focus:outline-none">
+                        <span class="font-semibold text-red-800">ما هي مدة صلاحية ترخيص الدفاع المدني؟</span>
+                        <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content p-4 bg-white border border-gray-200 rounded-b-lg">
+                        <p>مدة صلاحية ترخيص الدفاع المدني عادة سنة واحدة من تاريخ إصداره، ويجب تجديده سنوياً قبل انتهاء صلاحيته.</p>
+                    </div>
+                </div>
+                 <div>
+                    <button class="accordion-button w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 rounded-lg focus:outline-none">
+                        <span class="font-semibold text-red-800">هل يمكن الحصول على استثناءات من بعض متطلبات الدفاع المدني؟</span>
+                        <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content p-4 bg-white border border-gray-200 rounded-b-lg">
+                        <p>في حالات محددة ومبررة، يمكن التقدم بطلب استثناء من بعض المتطلبات. يتم دراسة كل طلب على حدة، ويجب تقديم حلول بديلة توفر مستوى مكافئ من السلامة. لا يتم منح استثناءات للمتطلبات الأساسية التي تؤثر بشكل مباشر على سلامة الأرواح.</p>
+                    </div>
+                </div>
+                 <div>
+                    <button class="accordion-button w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 rounded-lg focus:outline-none">
+                        <span class="font-semibold text-red-800">ما هي المكاتب والشركات المعتمدة من الدفاع المدني؟</span>
+                        <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content p-4 bg-white border border-gray-200 rounded-b-lg">
+                        <p>هي مكاتب هندسية وشركات متخصصة في مجال السلامة ومكافحة الحريق، تم اعتمادها من قبل المديرية العامة للدفاع المدني للقيام بأعمال التصميم، الإشراف، الفحص، التركيب، والصيانة لأنظمة السلامة. يجب التعامل مع هذه الجهات المعتمدة لضمان الامتثال للمتطلبات. يمكن الاطلاع على قائمة الجهات المعتمدة من خلال موقع الدفاع المدني أو منصة سلامة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>الخلاصة</h2>
+
+            <p>تمثل <strong>متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية</strong> إطاراً شاملاً وضرورياً لضمان سلامة الأرواح والممتلكات. يغطي هذا الإطار جوانب متعددة، بدءاً من التصميم والإنشاء، مروراً بتركيب وصيانة أنظمة الإنذار والإطفاء الفعالة، وتوفير سبل هروب آمنة، وصولاً إلى تدريب العاملين وتوعيتهم.</p>
+
+            <p>يجب على أصحاب المنشآت التجارية والمهندسين والمقاولين الالتزام الدقيق بهذه المتطلبات ليس فقط لتجنب العقوبات، بل كجزء أساسي من مسؤوليتهم الاجتماعية والأخلاقية لتوفير بيئة آمنة للعاملين والزوار. كما يجب مواكبة التحديثات المستمرة لهذه المتطلبات لضمان الامتثال للمعايير الأحدث وأفضل الممارسات في مجال السلامة من الحريق.</p>
+
+            <p>في النهاية، تعتبر السلامة مسؤولية مشتركة. التعاون بين الجهات الرسمية وأصحاب المنشآت والمختصين في مجال السلامة مثل <a href="https://nazretelebdaa.com/" target="_blank" rel="noopener noreferrer"><strong>شركة نظرة الإبداع</strong></a> هو السبيل الأمثل لتحقيق الهدف المنشود: حماية الأرواح والممتلكات من مخاطر الحريق والكوارث الأخرى، والمساهمة في بناء مجتمع أكثر أماناً وازدهاراً.</p>
+
+            <!-- Contact Section -->
+            <section id="contact" class="mt-12 pt-8 border-t border-gray-200">
+                <h2 class="text-2xl font-bold text-center mb-6">تحتاج مساعدة في تلبية متطلبات الدفاع المدني؟</h2>
+                <p class="text-center text-lg text-gray-600 mb-8">شركة نظرة الإبداع تقدم حلولاً متكاملة لتصميم وتركيب وصيانة أنظمة السلامة المعتمدة من الدفاع المدني السعودي. تواصل معنا اليوم لضمان امتثال منشأتك وحمايتها.</p>
+                <div class="text-center">
+                    <a href="tel:+966597212027" title="تواصل معنا عبر الهاتف" target="_blank" rel="noopener noreferrer" class="bg-red-600  text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-lg inline-block">تواصل مع خبرائنا</a>
+                </div>
+            </section>
+            <!-- Related Articles Section -->
+            <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h2 class="text-xl font-bold mb-6 text-secondary">مقالات ذات صلة</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <a href="fire_extinguishing_systems_article.html" target="_blank" aria-label="أنواع أنظمة إطفاء الحريق وتطبيقاتها المختلفة" title="أنواع أنظمة إطفاء الحريق وتطبيقاتها المختلفة" class="block group" >
+                        <div class="bg-gray-100 rounded-lg overflow-hidden mb-3 h-48">
+<img src="../assets/img/content/fire(12).webp" alt="أنواع أنظمة إطفاء الحريق وتطبيقاتها المختلفة" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 group-hover:text-primary transition duration-300">أنواع أنظمة إطفاء الحريق وتطبيقاتها المختلفة</h3>
+                        <p class="text-gray-600 text-sm">تعرف على أنواع أنظمة إطفاء الحريق المختلفة وكيفية اختيار النظام المناسب لكل منشأة.</p>
+                    </a>
+                    <a href="updated_fire_system.html" aria-label="التقنيات المتطورة في أنظمة الإنذار المبكر للكشف عن الحرائق" title="التقنيات المتطورة في أنظمة الإنذار المبكر للكشف عن الحرائق" class="block group">
+                        <div class="bg-gray-100 rounded-lg overflow-hidden mb-3 h-48">
+                            <img src="../assets/img/content/fire(4).webp" alt="التقنيات المتطورة في أنظمة الإنذار المبكر للكشف عن الحرائق" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 group-hover:text-primary transition duration-300">التقنيات المتطورة في أنظمة الإنذار المبكر للكشف عن الحرائق</h3>
+                        <p class="text-gray-600 text-sm">تعرف على التقنيات المتطورة في أنظمة الإنذار المبكر للكشف عن الحرائق وكيفية تطبيقها في المباني التجارية.</p>
+                    </a>
+                </div>
+            </div>
+
+        </article>
+    </main>
+
+    <!-- Recent Articles Container -->
+    <div id="recent-articles-container"></div>
+    
+    <div class="section-divider"></div>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Include Components Script -->
+    <script src="../components/include-components.js"></script>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="العودة للأعلى">
+        &uarr;
+    </button>
+
+    <script>
+        // Reading Progress Bar Logic
+        const progressBar = document.getElementById('progressBar');
+        window.addEventListener('scroll', () => {
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = (window.scrollY / scrollHeight) * 100;
+            progressBar.style.width = scrolled + '%';
+        });
+
+        // Back to Top Button Logic
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) { // Show button after scrolling 300px
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Accordion Logic
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                button.classList.toggle('active');
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+

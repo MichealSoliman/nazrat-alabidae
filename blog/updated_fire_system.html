@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التقنيات المتطورة في أنظمة الإنذار المبكر للكشف عن الحرائق | شركة نظرة الإبداع</title>
+    <meta name="description" content="دليل شامل حول أحدث التقنيات المستخدمة في أنظمة الإنذار المبكر للكشف عن الحرائق وأهميتها في حماية الأرواح والممتلكات. تعرف على أنواع الكاشفات وأنظمة الإنذار المتكاملة والذكية.">
+    <meta name="keywords" content="أنظمة إنذار الحريق, كاشفات الدخان, أنظمة الإنذار المبكر, كاشفات الحرارة, أنظمة الإطفاء, الدفاع المدني السعودي, أنظمة السلامة, شركة نظرة الإبداع">
+    <meta name="author" content="شركة نظرة الإبداع لأنظمة السلامة">
+    <meta property="og:title" content="التقنيات المتطورة في أنظمة الإنذار المبكر للكشف عن الحرائق">
+    <meta property="og:description" content="دليل شامل حول أحدث التقنيات المستخدمة في أنظمة الإنذار المبكر للكشف عن الحرائق وأهميتها في حماية الأرواح والممتلكات.">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="شركة نظرة الإبداع لأنظمة السلامة">
+    <meta name="google-site-verification" content="YOz7jMGNDRtCMv4clPRQX9dOPLQjByUAMdoEGFSLj7s" />
+    <link rel="home" href="https://nazretelebdaa.com/">
+    <meta name="author" content="نظرة الإبداع لأنظمة السلامة">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#e63946',
+                        secondary: '#1d3557',
+                        accent: '#457b9d',
+                        light: '#f1faee',
+                        dark: '#1d3557',
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .article-content h2 {
+            color: #e63946;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 1.5rem;
+            position: relative;
+            padding-right: 1rem;
+        }
+        
+        .article-content h2::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0.5rem;
+            width: 4px;
+            height: 70%;
+            background-color: #e63946;
+            border-radius: 2px;
+        }
+        
+        .article-content h3 {
+            color: #1d3557;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+        
+        .article-content h4 {
+            color: #457b9d;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .article-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .article-content ul, .article-content ol {
+            margin-bottom: 1rem;
+            padding-right: 1.5rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        
+        .section-divider {
+            height: 5px;
+            background: linear-gradient(90deg, #c41c1c, #e63e3e, #ff6b35);
+            margin: 3rem 0;
+            border-radius: 5px;
+        }
+        
+        .article-content ul li::before {
+            content: "•";
+            color: #e63946;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-right: -1em;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            padding: 1.25rem 0;
+            position: relative;
+        }
+        
+        .faq-question::after {
+            content: "\f107";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+            padding-bottom: 1.25rem;
+        }
+        
+        .progress-container {
+            width: 100%;
+            height: 5px;
+            background: transparent;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        
+        .progress-bar {
+            height: 5px;
+            background: #e63946;
+            width: 0%;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            background-color: #e63946;
+            color: white;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 999;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .article-content h2 {
+                font-size: 1.35rem;
+            }
+            
+            .article-content h3 {
+                font-size: 1.2rem;
+            }
+            
+            .article-content h4 {
+                font-size: 1.05rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Reading Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    
+    <!-- Header -->
+   
+<nav class="bg-white shadow-md py-4 px-4 sm:px-6 lg:px-8 sticky top-0 z-50">
+    <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+            <!-- Logo and Site Name -->
+            <a href="https://nazretelebdaa.com/index.html" class="flex items-center" aria-label="Go to Home" title="Go to Home" >
+                <img src="https://nazretelebdaa.com/assets/img/icon.webp" alt="logo" class="h-10 w-10 ml-2">
+                <span class="text-xl font-bold text-gray-800">شركة نظرة الإبداع لأنظمة السلامة</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-8 space-x-reverse">
+                <a href="https://nazretelebdaa.com/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Home" title="Go to Home">الرئيسية</a>
+                <a href="https://nazretelebdaa.com/index.html#about" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to About" title="Go to About">من نحن</a>
+                <a href="https://nazretelebdaa.com/services/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Services" title="Go to Services">خدماتنا</a>
+                <a href="https://nazretelebdaa.com/consultation/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Consultation" title="Go to Consultation">ارشادات</a>
+                <!-- Blog Dropdown (Desktop) -->
+                <div class="relative" x-data="{ open: false }" @keydown.escape="open = false">
+                    <button @click="open = !open" class="flex items-center text-gray-700 hover:text-red-600 font-medium focus:outline-none" :class="{ 'text-red-600': open }" aria-label="Open Blog Menu" title="Open Blog Menu" :aria-expanded="open">
+                        <span>المدونة</span>
+                        <svg class="w-4 h-4 mr-1 transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" 
+                         x-transition:enter="transition ease-out duration-100" 
+                         x-transition:enter-start="opacity-0 scale-95" 
+                         x-transition:enter-end="opacity-100 scale-100" 
+                         x-transition:leave="transition ease-in duration-75" 
+                         x-transition:leave-start="opacity-100 scale-100" 
+                         x-transition:leave-end="opacity-0 scale-95"
+                         class="absolute right-0 mt-2 w-72 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50 max-h-96 overflow-y-auto"
+                         @click.away="open = false"
+                         x-ref="dropdown">
+                        <div class="py-1 text-right" role="menu" aria-orientation="vertical" aria-labelledby="blog-menu-button">
+                            <a href="https://nazretelebdaa.com/blog/index.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Blog Main Page">صفحة المدونة الرئيسية</a>
+                            <a href="https://nazretelebdaa.com/blog/civil_defense_requirements_article.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Civil Defense Requirements Article">متطلبات الدفاع المدني</a>
+                            <a href="https://nazretelebdaa.com/blog/enhanced_fire_safety_page.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Enhanced Fire Safety Page">تعزيز السلامة من الحرائق</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_blog/article_1.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Article 1">مقالة المدونة 1</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_blog/article_2.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Article 2">مقالة المدونة 2</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_code.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Fire Code">كود الحريق السعودي</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_extinguishing_systems_article.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Fire Extinguishing Systems Article">أنظمة إطفاء الحريق</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_updates.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Fire Updates">آخر تحديثات السلامة</a>
+                            <a href="https://nazretelebdaa.com/blog/smart_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Smart System" aria-label="Go to Smart System">أنظمة الذكية</a>
+                            <a href="https://nazretelebdaa.com/blog/how_to_chose_fire_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to How To Choose Fire System" aria-label="Go to How To Choose Fire System">كيفية اختيار نظام مكافحة الحريق</a>
+                            
+                            <a href="https://nazretelebdaa.com/blog/how-to-supervise-fire-protection-systems.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to How To Supervise Fire Protection Systems">الإشراف على أنظمة الحماية</a>
+                            <a href="https://nazretelebdaa.com/blog/what-is-a-fire-safety-plan.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to What Is A Fire Safety Plan">ما هي خطة السلامة من الحرائق؟</a>
+                            <a href="https://nazretelebdaa.com/blog/analtics_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Statistics for Fire Fighting Systems">إحصائيات أنظمة مكافحة الحريق</a>
+                            <a href="https://nazretelebdaa.com/blog/updated_fire_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Advanced Early Warning Systems">تقنيات الإنذار المبكر</a>
+                            <a href="https://nazretelebdaa.com/blog/gholf_saftey_report.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Gulf Safety Report">تقرير السلامة في الخليج</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://nazretelebdaa.com/companies/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Companies" title="Go to Companies">الشركات</a>
+                <a href="https://nazretelebdaa.com/gifts/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Gifts" title="Go to Gifts">الهدايا</a>
+                <a href="https://nazretelebdaa.com/articles" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Articles" title="Go to Articles">خدمات عامة</a>
+            </div>
+            
+            <!-- Contact Button -->
+            <a href="https://api.whatsapp.com/send/?phone=966597212027&text&type=phone_number&app_absent=0" class="hidden md:block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition" aria-label="Go to Contact" title="Go to Contact">
+                <i class="fas fa-phone-alt ml-1"></i>اتصل بنا
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-red-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 bg-gray-50 rounded-lg p-4">
+            <div class="flex flex-col space-y-3">
+                <a href="https://nazretelebdaa.com/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Home" title="Go to Home">الرئيسية</a>
+                <a href="https://nazretelebdaa.com/index.html#about" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to About" title="Go to About">من نحن</a>
+                <a href="https://nazretelebdaa.com/services/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Services" title="Go to Services">خدماتنا</a>
+                <a href="https://nazretelebdaa.com/consultation/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Consultation" title="Go to Consultation">ارشادات</a>
+                <!-- Mobile Blog Dropdown -->
+                <div class="w-full" x-data="{ open: false }" @keydown.escape="open = false">
+                    <button @click="open = !open" class="w-full text-gray-700 hover:text-red-600 font-medium flex justify-between items-center py-2" aria-label="Open Blog Menu" title="Open Blog Menu" :aria-expanded="open">
+                        <span>المدونة</span>
+                        <svg class="ml-1 h-5 w-5 transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" 
+                         x-transition:enter="transition ease-out duration-100" 
+                         x-transition:enter-start="opacity-0 scale-95" 
+                         x-transition:enter-end="opacity-100 scale-100" 
+                         x-transition:leave="transition ease-in duration-75" 
+                         x-transition:leave-start="opacity-100 scale-100" 
+                         x-transition:leave-end="opacity-0 scale-95"
+                         class="mt-1 space-y-1 pl-4 text-right"
+                         @click.away="open = false"
+                         x-ref="dropdown">
+                        <a href="https://nazretelebdaa.com/blog/index.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Blog Main Page">صفحة المدونة الرئيسية</a>
+                        <a href="https://nazretelebdaa.com/blog/civil_defense_requirements_article.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Civil Defense Requirements Article">متطلبات الدفاع المدني</a>
+                        <a href="https://nazretelebdaa.com/blog/enhanced_fire_safety_page.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Enhanced Fire Safety Page">تعزيز السلامة من الحرائق</a>
+                        <a href="https://nazretelebdaa.com/blog/fire_blog/article_1.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Article 1">مقالة المدونة 1</a>
+                        <a href="https://nazretelebdaa.com/blog/fire_blog/article_2.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Article 2">مقالة المدونة 2</a>
+                        <a href="https://nazretelebdaa.com/blog/fire_code.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Fire Code">كود الحريق السعودي</a>
+                        <a href="https://nazretelebdaa.com/blog/smart_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Smart System" aria-label="Go to Smart System">أنظمة الذكية</a>
+                                <a href="https://nazretelebdaa.com/blog/how_to_chose_fire_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to How To Choose Fire System" aria-label="Go to How To Choose Fire System">كيفية اختيار نظام مكافحة الحريق</a>
+                                
+                        <a href="https://nazretelebdaa.com/blog/fire_extinguishing_systems_article.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Fire Extinguishing Systems Article">أنظمة إطفاء الحريق</a>
+                        <a href="https://nazretelebdaa.com/blog/fire_updates.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Fire Updates">آخر تحديثات السلامة</a>
+                        <a href="https://nazretelebdaa.com/blog/how-to-supervise-fire-protection-systems.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to How To Supervise Fire Protection Systems">الإشراف على أنظمة الحماية</a>
+                        <a href="https://nazretelebdaa.com/blog/what-is-a-fire-safety-plan.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to What Is A Fire Safety Plan">ما هي خطة السلامة من الحرائق؟</a>
+                        <a href="https://nazretelebdaa.com/blog/analtics_system.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Statistics for Fire Fighting Systems">إحصائيات أنظمة مكافحة الحريق</a>
+                        <!-- <a href="/blog/updated_fire_system.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Advanced Early Warning Systems">تقنيات الإنذار المبكر</a> -->
+                        <a href="https://nazretelebdaa.com/blog/gholf_saftey_report.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Gulf Safety Report">تقرير السلامة في الخليج</a>
+                    </div>
+                </div>
+                <a href="https://nazretelebdaa.com/companies/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Companies" title="Go to Companies">الشركات</a>
+                <a href="https://nazretelebdaa.com/gifts/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Gifts" title="Go to Gifts">الهدايا</a>
+                <a href="https://nazretelebdaa.com/articles" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Articles" title="Go to Articles">خدمات عامة</a>
+                <a href="https://api.whatsapp.com/send/?phone=966597212027&text&type=phone_number&app_absent=0" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition text-center" aria-label="Go to Contact" title="Go to Contact">
+                    <i class="fas fa-phone-alt ml-1"></i>اتصل بنا
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- Alpine.js -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+
+<script src="../js/navbar.js"></script>
+</nav>
+
+
+    
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-secondary to-accent text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4" alt="التقنيات المتطورة في أنظمة الإنذار المبكر للكشف عن الحرائق">التقنيات المتطورة في أنظمة الإنذار المبكر للكشف عن الحرائق</h1>
+                <p class="text-lg md:text-xl mb-8" alt="دليل شامل حول أحدث التقنيات المستخدمة في أنظمة الإنذار المبكر وأهميتها في حماية الأرواح والممتلكات">دليل شامل حول أحدث التقنيات المستخدمة في أنظمة الإنذار المبكر وأهميتها في حماية الأرواح والممتلكات</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a title="اقرأ المقال" href="#article-content" class="bg-primary hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg">اقرأ المقال</a>
+                    <a title="طلب استشارة مجانية" href="https://nazretelebdaa.com/" class="bg-white hover:bg-gray-100 text-secondary font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg">طلب استشارة مجانية</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-100 py-3">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm text-gray-600">
+                <a aria-label="الرئيسيه" title="الرئيسية" href="https://nazretelebdaa.com/" class="hover:text-primary">الرئيسية</a>
+                <span class="mx-2">/</span>
+                <a aria-label="المدونه" title="المدونة" href="https://nazretelebdaa.com/blog" class="hover:text-primary">المدونة</a>
+                <span class="mx-2">/</span>
+                <span aria-label="التقنيات المتطورة في أنظمة الإنذار المبكر" title="التقنيات المتطورة في أنظمة الإنذار المبكر" class="text-primary">التقنيات المتطورة في أنظمة الإنذار المبكر</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="flex flex-wrap">
+            <!-- Article Content -->
+            <article id="article-content" class="w-full lg:w-2/3 lg:pl-8">
+                <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                    <!-- Article Meta -->
+                    <div class="flex items-center justify-between mb-6 pb-4 border-b border-gray-200">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="mr-3">
+                                <span class="block text-sm text-gray-600">بواسطة</span>
+                                <span class="font-semibold">فريق نظرة الإبداع</span>
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-600">
+                            <i class="far fa-calendar-alt ml-1"></i>
+                            <span>27 مايو 2025</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Article Content -->
+                    <div class="article-content">
+                        <p>في عالم يتسارع فيه التطور التكنولوجي، أصبحت أنظمة الإنذار المبكر للكشف عن الحرائق جزءًا لا يتجزأ من استراتيجيات السلامة الحديثة في المباني والمنشآت. تلعب هذه الأنظمة دورًا حاسمًا في حماية الأرواح والممتلكات من خلال الكشف المبكر عن الحرائق قبل تفاقمها، مما يتيح الوقت الكافي للاستجابة السريعة والإخلاء الآمن. في هذا المقال الشامل، سنستعرض أحدث التقنيات المستخدمة في أنظمة الإنذار المبكر للكشف عن الحرائق، ونتعمق في فهم آليات عملها وأهميتها في تعزيز مستويات السلامة.</p>
+                        
+                        <h2>أهمية أنظمة الإنذار المبكر في حماية الأرواح والممتلكات</h2>
+                        <p>تُعد أنظمة الإنذار المبكر للحرائق خط الدفاع الأول ضد الكوارث المحتملة. فوفقًا للإحصائيات العالمية، تُظهر البيانات أن البلدان التي تمتلك أنظمة إنذار شاملة تُقلل نسبة الوفيات الناتجة عن الحرائق بمقدار ستة أضعاف مقارنة بالدول ذات الأنظمة المحدودة. هذا الفارق الكبير يعكس الأهمية القصوى لهذه التقنيات في إنقاذ الأرواح.</p>
+                        
+                        <p>في المملكة العربية السعودية، أصبح الاهتمام بأنظمة الإنذار المبكر أكثر إلحاحًا مع التوسع العمراني الهائل والتطور المستمر في قطاع البناء والتشييد. وقد فرضت الهيئة السعودية للمواصفات والمقاييس والجودة معايير صارمة لضمان تطبيق أحدث تقنيات السلامة في جميع المنشآت، بما يتوافق مع كود البناء السعودي SBC-801 ومعايير NFPA السعودي.</p>
+                        
+                        <h2>التقنيات الحديثة المستخدمة في أنظمة الإنذار المبكر للحرائق</h2>
+                        
+                        <h3>1. أنظمة الكشف عن الدخان المتطورة</h3>
+                        <p>تُعتبر كاشفات الدخان من أكثر أنواع أجهزة الكشف انتشارًا، وقد شهدت تطورًا كبيرًا في السنوات الأخيرة. تعتمد هذه الأجهزة على تقنيات متعددة للكشف عن جزيئات الدخان في الهواء، ومن أبرزها:</p>
+                        
+                        <h4>كاشفات الدخان الكهروضوئية (Photoelectric Smoke Detectors)</h4>
+                        <p>تعمل هذه الكاشفات باستخدام شعاع ضوئي داخل غرفة استشعار. عندما تدخل جزيئات الدخان إلى غرفة الاستشعار، تتشتت الأشعة الضوئية وتنحرف باتجاه خلية كهروضوئية، مما يؤدي إلى تفعيل الإنذار. تتميز هذه الكاشفات بفعاليتها في اكتشاف الحرائق البطيئة الاشتعال التي تنتج كميات كبيرة من الدخان قبل ظهور اللهب.</p>
+                        
+                        <h4>كاشفات الدخان التأينية (Ionization Smoke Detectors)</h4>
+                        <p>تحتوي هذه الكاشفات على كمية صغيرة من المواد المشعة التي تؤين الهواء داخل غرفة الاستشعار، مما يسمح بمرور تيار كهربائي. عندما تدخل جزيئات الدخان إلى الغرفة، تتعلق بالأيونات وتقلل من التيار الكهربائي، مما يؤدي إلى تفعيل الإنذار. تتميز هذه الكاشفات بقدرتها على اكتشاف الحرائق سريعة الاشتعال التي تنتج لهبًا قبل إنتاج كميات كبيرة من الدخان.</p>
+                        
+                        <h4>كاشفات الدخان المزدوجة (Dual Sensor Smoke Detectors)</h4>
+                        <p>تجمع هذه الكاشفات بين تقنيتي الكشف الكهروضوئية والتأينية، مما يوفر حماية شاملة ضد مختلف أنواع الحرائق. تُعتبر هذه الكاشفات الخيار الأمثل للمنشآت التي تتطلب مستويات عالية من الحماية.</p>
+                        
+                        <h4>كاشفات الدخان بتقنية الليزر (Laser Smoke Detectors)</h4>
+                        <p>تُعد من أحدث التقنيات في مجال كشف الدخان، حيث تستخدم أشعة الليزر لاكتشاف جزيئات الدخان الصغيرة جدًا. تتميز هذه الكاشفات بحساسيتها العالية وقدرتها على اكتشاف الحرائق في مراحلها الأولى جدًا، مما يوفر وقتًا أطول للاستجابة.</p>
+                        
+                        <div class="my-8 bg-light rounded-lg p-6 border-r-4 border-primary shadow-md">
+                            <h3 class="text-primary font-bold mb-3">حقيقة هامة</h3>
+                            <p class="mb-0">وفقًا لإحصائيات الدفاع المدني السعودي، تساهم أنظمة الإنذار المبكر في تقليل الخسائر البشرية الناتجة عن الحرائق بنسبة تصل إلى 70%، وتقليل الخسائر المادية بنسبة تتجاوز 50%.</p>
+                        </div>
+                        
+                        <h3>2. أنظمة الكشف عن الحرارة المتقدمة</h3>
+                        <p>تُعتبر كاشفات الحرارة مكملة لكاشفات الدخان، وتُستخدم غالبًا في الأماكن التي قد تحتوي على مستويات عالية من الأبخرة أو الغبار، مما قد يتسبب في إنذارات خاطئة لكاشفات الدخان. تتضمن أنواع كاشفات الحرارة المتقدمة:</p>
+                        
+                        <h4>كاشفات الحرارة الثابتة (Fixed Temperature Heat Detectors)</h4>
+                        <p>تعمل هذه الكاشفات على تفعيل الإنذار عندما تصل درجة الحرارة المحيطة إلى مستوى محدد مسبقًا (عادة بين 57-74 درجة مئوية). تُستخدم هذه الكاشفات في الأماكن التي تكون فيها درجات الحرارة العادية منخفضة نسبيًا.</p>
+                        
+                        <h4>كاشفات معدل ارتفاع الحرارة (Rate-of-Rise Heat Detectors)</h4>
+                        <p>تقوم هذه الكاشفات بمراقبة معدل ارتفاع درجة الحرارة، وتفعل الإنذار عندما ترتفع درجة الحرارة بسرعة غير طبيعية (عادة أكثر من 6.7-8.3 درجة مئوية في الدقيقة). تُعتبر هذه الكاشفات فعالة في اكتشاف الحرائق سريعة الانتشار.</p>
+                        
+                        <h4>كاشفات الحرارة المزدوجة (Combination Heat Detectors)</h4>
+                        <p>تجمع هذه الكاشفات بين تقنيتي الكشف الثابتة ومعدل الارتفاع، مما يوفر مستوى أعلى من الحماية. تُفعل الإنذار إما عند الوصول إلى درجة حرارة محددة أو عند ارتفاع درجة الحرارة بمعدل غير طبيعي.</p>
+                        
+                        <h3>3. أنظمة الكشف عن اللهب المتطورة</h3>
+                        <p>تُستخدم كاشفات اللهب في الأماكن التي قد تنشأ فيها حرائق سريعة الاشتعال دون إنتاج كميات كبيرة من الدخان، مثل المنشآت البترولية والكيميائية. تعتمد هذه الكاشفات على تقنيات متعددة للكشف عن الإشعاعات الناتجة عن اللهب:</p>
+                        
+                        <h4>كاشفات الأشعة فوق البنفسجية (UV Flame Detectors)</h4>
+                        <p>تكشف هذه الأجهزة عن الأشعة فوق البنفسجية المنبعثة من اللهب. تتميز بسرعة استجابتها العالية (أقل من ثانية واحدة)، لكنها قد تتأثر بمصادر أخرى للأشعة فوق البنفسجية مثل أشعة الشمس أو أعمال اللحام.</p>
+                        
+                        <h4>كاشفات الأشعة تحت الحمراء (IR Flame Detectors)</h4>
+                        <p>تكشف عن الأشعة تحت الحمراء المنبعثة من اللهب. تتميز بقدرتها على العمل في ظروف الدخان الكثيف والأتربة، وتكون أقل عرضة للإنذارات الخاطئة مقارنة بكاشفات الأشعة فوق البنفسجية.</p>
+                        
+                        <h3>4. أنظمة الكشف عن الغازات</h3>
+                        <p>تُستخدم كاشفات الغازات للكشف عن تسرب الغازات القابلة للاشتعال أو السامة قبل وصولها إلى مستويات خطرة. تشمل أنواع كاشفات الغازات:</p>
+                        
+                        <h4>كاشفات غاز أول أكسيد الكربون (CO Detectors)</h4>
+                        <p>تكشف عن وجود غاز أول أكسيد الكربون السام الذي ينتج عن الاحتراق غير الكامل للوقود. يُعتبر هذا الغاز خطيرًا بشكل خاص لأنه عديم اللون والرائحة، ويمكن أن يتسبب في الوفاة دون أي تحذير مسبق.</p>
+                        
+                        <h4>كاشفات الغازات القابلة للاشتعال (Combustible Gas Detectors)</h4>
+                        <p>تكشف عن وجود الغازات القابلة للاشتعال مثل الميثان، البروبان، والبيوتان قبل وصولها إلى مستويات قابلة للاشتعال. تُستخدم هذه الكاشفات بشكل شائع في المطابخ التجارية، المنشآت الصناعية، ومحطات الوقود.</p>
+                        
+                        <h3>5. أنظمة الكشف باستخدام عينات الهواء (Air Sampling Detection Systems)</h3>
+                        <p>تُعتبر أنظمة الكشف باستخدام عينات الهواء من أكثر أنظمة الكشف عن الحرائق تقدمًا وحساسية. تعمل هذه الأنظمة على سحب عينات من الهواء من خلال شبكة من الأنابيب الموزعة في المنطقة المحمية، ثم تحليلها باستخدام أجهزة استشعار عالية الدقة.</p>
+                        
+                        <h4>نظام VESDA (Very Early Smoke Detection Apparatus)</h4>
+                        <p>يُعتبر نظام VESDA من أشهر أنظمة الكشف باستخدام عينات الهواء. يستخدم تقنية الليزر لاكتشاف جزيئات الدخان الصغيرة جدًا، مما يسمح بالكشف عن الحرائق في مراحلها الأولى جدًا (قبل مرحلة الاحتراق الفعلي). يمكن لنظام VESDA اكتشاف مستويات من الدخان أقل بـ 1000 مرة من مستويات الدخان التي تكشفها كاشفات الدخان التقليدية.</p>
+                        
+                        <h2>أنظمة الإنذار المتكاملة والذكية</h2>
+                        <p>مع التطور التكنولوجي المستمر، ظهرت أنظمة إنذار متكاملة وذكية تجمع بين مختلف تقنيات الكشف وتتكامل مع أنظمة إدارة المباني. من أبرز هذه الأنظمة:</p>
+                        
+                        <h3>1. أنظمة الإنذار القابلة للعنونة (Addressable Fire Alarm Systems)</h3>
+                        <p>تُعتبر أنظمة الإنذار القابلة للعنونة من أحدث التقنيات في مجال أنظمة الإنذار من الحرائق. في هذه الأنظمة، يتم تعيين عنوان فريد لكل جهاز كشف (كاشف دخان، كاشف حرارة، زر إنذار يدوي)، مما يسمح للوحة التحكم المركزية بتحديد موقع الحريق بدقة متناهية.</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                            <div class="bg-light rounded-lg p-6 shadow-md">
+                                <h4 class="text-primary font-bold mb-3">مزايا أنظمة الإنذار القابلة للعنونة</h4>
+                                <ul class="list-disc list-inside">
+                                    <li>تحديد موقع الحريق بدقة، مما يسرع من عملية الاستجابة</li>
+                                    <li>إمكانية برمجة إجراءات محددة لكل جهاز</li>
+                                    <li>القدرة على مراقبة حالة كل جهاز ومعرفة ما إذا كان يعمل بشكل صحيح</li>
+                                    <li>تقليل التكاليف من خلال استخدام دوائر كهربائية أقل</li>
+                                    <li>سهولة التوسع وإضافة أجهزة جديدة</li>
+                                </ul>
+                            </div>
+                            <div class="bg-light rounded-lg p-6 shadow-md">
+                                <h4 class="text-primary font-bold mb-3">تطبيقات أنظمة الإنذار القابلة للعنونة</h4>
+                                <ul class="list-disc list-inside">
+                                    <li>المباني العالية والأبراج</li>
+                                    <li>المراكز التجارية والمولات</li>
+                                    <li>مراكز البيانات وغرف السيرفرات</li>
+                                    <li>المستشفيات والمرافق الصحية</li>
+                                    <li>البنوك والمؤسسات المالية</li>
+                                    <li>المتاحف والمكتبات</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h3>2. أنظمة الإنذار التقليدية (Conventional Fire Alarm Systems)</h3>
+                        <p>على الرغم من ظهور الأنظمة القابلة للعنونة، لا تزال أنظمة الإنذار التقليدية تُستخدم في المنشآت الصغيرة أو المشاريع ذات الميزانية المحدودة. في هذه الأنظمة، يتم تقسيم المبنى إلى مناطق، ويتم توصيل جميع أجهزة الكشف في كل منطقة بنفس الدائرة الكهربائية.</p>
+                        
+                        <p>عند تفعيل أي جهاز في منطقة معينة، تُظهر لوحة التحكم المركزية إنذارًا لتلك المنطقة، دون تحديد الجهاز الدقيق الذي تم تفعيله. تُستخدم هذه الأنظمة في:</p>
+                        <ul>
+                            <li>المستودعات والمصانع الصغيرة</li>
+                            <li>المدارس والمؤسسات التعليمية</li>
+                            <li>المباني السكنية الصغيرة</li>
+                            <li>المراكز المجتمعية</li>
+                        </ul>
+                        
+                        <h3>3. أنظمة الإنذار الذكية المتكاملة مع إنترنت الأشياء (IoT)</h3>
+                        <p>مع تطور تقنيات إنترنت الأشياء، ظهرت أنظمة إنذار ذكية تتكامل مع مختلف أنظمة المبنى وتوفر مستويات غير مسبوقة من المراقبة والتحكم. تتميز هذه الأنظمة بـ:</p>
+                        
+                        <ul>
+                            <li>المراقبة عن بُعد: يمكن مراقبة حالة النظام من أي مكان في العالم من خلال تطبيقات الهواتف الذكية أو منصات الويب</li>
+                            <li>التشخيص الذاتي: القدرة على اكتشاف الأعطال وإرسال إشعارات للصيانة قبل حدوث مشاكل كبيرة</li>
+                            <li>التكامل مع أنظمة المبنى الأخرى: مثل أنظمة التحكم في الدخان، أنظمة الإخلاء، وأنظمة إدارة المباني (BMS)</li>
+                            <li>التحليلات المتقدمة: استخدام الذكاء الاصطناعي وتحليل البيانات الضخمة لتحسين أداء النظام وتقليل الإنذارات الخاطئة</li>
+                        </ul>
+                        
+                        <h2>الأسئلة الشائعة حول أنظمة الإنذار المبكر للكشف عن الحرائق</h2>
+                        
+                        <div class="space-y-4 my-8">
+                            <div class="faq-item">
+                                <div class="faq-question font-bold text-lg text-secondary">
+                                    ما هي أفضل أنواع كاشفات الدخان للمنازل؟
+                                </div>
+                                <div class="faq-answer">
+                                    <p>تُعتبر كاشفات الدخان المزدوجة (التي تجمع بين تقنيتي الكشف الكهروضوئية والتأينية) الخيار الأمثل للمنازل، حيث توفر حماية شاملة ضد مختلف أنواع الحرائق. يُنصح بتركيب كاشفات الدخان في جميع غرف النوم، الممرات، وكل طابق من المنزل، بما في ذلك القبو والعلية.</p>
+                                    <p>من المهم أيضًا اختيار كاشفات دخان تحمل علامة اعتماد من هيئات معترف بها مثل UL أو SASO (الهيئة السعودية للمواصفات والمقاييس والجودة). كما يُنصح باختيار كاشفات مزودة ببطاريات طويلة العمر (تدوم حتى 10 سنوات) لتقليل الحاجة إلى استبدال البطاريات بشكل متكرر.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question font-bold text-lg text-secondary">
+                                    كيف يمكن تقليل الإنذارات الخاطئة في أنظمة الإنذار المبكر؟
+                                </div>
+                                <div class="faq-answer">
+                                    <p>الإنذارات الخاطئة من المشاكل الشائعة في أنظمة الإنذار المبكر، ويمكن تقليلها من خلال:</p>
+                                    <ol class="list-decimal list-inside mb-4">
+                                        <li class="mb-2">
+                                            <strong>اختيار النوع المناسب من أجهزة الكشف لكل بيئة:</strong>
+                                            <ul class="list-disc list-inside mr-6 mt-1">
+                                                <li>استخدام كاشفات الحرارة بدلاً من كاشفات الدخان في المطابخ وغرف الغلايات</li>
+                                                <li>استخدام كاشفات دخان بتقنية الليزر في البيئات النظيفة التي تتطلب حساسية عالية</li>
+                                                <li>استخدام كاشفات مقاومة للغبار في البيئات الصناعية</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-2">
+                                            <strong>الصيانة الدورية:</strong>
+                                            <ul class="list-disc list-inside mr-6 mt-1">
+                                                <li>تنظيف أجهزة الكشف بانتظام لإزالة الغبار والأوساخ</li>
+                                                <li>اختبار النظام بشكل دوري للتأكد من عمله بشكل صحيح</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-2">
+                                            <strong>استخدام أنظمة ذكية:</strong>
+                                            <ul class="list-disc list-inside mr-6 mt-1">
+                                                <li>أنظمة تحليل متقدمة تميز بين الدخان الحقيقي والظواهر المشابهة</li>
+                                                <li>أنظمة تأكيد متعددة تتطلب تفعيل أكثر من جهاز كشف قبل إطلاق الإنذار العام</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>التركيب الصحيح:</strong>
+                                            <ul class="list-disc list-inside mr-6 mt-1">
+                                                <li>تجنب تركيب كاشفات الدخان بالقرب من مصادر البخار أو الدخان (مثل الحمامات والمطابخ)</li>
+                                                <li>تجنب تركيب كاشفات الحرارة بالقرب من مصادر الحرارة (مثل المدافئ وفتحات التكييف)</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question font-bold text-lg text-secondary">
+                                    ما هي متطلبات الدفاع المدني السعودي لأنظمة الإنذار المبكر؟
+                                </div>
+                                <div class="faq-answer">
+                                    <p>يفرض الدفاع المدني السعودي متطلبات صارمة لأنظمة الإنذار المبكر في المباني، وتختلف هذه المتطلبات حسب نوع المبنى واستخدامه. بشكل عام، تشمل المتطلبات الأساسية:</p>
+                                    <ol class="list-decimal list-inside">
+                                        <li>الالتزام بكود البناء السعودي SBC-801 ومعايير NFPA السعودي</li>
+                                        <li>استخدام أجهزة معتمدة من الهيئة السعودية للمواصفات والمقاييس والجودة</li>
+                                        <li>تركيب كاشفات الدخان في جميع الممرات وطرق الهروب</li>
+                                        <li>تركيب أزرار إنذار يدوية عند جميع مخارج الطوارئ</li>
+                                        <li>تركيب أنظمة إنذار صوتية وضوئية في جميع أنحاء المبنى</li>
+                                        <li>توفير مصدر طاقة احتياطي (بطاريات) يكفي لتشغيل النظام لمدة لا تقل عن 24 ساعة</li>
+                                        <li>ربط نظام الإنذار بغرفة مراقبة مركزية أو بمركز الدفاع المدني في بعض أنواع المباني</li>
+                                        <li>إجراء صيانة دورية للنظام وتوثيقها</li>
+                                    </ol>
+                                    <p class="mt-4">يجب على المالكين والمشغلين التشاور مع شركات متخصصة ومعتمدة من الدفاع المدني لضمان الامتثال الكامل لجميع المتطلبات.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question font-bold text-lg text-secondary">
+                                    ما هي الفروق الرئيسية بين أنظمة الإنذار التقليدية والقابلة للعنونة؟
+                                </div>
+                                <div class="faq-answer">
+                                    <p>تختلف أنظمة الإنذار التقليدية والقابلة للعنونة في عدة جوانب رئيسية:</p>
+                                    <div class="overflow-x-auto">
+                                        <table class="min-w-full bg-white border border-gray-300 rounded-lg my-4">
+                                            <thead>
+                                                <tr>
+                                                    <th class="py-2 px-4 border-b text-right">الجانب</th>
+                                                    <th class="py-2 px-4 border-b text-right">الأنظمة التقليدية</th>
+                                                    <th class="py-2 px-4 border-b text-right">الأنظمة القابلة للعنونة</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="py-2 px-4 border-b font-semibold">تحديد موقع الحريق</td>
+                                                    <td class="py-2 px-4 border-b">تحدد المنطقة التي حدث فيها الحريق فقط</td>
+                                                    <td class="py-2 px-4 border-b">تحدد الجهاز الدقيق الذي اكتشف الحريق</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="py-2 px-4 border-b font-semibold">التكلفة</td>
+                                                    <td class="py-2 px-4 border-b">أقل تكلفة في التركيب الأولي</td>
+                                                    <td class="py-2 px-4 border-b">أعلى تكلفة في التركيب الأولي، لكنها قد تكون أكثر اقتصادية على المدى الطويل</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="py-2 px-4 border-b font-semibold">الأسلاك والتركيب</td>
+                                                    <td class="py-2 px-4 border-b">تتطلب دوائر كهربائية منفصلة لكل منطقة</td>
+                                                    <td class="py-2 px-4 border-b">تستخدم دائرة كهربائية واحدة يمكن أن تدعم مئات الأجهزة</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="py-2 px-4 border-b font-semibold">المراقبة والتشخيص</td>
+                                                    <td class="py-2 px-4 border-b">قدرات محدودة في مراقبة حالة الأجهزة</td>
+                                                    <td class="py-2 px-4 border-b">مراقبة مستمرة لحالة كل جهاز وقدرات تشخيص متقدمة</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="py-2 px-4 border-b font-semibold">البرمجة والمرونة</td>
+                                                    <td class="py-2 px-4 border-b">خيارات برمجة محدودة</td>
+                                                    <td class="py-2 px-4 border-b">خيارات برمجة متقدمة تسمح بتخصيص استجابات مختلفة لكل جهاز</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="py-2 px-4 font-semibold">التوسع</td>
+                                                    <td class="py-2 px-4">صعوبة في التوسع وإضافة أجهزة جديدة</td>
+                                                    <td class="py-2 px-4">سهولة في التوسع وإضافة أجهزة جديدة</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question font-bold text-lg text-secondary">
+                                    كيف يمكن تكامل أنظمة الإنذار المبكر مع أنظمة المبنى الذكي؟
+                                </div>
+                                <div class="faq-answer">
+                                    <p>مع تزايد انتشار المباني الذكية، أصبح تكامل أنظمة الإنذار المبكر مع أنظمة المبنى الأخرى أمرًا ضروريًا لتحقيق أقصى درجات السلامة والكفاءة. يمكن تحقيق هذا التكامل من خلال:</p>
+                                    <ol class="list-decimal list-inside">
+                                        <li class="mb-2">
+                                            <strong>التكامل مع نظام إدارة المبنى (BMS):</strong>
+                                            <ul class="list-disc list-inside mr-6 mt-1">
+                                                <li>مراقبة حالة نظام الإنذار من خلال واجهة موحدة</li>
+                                                <li>التحكم في أنظمة التكييف والتهوية عند اكتشاف حريق</li>
+                                                <li>إيقاف تشغيل الأنظمة الكهربائية في المناطق المتأثرة</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-2">
+                                            <strong>التكامل مع أنظمة التحكم في الدخول:</strong>
+                                            <ul class="list-disc list-inside mr-6 mt-1">
+                                                <li>فتح أبواب الخروج تلقائيًا عند اكتشاف حريق</li>
+                                                <li>تتبع عدد الأشخاص في كل منطقة لتسهيل عملية الإخلاء</li>
+                                                <li>توجيه عمليات البحث والإنقاذ إلى المناطق التي قد يتواجد فيها أشخاص</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-2">
+                                            <strong>التكامل مع أنظمة المراقبة بالفيديو:</strong>
+                                            <ul class="list-disc list-inside mr-6 mt-1">
+                                                <li>توجيه كاميرات المراقبة تلقائيًا إلى مناطق الحريق</li>
+                                                <li>توفير صور حية للمناطق المتأثرة لفرق الطوارئ</li>
+                                                <li>تسجيل الحوادث لتحليلها لاحقًا</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-2">
+                                            <strong>التكامل مع أنظمة الاتصالات:</strong>
+                                            <ul class="list-disc list-inside mr-6 mt-1">
+                                                <li>إرسال إشعارات تلقائية إلى فرق الطوارئ</li>
+                                                <li>إرسال رسائل نصية أو بريد إلكتروني للمسؤولين</li>
+                                                <li>تفعيل أنظمة الاتصال الداخلي لتوجيه عملية الإخلاء</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>التكامل مع تطبيقات الهواتف الذكية:</strong>
+                                            <ul class="list-disc list-inside mr-6 mt-1">
+                                                <li>إرسال إشعارات فورية إلى شاغلي المبنى</li>
+                                                <li>توفير خرائط وتعليمات الإخلاء</li>
+                                                <li>تمكين التواصل مع فرق الطوارئ</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h2>الاتجاهات المستقبلية في تقنيات أنظمة الإنذار المبكر</h2>
+                        <p>تشهد تقنيات أنظمة الإنذار المبكر تطورًا مستمرًا، ومن المتوقع أن تشهد السنوات القادمة المزيد من الابتكارات. من أبرز الاتجاهات المستقبلية:</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                            <div class="bg-light rounded-lg p-6 shadow-md">
+                                <h3 class="text-primary font-bold mb-3">الذكاء الاصطناعي وتعلم الآلة</h3>
+                                <p>سيؤدي دمج تقنيات الذكاء الاصطناعي وتعلم الآلة في أنظمة الإنذار المبكر إلى:</p>
+                                <ul class="list-disc list-inside">
+                                    <li>تحسين دقة الكشف وتقليل الإنذارات الخاطئة</li>
+                                    <li>التنبؤ بالحرائق قبل حدوثها من خلال تحليل أنماط البيانات</li>
+                                    <li>تطوير استراتيجيات استجابة مخصصة بناءً على طبيعة الحريق وموقعه</li>
+                                </ul>
+                            </div>
+                            <div class="bg-light rounded-lg p-6 shadow-md">
+                                <h3 class="text-primary font-bold mb-3">إنترنت الأشياء (IoT) والاتصال السحابي</h3>
+                                <p>سيؤدي التوسع في استخدام تقنيات إنترنت الأشياء والاتصال السحابي إلى:</p>
+                                <ul class="list-disc list-inside">
+                                    <li>تمكين المراقبة عن بُعد وإدارة أنظمة الإنذار من أي مكان</li>
+                                    <li>تسهيل تحديثات البرامج وتحسينات النظام عن بُعد</li>
+                                    <li>تحسين التكامل مع أنظمة المبنى الأخرى وأنظمة الاستجابة للطوارئ</li>
+                                </ul>
+                            </div>
+                            <div class="bg-light rounded-lg p-6 shadow-md">
+                                <h3 class="text-primary font-bold mb-3">تقنيات الاستشعار المتقدمة</h3>
+                                <p>ستؤدي التطورات في تقنيات الاستشعار إلى:</p>
+                                <ul class="list-disc list-inside">
+                                    <li>تطوير كاشفات أكثر حساسية وأقل عرضة للإنذارات الخاطئة</li>
+                                    <li>دمج وظائف متعددة في جهاز واحد (كشف الدخان، الحرارة، الغازات)</li>
+                                    <li>تطوير كاشفات قادرة على تمييز أنواع مختلفة من الحرائق والمواد المحترقة</li>
+                                </ul>
+                            </div>
+                            <div class="bg-light rounded-lg p-6 shadow-md">
+                                <h3 class="text-primary font-bold mb-3">الواقع المعزز والافتراضي</h3>
+                                <p>سيؤدي دمج تقنيات الواقع المعزز والافتراضي إلى:</p>
+                                <ul class="list-disc list-inside">
+                                    <li>تحسين تدريب فرق الطوارئ من خلال محاكاة سيناريوهات واقعية</li>
+                                    <li>توفير معلومات مرئية في الوقت الفعلي لفرق الإطفاء أثناء الاستجابة للحرائق</li>
+                                    <li>تسهيل عمليات الصيانة والتركيب من خلال توفير تعليمات مرئية</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h2>الخلاصة</h2>
+                        <p>تُعتبر أنظمة الإنذار المبكر للكشف عن الحرائق جزءًا أساسيًا من استراتيجيات السلامة الحديثة، حيث توفر الوقت الثمين اللازم للاستجابة السريعة والإخلاء الآمن. مع التطور المستمر في التقنيات، أصبحت هذه الأنظمة أكثر دقة وفعالية في الكشف عن الحرائق في مراحلها الأولى.</p>
+                        
+                        <p>تتنوع تقنيات الكشف المستخدمة في هذه الأنظمة، من كاشفات الدخان والحرارة التقليدية إلى أنظمة الكشف المتقدمة باستخدام عينات الهواء والأنظمة القابلة للعنونة. كما تتكامل هذه الأنظمة مع أنظمة مكافحة الحريق الأخرى وأنظمة إدارة المباني لتوفير حماية شاملة.</p>
+                        
+                        <p>في المملكة العربية السعودية، تزداد أهمية هذه الأنظمة مع التوسع العمراني المستمر وتطبيق معايير السلامة الصارمة من قبل الدفاع المدني. لذلك، يُنصح أصحاب المباني والمنشآت بالتعاون مع شركات متخصصة ومعتمدة مثل شركة نظرة الإبداع لأنظمة السلامة لتصميم وتركيب وصيانة أنظمة إنذار مبكر تتناسب مع احتياجاتهم وتلبي متطلبات الدفاع المدني.</p>
+                        
+                        <p>من خلال الاستثمار في أنظمة الإنذار المبكر المتطورة والالتزام بالصيانة الدورية، يمكن تحقيق أعلى مستويات السلامة وحماية الأرواح والممتلكات من مخاطر الحرائق.</p>
+                        
+                        <div class="mt-8 p-6 bg-light rounded-lg shadow-md">
+                            <h3 class="text-primary font-bold mb-4">المراجع</h3>
+                            <ol class="list-decimal list-inside">
+                                <li>الهيئة السعودية للمواصفات والمقاييس والجودة. (2023). متطلبات أنظمة إنذار الحريق في المباني.</li>
+                                <li>المديرية العامة للدفاع المدني السعودي. (2024). دليل أنظمة السلامة ومكافحة الحرائق.</li>
+                                <li>National Fire Protection Association (NFPA). (2022). NFPA 72: National Fire Alarm and Signaling Code.</li>
+                                <li>Underwriters Laboratories (UL). (2023). Standards for Fire Detection and Alarm Systems.</li>
+                                <li>شركة نظرة الإبداع لأنظمة السلامة. (2024). دليل أنظمة الإنذار المبكر للحرائق.</li>
+                                <li>المنظمة العالمية للأرصاد الجوية. (2023). نظم الإنذار المبكر للجميع.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <!-- Article Share -->
+                    <div class="mt-8 pt-6 border-t border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-gray-600 ml-2">مشاركة المقال:</span>
+                                <a aria-label="facebook" title="facebook" href="https://www.facebook.com/nazretelebdaa/" target="_blank" class="inline-block mx-1 text-accent hover:text-primary transition duration-300" aria-label="Go to Facebook" title="Go to Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a aria-label="twitter" title="twitter" href="https://x.com/nazret_elebdaa" target="_blank" class="inline-block mx-1 text-accent hover:text-primary transition duration-300" aria-label="Go to Twitter" title="Go to Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a aria-label="tiktok" title="tiktok" href="https://www.tiktok.com/@nazret_elebdaa_contract" class="inline-block mx-1 text-accent hover:text-primary transition duration-300" aria-label="Go to Tiktok" title="Go to Tiktok">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a aria-label="instagram" title="instagram" href="https://www.instagram.com/nazret_elebdaa_contracting" class="inline-block mx-1 text-accent hover:text-primary transition duration-300" aria-label="Go to Instagram" title="Go to Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a aria-label="whatsapp" title="whatsapp" href="https://wa.me/966597212027" target="_blank" class="inline-block mx-1 text-accent hover:text-primary transition duration-300" aria-label="Go to Whatsapp" title="Go to Whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                      
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Articles -->
+                <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                    <h2 class="text-xl font-bold mb-6 text-secondary">مقالات ذات صلة</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <a href="fire_extinguishing_systems_article.html" target="_blank" aria-label="أنواع أنظمة إطفاء الحريق وتطبيقاتها المختلفة" title="أنواع أنظمة إطفاء الحريق وتطبيقاتها المختلفة" class="block group">
+                            <div class="bg-gray-100 rounded-lg overflow-hidden mb-3 h-48">
+<img src="../assets/img/content/fire(1).webp" alt="أنواع أنظمة إطفاء الحريق وتطبيقاتها المختلفة" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="font-bold text-lg mb-2 group-hover:text-primary transition duration-300">أنواع أنظمة إطفاء الحريق وتطبيقاتها المختلفة</h3>
+                            <p class="text-gray-600 text-sm">تعرف على أنواع أنظمة إطفاء الحريق المختلفة وكيفية اختيار النظام المناسب لكل منشأة.</p>
+                        </a>
+                        <a href="civil_defense_requirements_article.html" aria-label="متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية" title="متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية" class="block group">
+                            <div class="bg-gray-100 rounded-lg overflow-hidden mb-3 h-48">
+                                <img src="https://nazretelebdaa.com/assets/img/content/fire(3).webp" alt="متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="font-bold text-lg mb-2 group-hover:text-primary transition duration-300">متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية</h3>
+                            <p class="text-gray-600 text-sm">دليل شامل حول متطلبات الدفاع المدني السعودي لأنظمة السلامة في المباني التجارية والمنشآت الكبرى.</p>
+                        </a>
+                        <a href="https://nazretelebdaa.com/blog/updated_fire_system.html" aria-label="أنواع أنظمة إطفاء الحريق وتطبيقاتها المختلفة" title="أنواع أنظمة إطفاء الحريق وتطبيقاتها المختلفة" class="block group">
+                            <div class="bg-gray-100 rounded-lg overflow-hidden mb-3 h-48">
+                                <img src="https://nazretelebdaa.com/assets/img/content/fire(13).webp" alt="أنواع أنظمة إطفاء الحريق وتطبيقاتها المختلفة" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="font-bold text-lg mb-2 group-hover:text-primary transition duration-300">أنواع أنظمة إطفاء الحريق وتطبيقاتها المختلفة</h3>
+                            <p class="text-gray-600 text-sm">تعرف على أنواع أنظمة إطفاء الحريق المختلفة وكيفية اختيار النظام المناسب لكل منشأة.</p>
+                        </a>
+                        <a href="index.html" aria-label="نصائح للحفاظ على سلامة منزلك من الحرائق" title="نصائح للحفاظ على سلامة منزلك من الحرائق" class="block group">
+                            <div class="bg-gray-100 rounded-lg overflow-hidden mb-3 h-48">
+                                <img src="https://nazretelebdaa.com/assets/img/content/fire(14).webp" alt="نصائح للحفاظ على سلامة منزلك من الحرائق" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="font-bold text-lg mb-2 group-hover:text-primary transition duration-300">نصائح للحفاظ على سلامة منزلك من الحرائق</h3>
+                            <p class="text-gray-600 text-sm">تعرف على النصائح والأفكار البسيطة للحفاظ على سلامة منزلك من الحرائق</p>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Sidebar -->
+            <aside class="w-full lg:w-1/3">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                    <h2 class="text-xl font-bold mb-6 text-secondary">طلب استشارة مجانية</h2>
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">الاسم</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 mb-2">رقم الجوال</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">البريد الإلكتروني</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="service" class="block text-gray-700 mb-2">الخدمة المطلوبة</label>
+                            <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                <option value="fire_alarm">أنظمة إنذار الحريق</option>
+                                <option value="fire_fighting">أنظمة إطفاء الحريق</option>
+                                <option value="maintenance">صيانة دورية</option>
+                                <option value="consultation">استشارة هندسية</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">الرسالة</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg">إرسال الطلب</button>
+                    </form>
+                </div>
+                
+                <!-- Services -->
+                <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                    <h2 class="text-xl font-bold mb-6 text-secondary">خدماتنا</h2>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="#" aria-label="أنظمة إنذار الحريق" title="أنظمة إنذار الحريق" class="flex items-center p-3 bg-light rounded-lg hover:bg-gray-200 transition duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white ml-3">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold">أنظمة إنذار الحريق</h3>
+                                    <p class="text-sm text-gray-600">تصميم وتركيب وصيانة أنظمة الإنذار المبكر</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="fire_extinguishing_systems_article.html" aria-label="أنظمة إطفاء الحريق" title="أنظمة إطفاء الحريق" class="flex items-center p-3 bg-light rounded-lg hover:bg-gray-200 transition duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white ml-3">
+                                    <i class="fas fa-fire-extinguisher"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold">أنظمة إطفاء الحريق</h3>
+                                    <p class="text-sm text-gray-600">حلول متكاملة لإطفاء الحرائق بمختلف أنواعها</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="civil_defense_requirements_article.html" aria-label="الصيانة الدورية" title="الصيانة الدورية" class="flex items-center p-3 bg-light rounded-lg hover:bg-gray-200 transition duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white ml-3">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold">الصيانة الدورية</h3>
+                                    <p class="text-sm text-gray-600">صيانة وقائية وتصحيحية لجميع أنظمة السلامة</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="civil_defense_requirements_article.html" aria-label="تراخيص الدفاع المدني" title="تراخيص الدفاع المدني" class="flex items-center p-3 bg-light rounded-lg hover:bg-gray-200 transition duration-300">
+                                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white ml-3">
+                                    <i class="fas fa-clipboard-check"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold">تراخيص الدفاع المدني</h3>
+                                    <p class="text-sm text-gray-600">خدمات متكاملة لاستخراج تراخيص السلامة</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Tags -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-bold mb-6 text-secondary">الكلمات المفتاحية</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="fire_extinguishing_systems_article.html" aria-label="أنظمة إنذار الحريق" title="أنظمة إنذار الحريق" class="px-4 py-2 bg-light rounded-full text-sm hover:bg-primary hover:text-white transition duration-300">أنظمة إنذار الحريق</a>
+                        <a href="fire_extinguishing_systems_article.html" aria-label="كاشفات الدخان" title="كاشفات الدخان" class="px-4 py-2 bg-light rounded-full text-sm hover:bg-primary hover:text-white transition duration-300">كاشفات الدخان</a>
+                        <a href="fire_extinguishing_systems_article.html" aria-label="أنظمة الإنذار المبكر" title="أنظمة الإنذار المبكر" class="px-4 py-2 bg-light rounded-full text-sm hover:bg-primary hover:text-white transition duration-300">أنظمة الإنذار المبكر</a>
+                        <a href="fire_extinguishing_systems_article.html" aria-label="كاشفات الحرارة" title="كاشفات الحرارة" class="px-4 py-2 bg-light rounded-full text-sm hover:bg-primary hover:text-white transition duration-300">كاشفات الحرارة</a>
+                        <a href="fire_extinguishing_systems_article.html" aria-label="الدفاع المدني السعودي" title="الدفاع المدني السعودي" class="px-4 py-2 bg-light rounded-full text-sm hover:bg-primary hover:text-white transition duration-300">الدفاع المدني السعودي</a>
+                        <a href="fire_extinguishing_systems_article.html" aria-label="أنظمة السلامة" title="أنظمة السلامة" class="px-4 py-2 bg-light rounded-full text-sm hover:bg-primary hover:text-white transition duration-300">أنظمة السلامة</a>
+                        <a href="fire_extinguishing_systems_article.html" aria-label="شركة نظرة الإبداع" title="شركة نظرة الإبداع" class="px-4 py-2 bg-light rounded-full text-sm hover:bg-primary hover:text-white transition duration-300">شركة نظرة الإبداع</a>
+                        <a href="fire_extinguishing_systems_article.html" aria-label="أنظمة الإطفاء" title="أنظمة الإطفاء" class="px-4 py-2 bg-light rounded-full text-sm hover:bg-primary hover:text-white transition duration-300">أنظمة الإطفاء</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    
+    <!-- CTA Section -->
+    <section class="bg-secondary py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">هل تحتاج إلى مساعدة في أنظمة السلامة؟</h2>
+                <p class="text-lg mb-8 text-gray-300">فريقنا من الخبراء جاهز لمساعدتك في اختيار وتركيب أنظمة الإنذار المبكر المناسبة لاحتياجاتك</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://api.whatsapp.com/send/?phone=966597212027" class="bg-primary hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg" aria-label="تواصل معنا الآن" title="تواصل معنا الآن">تواصل معنا الآن</a>
+                    <a href="tel:+966597212027" class="bg-white hover:bg-gray-100 text-secondary font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg" aria-label="اتصل بنا" title="اتصل بنا">
+                        <i class="fas fa-phone-alt ml-2"></i>
+                        اتصل بنا: 0597212027
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Recent Articles Container -->
+    <div id="recent-articles-container"></div>
+    
+    <div class="section-divider"></div>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Include Components Script -->
+    <script src="../components/include-components.js"></script>
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Reading Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+            
+            // Back to Top Button
+            const backToTop = document.getElementById('backToTop');
+            if (winScroll > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        // Back to Top Button Click
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Form validation
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !phone || !email || !service || !message) {
+                alert('يرجى ملء جميع الحقول المطلوبة');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('تم إرسال طلبك بنجاح. سنتواصل معك قريبًا.');
+            document.getElementById('contactForm').reset();
+        });
+        
+        // Activate first FAQ item by default
+        if (faqItems.length > 0) {
+            faqItems[0].classList.add('active');
+        }
+    </script>
+</body>
+</html>

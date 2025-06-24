@@ -1,0 +1,123 @@
+
+<nav class="bg-white shadow-md py-4 px-4 sm:px-6 lg:px-8 sticky top-0 z-50">
+    <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+            <!-- Logo and Site Name -->
+            <a href="/index.html" class="flex items-center" aria-label="Go to Home" title="Go to Home" >
+                <img src="../assets/img/icon.webp" alt="logo" class="h-10 w-10 ml-2">
+                <span class="text-xl font-bold text-gray-800">شركة نظرة الإبداع لأنظمة السلامة</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-8 space-x-reverse">
+                <a href="/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Home" title="Go to Home">الرئيسية</a>
+                <a href="/index.html#about" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to About" title="Go to About">من نحن</a>
+                <a href="/services/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Services" title="Go to Services">خدماتنا</a>
+                <a href="/consultation/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Consultation" title="Go to Consultation">ارشادات</a>
+                <!-- Blog Dropdown (Desktop) -->
+                <div class="relative" x-data="{ open: false }" @keydown.escape="open = false">
+                    <button @click="open = !open" class="flex items-center text-gray-700 hover:text-red-600 font-medium focus:outline-none" :class="{ 'text-red-600': open }" aria-label="Open Blog Menu" title="Open Blog Menu" :aria-expanded="open">
+                        <span>المدونة</span>
+                        <svg class="w-4 h-4 mr-1 transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" 
+                         x-transition:enter="transition ease-out duration-100" 
+                         x-transition:enter-start="opacity-0 scale-95" 
+                         x-transition:enter-end="opacity-100 scale-100" 
+                         x-transition:leave="transition ease-in duration-75" 
+                         x-transition:leave-start="opacity-100 scale-100" 
+                         x-transition:leave-end="opacity-0 scale-95"
+                         class="absolute right-0 mt-2 w-72 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50 max-h-96 overflow-y-auto"
+                         @click.away="open = false"
+                         x-ref="dropdown">
+                        <div class="py-1 text-right" role="menu" aria-orientation="vertical" aria-labelledby="blog-menu-button">
+                            <a href="https://nazretelebdaa.com/blog/index.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Blog Main Page" aria-label="Go to Blog Main Page" >صفحة المدونة الرئيسية</a>
+                            <a href="https://nazretelebdaa.com/blog/civil_defense_requirements_article.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Civil Defense Requirements Article" aria-label="Go to Civil Defense Requirements Article">متطلبات الدفاع المدني</a>
+                            <a href="https://nazretelebdaa.com/blog/enhanced_fire_safety_page.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Enhanced Fire Safety Page" aria-label="Go to Enhanced Fire Safety Page">تعزيز السلامة من الحرائق</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_blog/article_1.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Article 1" aria-label="Go to Article 1">مقالة المدونة 1</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_blog/article_2.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Article 2" aria-label="Go to Article 2">مقالة المدونة 2</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_code.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Fire Code" aria-label="Go to Fire Code">كود الحريق السعودي</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_extinguishing_systems_article.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Fire Extinguishing Systems Article" aria-label="Go to Fire Extinguishing Systems Article">أنظمة إطفاء الحريق</a>
+                            <a href="https://nazretelebdaa.com/blog/fire_updates.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Fire Updates" aria-label="Go to Fire Updates">آخر تحديثات السلامة</a>
+                            <a href="https://nazretelebdaa.com/blog/how-to-supervise-fire-protection-systems.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to How To Supervise Fire Protection Systems" aria-label="Go to How To Supervise Fire Protection Systems">الإشراف على أنظمة الحماية</a>
+                            <a href="https://nazretelebdaa.com/blog/what-is-a-fire-safety-plan.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to What Is A Fire Safety Plan" aria-label="Go to What Is A Fire Safety Plan">ما هي خطة السلامة من الحرائق؟</a>
+                            <a href="https://nazretelebdaa.com/blog/analtics_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Statistics for Fire Fighting Systems" aria-label="Go to Statistics for Fire Fighting Systems">إحصائيات أنظمة مكافحة الحريق</a>
+                            <a href="https://nazretelebdaa.com/blog/updated_fire_system.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Advanced Early Warning Systems" aria-label="Go to Advanced Early Warning Systems">تقنيات الإنذار المبكر</a>
+                            <a href="https://nazretelebdaa.com/blog/gholf_saftey_report.html" @click="open = false" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-700" role="menuitem" title="Go to Gulf Safety Report" aria-label="Go to Gulf Safety Report">تقرير السلامة في الخليج</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="/companies/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Companies" title="Go to Companies">الشركات</a>
+                <a href="/gifts/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Gifts" title="Go to Gifts">الهدايا</a>
+                <a href="/articles" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Articles" title="Go to Articles">خدمات عامة</a>
+            </div>
+            
+            <!-- Contact Button -->
+            <a href="https://api.whatsapp.com/send/?phone=966597212027&text&type=phone_number&app_absent=0" class="hidden md:block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition" aria-label="Go to Contact" title="Go to Contact">
+                <i class="fas fa-phone-alt ml-1"></i>اتصل بنا
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-red-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 bg-gray-50 rounded-lg p-4">
+            <div class="flex flex-col space-y-3">
+                <a href="/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Home" title="Go to Home" >الرئيسية</a>
+                <a href="/index.html#about" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to About" title="Go to About">من نحن</a>
+                <a href="/services/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Services" title="Go to Services">خدماتنا</a>
+                <a href="/consultation/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Consultation" title="Go to Consultation">ارشادات</a>
+                <!-- Mobile Blog Dropdown -->
+                <div class="w-full" x-data="{ open: false }" @keydown.escape="open = false">
+                    <button @click="open = !open" class="w-full text-gray-700 hover:text-red-600 font-medium flex justify-between items-center py-2" aria-label="Open Blog Menu" title="Open Blog Menu" :aria-expanded="open">
+                        <span>المدونة</span>
+                        <svg class="ml-1 h-5 w-5 transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" 
+                         x-transition:enter="transition ease-out duration-100" 
+                         x-transition:enter-start="opacity-0 scale-95" 
+                         x-transition:enter-end="opacity-100 scale-100" 
+                         x-transition:leave="transition ease-in duration-75" 
+                         x-transition:leave-start="opacity-100 scale-100" 
+                         x-transition:leave-end="opacity-0 scale-95"
+                         class="mt-1 space-y-1 pl-4 text-right"
+                         @click.away="open = false"
+                         x-ref="dropdown">
+                        <a href="/blog/index.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Blog Main Page">صفحة المدونة الرئيسية</a>
+                        <a href="/blog/civil_defense_requirements_article.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Civil Defense Requirements Article">متطلبات الدفاع المدني</a>
+                        <a href="/blog/enhanced_fire_safety_page.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Enhanced Fire Safety Page">تعزيز السلامة من الحرائق</a>
+                        <a href="/blog/fire_blog/article_1.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Article 1">مقالة المدونة 1</a>
+                        <a href="/blog/fire_blog/article_2.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Article 2">مقالة المدونة 2</a>
+                        <a href="/blog/fire_code.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Fire Code">كود الحريق السعودي</a>
+                        <a href="/blog/fire_extinguishing_systems_article.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Fire Extinguishing Systems Article">أنظمة إطفاء الحريق</a>
+                        <a href="/blog/fire_updates.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Fire Updates">آخر تحديثات السلامة</a>
+                        <a href="/blog/how-to-supervise-fire-protection-systems.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to How To Supervise Fire Protection Systems">الإشراف على أنظمة الحماية</a>
+                        <a href="/blog/what-is-a-fire-safety-plan.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to What Is A Fire Safety Plan">ما هي خطة السلامة من الحرائق؟</a>
+                        <a href="/blog/analtics_system.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Statistics for Fire Fighting Systems">إحصائيات أنظمة مكافحة الحريق</a>
+                        <a href="/blog/updated_fire_system.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Advanced Early Warning Systems">تقنيات الإنذار المبكر</a>
+                        <a href="/blog/gholf_saftey_report.html" @click="open = false" class="block text-gray-700 hover:text-red-600 font-medium py-1" role="menuitem" title="Go to Gulf Safety Report">تقرير السلامة في الخليج</a>
+                    </div>
+                </div>
+                <a href="/companies/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Companies" title="Go to Companies">الشركات</a>
+                <a href="/gifts/index.html" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Gifts" title="Go to Gifts">الهدايا</a>
+                <a href="/articles" class="text-gray-700 hover:text-red-600 font-medium" aria-label="Go to Articles" title="Go to Articles">خدمات عامة</a>
+                <a href="https://api.whatsapp.com/send/?phone=966597212027&text&type=phone_number&app_absent=0" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition text-center" aria-label="Go to Contact" title="Go to Contact">
+                    <i class="fas fa-phone-alt ml-1"></i>اتصل بنا
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- Alpine.js -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+
+<script src="../js/navbar.js"></script>
+</nav>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://nazretelebdaa.com/sitemap.xml
+Sitemap: https://nazretelebdaa.com/image-sitemap.xml

@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات النظافة والتعقيم ومكافحة الحشرات في الرياض - شركة بلس كلين | Plus Clean Services</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="شركة بلس كلين الرائدة في خدمات النظافة والتعقيم ومكافحة الحشرات في الرياض. خدمات تنظيف المنازل والمكاتب والفلل والشركات والمطاعم مع ضمان الجودة والأسعار المناسبة. اتصل الآن 0569131252">
+    <meta name="keywords" content="شركة تنظيف الرياض, تعقيم منازل الرياض, مكافحة الحشرات الرياض, تنظيف فلل الرياض, تنظيف مكاتب الرياض, تنظيف شقق الرياض, تنظيف مطاعم الرياض, تنظيف شركات الرياض, بلس كلين, Plus Clean, تنظيف خزانات المياه, تنظيف المجالس, تنظيف السجاد, تنظيف الكنب">
+    <meta name="author" content="Plus Clean Services">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="خدمات النظافة والتعقيم ومكافحة الحشرات في الرياض - شركة بلس كلين">
+    <meta property="og:description" content="شركة بلس كلين الرائدة في خدمات النظافة والتعقيم ومكافحة الحشرات في الرياض مع ضمان الجودة والأسعار المناسبة">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_SA">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="خدمات النظافة والتعقيم ومكافحة الحشرات في الرياض - شركة بلس كلين">
+    <meta name="twitter:description" content="شركة بلس كلين الرائدة في خدمات النظافة والتعقيم ومكافحة الحشرات في الرياض">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://plus-clean.com/cleaning-services-riyadh">
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Cairo', Arial, sans-serif;
+            line-height: 1.8;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #66eadf 0%, #215b63 100%);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #66eadf, #215b63);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            margin: 0 auto 15px;
+        }
+        
+        .section-divider {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(45deg, #66eac2, #215b63);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        
+        .area-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .area-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .price-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(45deg, #66eac2, #215b63);
+        }
+        
+        .price-card:hover {
+            border-color: #66eac2;
+            transform: translateY(-5px);
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-right: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: -5px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background: #66eac2;
+            border-radius: 50%;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 10px;
+            width: 2px;
+            height: calc(100% - 10px);
+            background: #66eac2;
+        }
+        
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #66eac2 0%, #215b63 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .stats-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #03e7c1e5;
+            display: block;
+        }
+        
+        .equipment-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .equipment-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Services Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                    خدماتنا الشاملة في مدينة الرياض
+                </h2>
+                <div class="section-divider"></div>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    تقدم شركة بلس كلين مجموعة متكاملة من خدمات النظافة والتعقيم ومكافحة الحشرات لجميع أنواع المباني في الرياض، مع استخدام أحدث التقنيات والمعدات المتطورة وفريق عمل مدرب على أعلى مستوى من الكفاءة والاحترافية.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white shadow-lg p-6">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">تنظيف المنازل والفلل</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        خدمات تنظيف شاملة للمنازل والفلل تشمل جميع الغرف والحمامات والمطابخ والمجالس مع التعقيم الكامل
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تنظيف شامل لجميع الغرف</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تعقيم الحمامات والمطابخ</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تنظيف النوافذ والأبواب</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تنظيف الأثاث والديكورات</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white shadow-lg p-6">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">تنظيف المكاتب والشركات</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        خدمات تنظيف احترافية للمكاتب والشركات والمؤسسات التجارية مع برامج صيانة دورية مخصصة
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تنظيف المكاتب والقاعات</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تنظيف الأرضيات والسجاد</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تنظيف الزجاج والنوافذ</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>صيانة دورية مجدولة</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white shadow-lg p-6">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">تنظيف المطاعم والمقاهي</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        تنظيف متخصص للمطاعم والمقاهي مع التركيز على معايير السلامة الغذائية والتعقيم المتقدم
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تنظيف المطابخ التجارية</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تعقيم معدات الطعام</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تنظيف صالات الطعام</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>إزالة الدهون والزيوت</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white shadow-lg p-6">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">خدمات التعقيم والتطهير</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        تعقيم شامل باستخدام أحدث تقنيات التطهير لضمان بيئة آمنة وصحية خالية من البكتيريا والفيروسات
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تعقيم ضد الفيروسات</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>إزالة البكتيريا الضارة</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تطهير الأسطح والمعدات</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>مواد تعقيم آمنة ومعتمدة</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white shadow-lg p-6">
+                    <div class="feature-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">مكافحة الحشرات والآفات</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        برامج شاملة لمكافحة جميع أنواع الحشرات والآفات مع ضمان عدم العودة لفترات طويلة
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>مكافحة الصراصير والنمل</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>إبادة البق والبراغيث</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>مكافحة الفئران والقوارض</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>ضمان عدم العودة</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white shadow-lg p-6">
+                    <div class="feature-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">تنظيف الأثاث والسجاد</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        خدمات متخصصة في تنظيف وتعقيم الأثاث والسجاد والمفروشات باستخدام تقنيات البخار المتقدمة
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تنظيف بالبخار الساخن</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>إزالة البقع المستعصية</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تنظيف الكنب والمراتب</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تجفيف سريع وآمن</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas We Serve -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                    المناطق التي نخدمها في مدينة الرياض
+                </h2>
+                <div class="section-divider"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    نغطي جميع أحياء ومناطق الرياض بخدمات نظافة وتعقيم ومكافحة حشرات عالية الجودة مع ضمان الوصول السريع في نفس اليوم
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">الملز</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">العليا</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">الرياض الحديثة</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">النرجس</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">الملقا</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">حي السفارات</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">المروج</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">الروضة</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">اليرموك</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">الواحة</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">الخزامى</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">السليمانية</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">البطحاء</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">المنصورة</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">الربوة</h3>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <h3 class="font-bold">المعيزيلة</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                    لماذا تختار شركة بلس كلين؟
+                </h2>
+                <div class="section-divider"></div>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    نتميز بخبرة واسعة في مجال النظافة والتعقيم مع فريق عمل مدرب ومعدات حديثة وضمان الجودة الذي يجعلنا الخيار الأول للعملاء في الرياض
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div class="stats-card">
+                    <span class="stats-number">5000+</span>
+                    <p class="text-gray-600 font-semibold">عميل راضٍ</p>
+                </div>
+                <div class="stats-card">
+                    <span class="stats-number">15+</span>
+                    <p class="text-gray-600 font-semibold">سنة خبرة</p>
+                </div>
+                <div class="stats-card">
+                    <span class="stats-number">50+</span>
+                    <p class="text-gray-600 font-semibold">موظف مدرب</p>
+                </div>
+                <div class="stats-card">
+                    <span class="stats-number">24/7</span>
+                    <p class="text-gray-600 font-semibold">خدمة مستمرة</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">شهادات ومعايير دولية</h3>
+                    <p class="text-gray-600">
+                        حاصلون على شهادات جودة دولية ونلتزم بأعلى معايير السلامة والصحة المهنية في جميع خدماتنا
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">معدات حديثة ومتطورة</h3>
+                    <p class="text-gray-600">
+                        نستخدم أحدث المعدات والتقنيات العالمية في التنظيف والتعقيم لضمان أفضل النتائج
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">مواد آمنة وصديقة للبيئة</h3>
+                    <p class="text-gray-600">
+                        جميع المواد المستخدمة آمنة على الصحة والبيئة ومعتمدة من الجهات المختصة
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">سرعة في الاستجابة</h3>
+                    <p class="text-gray-600">
+                        نضمن الوصول إليك في نفس اليوم أو خلال 24 ساعة كحد أقصى مع مرونة في المواعيد
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">ضمان شامل للخدمة</h3>
+                    <p class="text-gray-600">
+                        نقدم ضمان شامل على جميع خدماتنا مع إعادة الخدمة مجاناً في حالة عدم الرضا
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">أسعار تنافسية عادلة</h3>
+                    <p class="text-gray-600">
+                        أسعار مدروسة وتنافسية مع إمكانية الدفع المرن وخصومات للعملاء الدائمين
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                    تفاصيل خدماتنا المتخصصة
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Home Cleaning -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6">
+                            <i class="fas fa-home text-blue-600 ml-3"></i>
+                            خدمات تنظيف المنازل والفلل الشاملة
+                        </h3>
+                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                            نقدم خدمات تنظيف شاملة للمنازل والفلل في جميع أنحاء الرياض، حيث نهتم بكل التفاصيل من الأرضيات إلى الأسقف، مع التركيز على النظافة العميقة والتعقيم الفعال. فريقنا المدرب يستخدم أحدث المعدات والمواد الآمنة لضمان بيئة نظيفة وصحية لك ولعائلتك.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تنظيف شامل لجميع الغرف والصالات والمجالس</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تنظيف وتعقيم الحمامات بأحدث المطهرات</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تنظيف المطابخ وإزالة الدهون والزيوت</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">غسيل وتنظيف النوافذ والأبواب والشبابيك</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تنظيف الأثاث والديكورات والتحف</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تنظيف الستائر والمفروشات</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">أنواع المنازل التي نخدمها:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• الفلل الكبيرة والمتوسطة</li>
+                                <li>• الشقق السكنية بجميع أحجامها</li>
+                                <li>• البيوت الشعبية والتراثية</li>
+                                <li>• القصور والاستراحات</li>
+                                <li>• المنازل المفروشة والفارغة</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">خدمات إضافية:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• تنظيف ما بعد الدهان والتشطيب</li>
+                                <li>• تنظيف المنازل الجديدة</li>
+                                <li>• خدمات التنظيف الدورية</li>
+                                <li>• تنظيف أثاث الحدائق</li>
+                                <li>• خدمات التنظيف العميق الموسمية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Office Cleaning -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6">
+                            <i class="fas fa-building text-purple-600 ml-3"></i>
+                            تنظيف المكاتب والشركات والمؤسسات
+                        </h3>
+                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                            نوفر خدمات تنظيف احترافية للمكاتب والشركات والمؤسسات التجارية والحكومية، مع برامج صيانة دورية مرنة تناسب طبيعة عملك. نفهم أهمية البيئة النظيفة في زيادة الإنتاجية وتحسين صورة الشركة أمام العملاء والموظفين.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تنظيف مكاتب العمل والقاعات الكبرى</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تنظيف وتلميع الأرضيات والسيراميك</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تنظيف الزجاج والنوافذ الخارجية</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تنظيف دورات المياه والمرافق</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تنظيف السجاد والموكيت بالبخار</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تنظيف أجهزة التكييف والمكاتب</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">أنواع المؤسسات:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• الشركات الكبيرة والمتوسطة</li>
+                                <li>• البنوك والمؤسسات المالية</li>
+                                <li>• المستشفيات والعيادات</li>
+                                <li>• المدارس والجامعات</li>
+                                <li>• المراكز التجارية والمولات</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">برامج الصيانة:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• تنظيف يومي أو أسبوعي</li>
+                                <li>• صيانة شهرية شاملة</li>
+                                <li>• تنظيف عميق ربع سنوي</li>
+                                <li>• خدمات طوارئ على مدار الساعة</li>
+                                <li>• عقود سنوية بأسعار مخفضة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disinfection Services -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6">
+                            <i class="fas fa-shield-virus text-red-600 ml-3"></i>
+                            خدمات التعقيم والتطهير المتقدمة
+                        </h3>
+                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                            نقدم خدمات تعقيم وتطهير شاملة باستخدام أحدث التقنيات العالمية للقضاء على البكتيريا والفيروسات والجراثيم. خدماتنا ضرورية خاصة في ظل الظروف الصحية الحالية، ونستخدم مواد معتمدة من وزارة الصحة السعودية.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تعقيم شامل ضد فيروس كورونا</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">إزالة البكتيريا والجراثيم الضارة</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تطهير الأسطح والمعدات الحساسة</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">استخدام مواد تعقيم آمنة ومعتمدة</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">تعقيم أنظمة التهوية والتكييف</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-xl ml-3"></i>
+                                <span class="text-gray-700">شهادة تعقيم معتمدة</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-r from-red-50 to-pink-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">تقنيات التعقيم:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• الرش بالضباب البارد</li>
+                                <li>• التعقيم بالأشعة فوق البنفسجية</li>
+                                <li>• التعقيم بغاز الأوزون</li>
+                                <li>• المسح بالمطهرات الطبية</li>
+                                <li>• التعقيم بالبخار الساخن</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">الأماكن المتخصصة:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• المستشفيات والعيادات</li>
+                                <li>• المدارس ورياض الأطفال</li>
+                                <li>• المساجد والمراكز الدينية</li>
+                                <li>• الفنادق وصالات الأفراح</li>
+                                <li>• وسائل النقل والمركبات</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                    أحدث المعدات والتقنيات المستخدمة
+                </h2>
+                <div class="section-divider"></div>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    نستثمر في أحدث المعدات والتقنيات العالمية لضمان تقديم أفضل خدمات النظافة والتعقيم، مع التطوير المستمر لأدواتنا ومعداتنا
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="equipment-card">
+                    <i class="fas fa-wind text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">مكانس هوائية صناعية</h3>
+                    <p class="text-gray-600">مكانس بقوة شفط عالية لإزالة الأتربة والغبار من الأماكن الصعبة والسجاد العميق</p>
+                </div>
+
+                <div class="equipment-card">
+                    <i class="fas fa-fire text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">أجهزة البخار المضغوط</h3>
+                    <p class="text-gray-600">تنظيف وتعقيم بالبخار الساخن للقضاء على البكتيريا وإزالة البقع المستعصية</p>
+                </div>
+
+                <div class="equipment-card">
+                    <i class="fas fa-spray-can text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">أجهزة الرش الآلية</h3>
+                    <p class="text-gray-600">رش المطهرات والمعقمات بشكل متساوي ومتجانس في جميع أنحاء المكان</p>
+                </div>
+
+                <div class="equipment-card">
+                    <i class="fas fa-tint text-4xl text-cyan-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">أجهزة الغسيل بالضغط</h3>
+                    <p class="text-gray-600">تنظيف الأرضيات والجدران بضغط الماء العالي لإزالة الأوساخ العنيدة</p>
+                </div>
+
+                <div class="equipment-card">
+                    <i class="fas fa-lightbulb text-4xl text-yellow-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">أجهزة الأشعة فوق البنفسجية</h3>
+                    <p class="text-gray-600">تعقيم متقدم بالأشعة فوق البنفسجية للقضاء على الفيروسات والبكتيريا</p>
+                </div>
+
+                <div class="equipment-card">
+                    <i class="fas fa-fan text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">أجهزة التجفيف السريع</h3>
+                    <p class="text-gray-600">تجفيف الأرضيات والسجاد بسرعة لتجنب تكون العفن والرطوبة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pest Control Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                    خدمات مكافحة الحشرات والآفات الشاملة
+                </h2>
+                <div class="section-divider"></div>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    نقدم حلول شاملة لمكافحة جميع أنواع الحشرات والآفات باستخدام أحدث المبيدات الآمنة وأساليب المكافحة المتطورة مع ضمان عدم العودة
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">
+                        <i class="fas fa-bug text-red-600 ml-3"></i>
+                        أنواع الحشرات التي نكافحها
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-times-circle text-red-500 ml-2"></i>
+                                <span class="text-gray-700">الصراصير بجميع أنواعها</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-times-circle text-red-500 ml-2"></i>
+                                <span class="text-gray-700">النمل الأبيض والعادي</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-times-circle text-red-500 ml-2"></i>
+                                <span class="text-gray-700">البق والبراغيث</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-times-circle text-red-500 ml-2"></i>
+                                <span class="text-gray-700">الفئران والجرذان</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-times-circle text-red-500 ml-2"></i>
+                                <span class="text-gray-700">الذباب والبعوض</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-times-circle text-red-500 ml-2"></i>
+                                <span class="text-gray-700">العقارب والثعابين</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-times-circle text-red-500 ml-2"></i>
+                                <span class="text-gray-700">الدبابير والنحل</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-times-circle text-red-500 ml-2"></i>
+                                <span class="text-gray-700">العث وحشرات السجاد</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-times-circle text-red-500 ml-2"></i>
+                                <span class="text-gray-700">الخنافس والسوس</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-times-circle text-red-500 ml-2"></i>
+                                <span class="text-gray-700">حشرات الحبوب والمخازن</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">
+                        <i class="fas fa-shield-alt text-green-600 ml-3"></i>
+                        طرق المكافحة المتقدمة
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">المكافحة الكيميائية الآمنة</h4>
+                            <p class="text-gray-600 text-sm">استخدام مبيدات حديثة آمنة على الصحة والبيئة مع فعالية عالية ضد الآفات</p>
+                        </div>
+                        <div class="bg-gradient-to-r from-blue-50 to-cyan-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">المكافحة الحيوية الطبيعية</h4>
+                            <p class="text-gray-600 text-sm">استخدام أعداء طبيعيون للحشرات ومواد عضوية آمنة تماماً</p>
+                        </div>
+                        <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">المكافحة الفيزيائية والميكانيكية</h4>
+                            <p class="text-gray-600 text-sm">استخدام الفخاخ والحواجز والمصائد المتطورة</p>
+                        </div>
+                        <div class="bg-gradient-to-r from-orange-50 to-red-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">المكافحة المتكاملة IPM</h4>
+                            <p class="text-gray-600 text-sm">دمج عدة طرق معاً لضمان أفضل النتائج وعدم عودة الآفات</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8 mt-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                    برامج المكافحة الدورية والوقائية
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-calendar-alt text-2xl text-red-600"></i>
+                        </div>
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">البرنامج الشهري</h4>
+                        <p class="text-gray-600">زيارات شهرية للفحص والمكافحة الوقائية مع تقارير مفصلة</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-calendar-check text-2xl text-blue-600"></i>
+                        </div>
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">البرنامج الربع سنوي</h4>
+                        <p class="text-gray-600">مكافحة شاملة كل 3 أشهر مع ضمان عدم العودة والمتابعة المستمرة</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shield-check text-2xl text-green-600"></i>
+                        </div>
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">البرنامج السنوي</h4>
+                        <p class="text-gray-600">خطة شاملة سنوية مع خصومات كبيرة وخدمات طوارئ مجانية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Process Timeline -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                    خطوات العمل المحترفة
+                </h2>
+                <div class="section-divider"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    نتبع منهجية علمية ومدروسة في تنفيذ جميع خدماتنا لضمان أفضل النتائج والرضا التام للعملاء
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline-item">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg ml-4">1</div>
+                            <h3 class="text-xl font-bold text-gray-800">استلام الطلب والاستشارة</h3>
+                        </div>
+                        <p class="text-gray-600">نستقبل طلبكم عبر الهاتف أو الموقع ونقدم استشارة مجانية لتحديد نوع الخدمة المطلوبة والوقت المناسب للزيارة مع تقديم عرض سعر مبدئي.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg ml-4">2</div>
+                            <h3 class="text-xl font-bold text-gray-800">الفحص والتقييم الأولي</h3>
+                        </div>
+                        <p class="text-gray-600">يقوم فريقنا المتخصص بزيارة الموقع لفحص المكان وتقييم حجم العمل المطلوب وتحديد المعدات والمواد اللازمة مع تقديم عرض سعر نهائي وشفاف.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg ml-4">3</div>
+                            <h3 class="text-xl font-bold text-gray-800">إعداد خطة العمل التفصيلية</h3>
+                        </div>
+                        <p class="text-gray-600">نضع خطة عمل مفصلة تشمل المراحل والتوقيتات والمواد المستخدمة والفريق المطلوب، مع مراعاة أولوياتكم الخاصة ومتطلبات السلامة.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-lg ml-4">4</div>
+                            <h3 class="text-xl font-bold text-gray-800">تنفيذ العمل بجودة عالية</h3>
+                        </div>
+                        <p class="text-gray-600">نبدأ تنفيذ العمل وفق الخطة المتفق عليها باستخدام أحدث المعدات والمواد الآمنة، مع إشراف مباشر من مشرف مختص لضمان الجودة والالتزام بالمواعيد.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg ml-4">5</div>
+                            <h3 class="text-xl font-bold text-gray-800">الفحص النهائي والتسليم</h3>
+                        </div>
+                        <p class="text-gray-600">نقوم بفحص نهائي شامل للتأكد من جودة العمل والالتزام بجميع المعايير المطلوبة، ثم نسلمكم المكان نظيفاً ومعقماً مع تقديم شهادة الضمان والتوجيهات اللازمة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                    آراء وتقييمات عملائنا الكرام
+                </h2>
+                <div class="section-divider"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    نفخر بثقة عملائنا وتقييماتهم الإيجابية التي تحفزنا على التطوير المستمر وتقديم أفضل الخدمات
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold ml-3">
+                            أ.م
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">أحمد محمد</h4>
+                            <p class="text-gray-600 text-sm">حي العليا - الرياض</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700">
+                        "خدمة ممتازة جداً، فريق العمل محترف ومتعاون، نظفوا الفيلا بشكل رائع والأسعار مناسبة. أنصح بالتعامل معهم بقوة."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold ml-3">
+                            ف.س
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">فاطمة السعد</h4>
+                            <p class="text-gray-600 text-sm">حي النرجس - الرياض</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700">
+                        "تعاملت معهم في تنظيف المنزل بعد الدهان، وكانت النتيجة فوق التوقعات. دقة في المواعيد واهتمام بالتفاصيل."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold ml-3">
+                            خ.ع
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">خالد العتيبي</h4>
+                            <p class="text-gray-600 text-sm">حي الملز - الرياض</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700">
+                        "استخدمت خدمة مكافحة الحشرات، والنتيجة ممتازة، اختفت المشكلة تماماً ولم تعد حتى الآن. شكراً لفريق بلس كلين."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold ml-3">
+                            ن.م
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">نورا المطيري</h4>
+                            <p class="text-gray-600 text-sm">حي الروضة - الرياض</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700">
+                        "خدمة تعقيم رائعة خاصة في ظل جائحة كورونا، اهتمام بالمعايير الصحية وفريق مدرب ومجهز بأحدث المعدات."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-cyan-600 rounded-full flex items-center justify-center text-white font-bold ml-3">
+                            س.ا
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">سعد الأحمد</h4>
+                            <p class="text-gray-600 text-sm">حي المروج - الرياض</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700">
+                        "تنظيف مكتب الشركة بشكل دوري، خدمة احترافية والتزام في المواعيد، أسعار معقولة وجودة عالية."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold ml-3">
+                            ر.ق
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">رانيا القحطاني</h4>
+                            <p class="text-gray-600 text-sm">حي اليرموك - الرياض</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700">
+                        "خدمة تنظيف السجاد والكنب ممتازة، استخدموا البخار وأزالوا جميع البقع، السجاد أصبح كالجديد تماماً."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact and CTA -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">
+                    احصل على خدمة نظافة احترافية الآن
+                </h2>
+                <div class="section-divider bg-white"></div>
+                <p class="text-xl max-w-3xl mx-auto">
+                    لا تتردد في التواصل معنا للحصول على أفضل خدمات النظافة والتعقيم ومكافحة الحشرات في الرياض
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">اتصل بنا الآن</h3>
+                    <p class="text-lg font-semibold">0569131252</p>
+                    <p class="text-sm opacity-90">متاح 24 ساعة / 7 أيام</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">راسلنا بالإيميل</h3>
+                    <p class="text-lg font-semibold">info@plusclean.sa</p>
+                    <p class="text-sm opacity-90">رد خلال ساعة واحدة</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">نصل إليك في الرياض</h3>
+                    <p class="text-lg font-semibold">جميع الأحياء</p>
+                    <p class="text-sm opacity-90">خدمة سريعة في نفس اليوم</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="tel:0569131252" class="inline-block bg-white text-blue-600 font-bold py-4 px-8 rounded-full text-xl hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-phone ml-2"></i>
+                    اطلب الخدمة الآن - خصم 25%
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

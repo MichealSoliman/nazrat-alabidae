@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- الصفحة الرئيسية -->
+    <url>
+        <loc>https://nazretelebdaa.com/</loc>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/icon.webp</image:loc>
+            <image:title>شعار شركة نظرة الإبداع</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/logo.webp</image:loc>
+            <image:title>شعار الشركة</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/logo2.webp</image:loc>
+            <image:title>شعار الشركة البديل</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/icon white.webp</image:loc>
+            <image:title>أيقونة بيضاء</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/defaa.svg</image:loc>
+            <image:title>شعار الدفاع المدني</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/sbc-801.svg</image:loc>
+            <image:title>معايير البناء السعودي</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/smart.svg</image:loc>
+            <image:title>شعار سمارت للحماية من الحرائق</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/nfpa.jpg</image:loc>
+            <image:title>شعار NFPA</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/saudia.jpg</image:loc>
+            <image:title>شعار السعودية</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/saudia.png</image:loc>
+            <image:title>شعار السعودية</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/ulist.png</image:loc>
+            <image:title>قائمة</image:title>
+        </image:image>
+    </url>
+
+    <!-- معارض الصور -->
+    <url>
+ 
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/Artboard1.webp</image:loc>
+            <image:title>لوحة فنية 1</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/Artboard2.webp</image:loc>
+            <image:title>لوحة فنية 2</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/Artboard3.webp</image:loc>
+            <image:title>لوحة فنية 3</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/Artboard4.webp</image:loc>
+            <image:title>لوحة فنية 4</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/Artboard7.webp</image:loc>
+            <image:title>لوحة فنية 7</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/Artboard10.webp</image:loc>
+            <image:title>لوحة فنية 10</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/banner.png</image:loc>
+            <image:title>بانر</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/footer-bg.webp</image:loc>
+            <image:title>خلفية التذييل</image:title>
+        </image:image>
+    </url>
+
+    <!-- معرض أعمال مكافحة الحرائق -->
+    <url>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(1).webp</image:loc>
+            <image:title>نظام مكافحة حريق 1</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(2).webp</image:loc>
+            <image:title>نظام مكافحة حريق 2</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(3).webp</image:loc>
+            <image:title>نظام مكافحة حريق 3</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(4).webp</image:loc>
+            <image:title>نظام مكافحة حريق 4</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(5).webp</image:loc>
+            <image:title>نظام مكافحة حريق 5</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(6).webp</image:loc>
+            <image:title>نظام مكافحة حريق 6</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(7).webp</image:loc>
+            <image:title>نظام مكافحة حريق 7</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(8).webp</image:loc>
+            <image:title>نظام مكافحة حريق 8</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(9).webp</image:loc>
+            <image:title>نظام مكافحة حريق 9</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(10).webp</image:loc>
+            <image:title>نظام مكافحة حريق 10</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(11).webp</image:loc>
+            <image:title>نظام مكافحة حريق 11</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(12).webp</image:loc>
+            <image:title>نظام مكافحة حريق 12</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(13).webp</image:loc>
+            <image:title>نظام مكافحة حريق 13</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/content/fire(14).webp</image:loc>
+            <image:title>نظام مكافحة حريق 14</image:title>
+        </image:image>
+    </url>
+
+    <!-- آراء العملاء -->
+    <url>
+   
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/testimonials/testimonials-1.webp</image:loc>
+            <image:title>رأي العميل 1</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/testimonials/testimonials-4.webp</image:loc>
+            <image:title>رأي العميل 4</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/testimonials/testimonials-5.webp</image:loc>
+            <image:title>رأي العميل 5</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/testimonials/download.jpeg</image:loc>
+            <image:title>صورة العميل 1</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/testimonials/download (1).jpeg</image:loc>
+            <image:title>صورة العميل 2</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nazretelebdaa.com/assets/img/testimonials/download (2).jpeg</image:loc>
+            <image:title>صورة العميل 3</image:title>
+        </image:image>
+    </url>
+
+</urlset>

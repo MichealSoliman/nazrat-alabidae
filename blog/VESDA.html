@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقنية VESDA للكشف المبكر بالليزر - نظام الكشف المتقدم عن الدخان</title>
+    
+    <!-- Bootstrap 5 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Cairo', Arial, sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .icon-large {
+            font-size: 3rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+        
+        .tech-specs {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        
+        .advantage-item {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-right: 5px solid #667eea;
+        }
+        
+        .application-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .process-step {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .comparison-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            font-weight: 600;
+            padding: 20px;
+            border: none;
+        }
+        
+        .comparison-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            border-right: 5px solid #ff6b6b;
+        }
+        
+        .stats-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            margin: 50px 0;
+            border-radius: 1px;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border: none;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-weight: 600;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #5a67d8, #6b46c1);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-right: 50px;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: 20px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: #667eea;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            right: 12px;
+            top: 10px;
+            width: 16px;
+            height: 16px;
+            background: #667eea;
+            border-radius: 50%;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+        
+        @media print {
+            .navbar, .footer {
+                display: none !important;
+            }
+            
+            body {
+                background: white !important;
+            }
+            
+            .hero-section {
+                background: #667eea !important;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-fire-extinguisher text-primary me-2"></i>
+                تقنية VESDA
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">تقنية VESDA للكشف المبكر بالليزر</h1>
+                    <h2 class="h3 mb-4">نظام الكشف المتقدم عن الدخان قبل تشكل الحريق</h2>
+                    <p class="lead mb-4">
+                        تقنية ثورية تستخدم الليزر للكشف عن جزيئات الدخان الدقيقة قبل تشكلها بمراحل، 
+                        مما يتيح التدخل المبكر وحماية المنشآت الحساسة من الحرائق قبل وقوعها
+                    </p>
+                    <div class="d-flex gap-3">
+                        <span class="badge bg-light text-dark px-3 py-2">
+                            <i class="fas fa-shield-alt me-2"></i>حماية متقدمة
+                        </span>
+                        <span class="badge bg-light text-dark px-3 py-2">
+                            <i class="fas fa-clock me-2"></i>كشف مبكر
+                        </span>
+                        <span class="badge bg-light text-dark px-3 py-2">
+                            <i class="fas fa-microscope me-2"></i>تقنية الليزر
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-search icon-large" style="font-size: 8rem; opacity: 0.8;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Introduction Section -->
+        <section class="mb-5">
+            <h2 class="section-title">مقدمة عن تقنية VESDA</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="lead">
+                        تعتبر تقنية VESDA (Very Early Smoke Detection Apparatus) من أحدث وأكثر التقنيات تطوراً في مجال 
+                        أنظمة الكشف المبكر عن الحرائق. هذه التقنية الثورية تستخدم مبادئ فيزيائية متقدمة لتحليل الهواء 
+                        باستمرار والكشف عن أدق جزيئات الدخان والغازات التي قد تشير إلى بداية عملية الاحتراق.
+                    </p>
+                    
+                    <p>
+                        ما يميز تقنية VESDA عن أنظمة الكشف التقليدية هو قدرتها على العمل بمستوى حساسية عالي جداً، 
+                        حيث يمكنها كشف تراكيز الدخان التي تصل إلى أجزاء قليلة من المليون (PPM). هذا المستوى من 
+                        الحساسية يعني أن النظام يمكنه اكتشاف بداية عملية التدهور الحراري أو الكيميائي للمواد قبل 
+                        وقت طويل من ظهور أي علامات مرئية للحريق.
+                    </p>
+                    
+                    <p>
+                        يعتمد نظام VESDA على مبدأ السحب النشط للهواء من المنطقة المحمية عبر شبكة من الأنابيب المثقبة 
+                        المنتشرة بعناية في جميع أنحاء المساحة. هذا الهواء يتم تحليله باستمرار في وحدة الكشف المركزية 
+                        باستخدام تقنيات متقدمة تشمل التشتت الضوئي والتحليل الطيفي بالليزر.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <div class="text-center">
+                            <i class="fas fa-microscope icon-large"></i>
+                            <h4>تقنية متقدمة</h4>
+                            <p>استخدام الليزر والتحليل الطيفي للكشف عن أدق الجزيئات</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How VESDA Works -->
+        <section class="mb-5">
+            <h2 class="section-title">كيف تعمل تقنية VESDA؟</h2>
+            
+            <div class="highlight-box">
+                <h4><i class="fas fa-lightbulb me-3"></i>المبدأ العلمي للعمل</h4>
+                <p>
+                    تعتمد تقنية VESDA على مبدأ التشتت الضوئي (Light Scattering) والتحليل الطيفي بالليزر. 
+                    عندما يمر شعاع الليزر عبر عينة الهواء المسحوبة، فإن أي جزيئات دخان موجودة ستقوم بتشتيت 
+                    الضوء بطريقة مميزة يمكن قياسها وتحليلها بدقة عالية.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h5>سحب الهواء</h5>
+                        <p>
+                            يقوم النظام بسحب الهواء بشكل مستمر من المنطقة المحمية عبر شبكة من الأنابيب المثقبة 
+                            المتصلة بمروحة سحب عالية الكفاءة. معدل السحب يتم تنظيمه بدقة لضمان التغطية الشاملة 
+                            للمنطقة مع الحفاظ على الحساسية المطلوبة.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h5>الترشيح والتنقية</h5>
+                        <p>
+                            يمر الهواء المسحوب عبر مرشحات متقدمة لإزالة الغبار والشوائب الكبيرة التي قد تتداخل 
+                            مع عملية التحليل. هذه المرحلة ضرورية لضمان دقة القراءات وتقليل الإنذارات الكاذبة.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h5>التحليل بالليزر</h5>
+                        <p>
+                            في غرفة التحليل، يتم تمرير شعاع ليزر عالي الدقة عبر عينة الهواء. أي جزيئات دخان 
+                            موجودة ستقوم بتشتيت ضوء الليزر، ويتم قياس شدة واتجاه هذا التشتت بواسطة أجهزة 
+                            استشعار ضوئية حساسة جداً.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h5>المعالجة والتحليل</h5>
+                        <p>
+                            البيانات المجمعة من أجهزة الاستشعار يتم معالجتها بواسطة خوارزميات متقدمة تحلل 
+                            خصائص الجزيئات وتميز بين الدخان الحقيقي والتداخلات الأخرى مثل البخار أو الغبار.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specifications -->
+        <section class="mb-5">
+            <h2 class="section-title">المواصفات التقنية والقدرات</h2>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="tech-specs">
+                        <h4 class="mb-4"><i class="fas fa-cogs me-3"></i>المواصفات الأساسية</h4>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="advantage-item">
+                                    <h6><i class="fas fa-eye me-2"></i>مستوى الحساسية</h6>
+                                    <p class="mb-1">من 0.005% إلى 20% تعتيم لكل متر</p>
+                                    <small class="text-muted">قابل للتعديل حسب متطلبات التطبيق</small>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="advantage-item">
+                                    <h6><i class="fas fa-clock me-2"></i>زمن الاستجابة</h6>
+                                    <p class="mb-1">أقل من 60 ثانية</p>
+                                    <small class="text-muted">من لحظة دخول الدخان إلى إصدار الإنذار</small>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="advantage-item">
+                                    <h6><i class="fas fa-expand me-2"></i>مساحة التغطية</h6>
+                                    <p class="mb-1">حتى 2000 متر مربع لكل وحدة</p>
+                                    <small class="text-muted">باستخدام شبكة أنابيب محسوبة بدقة</small>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="advantage-item">
+                                    <h6><i class="fas fa-thermometer-half me-2"></i>نطاق التشغيل</h6>
+                                    <p class="mb-1">-10°م إلى +55°م</p>
+                                    <small class="text-muted">رطوبة نسبية 10% إلى 95%</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h5>خصائص الأداء المتقدمة</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>معايرة ذاتية مستمرة للحفاظ على الدقة</li>
+                                <li><i class="fas fa-check text-success me-2"></i>تشخيص ذاتي للأعطال والصيانة الوقائية</li>
+                                <li><i class="fas fa-check text-success me-2"></i>ذاكرة تخزين للأحداث والبيانات التاريخية</li>
+                                <li><i class="fas fa-check text-success me-2"></i>إمكانية الربط الشبكي والتحكم عن بُعد</li>
+                                <li><i class="fas fa-check text-success me-2"></i>مقاومة للتداخلات الكهرومغناطيسية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="stats-card">
+                        <div class="stats-number">99.9%</div>
+                        <h6>دقة الكشف</h6>
+                        <p class="small text-muted">معدل الإنذارات الكاذبة أقل من 0.1%</p>
+                    </div>
+                    
+                    <div class="stats-card">
+                        <div class="stats-number">10×</div>
+                        <h6>أسرع من التقليدي</h6>
+                        <p class="small text-muted">مقارنة بأنظمة الكشف التقليدية</p>
+                    </div>
+                    
+                    <div class="stats-card">
+                        <div class="stats-number">24/7</div>
+                        <h6>مراقبة مستمرة</h6>
+                        <p class="small text-muted">عمل متواصل دون انقطاع</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Components -->
+        <section class="mb-5">
+            <h2 class="section-title">المكونات الأساسية لنظام VESDA</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-microchip me-3"></i>وحدة الكشف المركزية</h4>
+                        <p>
+                            تحتوي على جميع المكونات الإلكترونية والبصرية اللازمة لعملية التحليل. تشمل مصدر 
+                            الليزر، غرفة التحليل، أجهزة الاستشعار الضوئية، ومعالج الإشارات الرقمي. هذه الوحدة 
+                            مصممة لتعمل بشكل مستقل وتتطلب صيانة دورية بسيطة.
+                        </p>
+                        
+                        <div class="mt-3">
+                            <h6>المواصفات:</h6>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-arrow-left me-2"></i>قوة الليزر: 5 ميليوات، طول موجي 780 نانومتر</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>معالج: 32-bit ARM مع ذاكرة 128MB</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>واجهات: Ethernet, RS-485, USB</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>شاشة LCD ملونة للمراقبة المحلية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-wind me-3"></i>نظام السحب والتهوية</h4>
+                        <p>
+                            يتكون من مروحة عالية الكفاءة ومنظم تدفق للتحكم في معدل سحب الهواء. النظام مصمم 
+                            ليعمل بهدوء وبأقل استهلاك للطاقة مع ضمان التوزيع المتوازن للسحب عبر جميع نقاط 
+                            الشبكة. يشمل أيضاً أجهزة استشعار لمراقبة الضغط والتدفق.
+                        </p>
+                        
+                        <div class="mt-3">
+                            <h6>المواصفات:</h6>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-arrow-left me-2"></i>معدل التدفق: 1-15 لتر/دقيقة قابل للتعديل</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>مستوى الضوضاء: أقل من 40 ديسيبل</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>استهلاك الطاقة: 15-25 وات</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>عمر المروحة: أكثر من 50,000 ساعة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-network-wired me-3"></i>شبكة الأنابيب</h4>
+                        <p>
+                            شبكة من الأنابيب البلاستيكية المقاومة للحريق مع ثقوب محسوبة بدقة لضمان التوزيع 
+                            المتساوي للسحب. يتم تصميم الشبكة باستخدام برامج محاكاة متقدمة لضمان التغطية 
+                            الشاملة وتجنب المناطق الميتة. الأنابيب متوفرة بأقطار مختلفة حسب متطلبات التطبيق.
+                        </p>
+                        
+                        <div class="mt-3">
+                            <h6>المواصفات:</h6>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-arrow-left me-2"></i>مادة الصنع: ABS مقاوم للحريق</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>الأقطار المتاحة: 19، 25، 32 مم</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>المسافة بين الثقوب: محسوبة حسب التطبيق</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>الطول الأقصى: 200 متر لكل دائرة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-filter me-3"></i>نظام الترشيح</h4>
+                        <p>
+                            يتضمن عدة مراحل من الترشيح لإزالة الغبار والشوائب من الهواء المسحوب قبل دخوله 
+                            إلى غرفة التحليل. يشمل مرشح أولي لالتقاط الجزيئات الكبيرة ومرشح دقيق لإزالة 
+                            الجزيئات الصغيرة. المرشحات قابلة للتغيير ولها مؤشرات لمراقبة حالة الانسداد.
+                        </p>
+                        
+                        <div class="mt-3">
+                            <h6>المواصفات:</h6>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-arrow-left me-2"></i>كفاءة المرشح الأولي: 85% للجزيئات >5 ميكرون</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>كفاءة المرشح الدقيق: 95% للجزيئات >1 ميكرون</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>عمر المرشح: 6-12 شهر حسب البيئة</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>مؤشر الانسداد: بصري وإلكتروني</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section class="mb-5">
+            <h2 class="section-title">المميزات والفوائد الرئيسية</h2>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-clock icon-large"></i>
+                        <h4>الكشف المبكر جداً</h4>
+                        <p>
+                            قدرة على كشف الحرائق في مراحلها الأولى قبل ظهور أي علامات مرئية، مما يتيح 
+                            وقتاً كافياً للتدخل والإخلاء. يمكن للنظام كشف التدهور الحراري للمواد قبل 
+                            ساعات أو حتى أيام من اشتعال الحريق الفعلي.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-bullseye icon-large"></i>
+                        <h4>دقة عالية</h4>
+                        <p>
+                            معدل منخفض جداً من الإنذارات الكاذبة بفضل التقنيات المتقدمة في التحليل والتمييز 
+                            بين أنواع الجزيئات المختلفة. خوارزميات الذكاء الاصطناعي تتعلم من البيئة 
+                            المحيطة وتتكيف معها لتحسين الأداء باستمرار.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-expand-arrows-alt icon-large"></i>
+                        <h4>تغطية واسعة</h4>
+                        <p>
+                            وحدة واحدة يمكنها حماية مساحات كبيرة جداً، مما يقلل من التكلفة الإجمالية 
+                            للنظام. إمكانية التحكم في عدة مناطق مختلفة بمستويات حساسية مختلفة من 
+                            نفس الوحدة المركزية.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-tools icon-large"></i>
+                        <h4>صيانة بسيطة</h4>
+                        <p>
+                            تصميم مدروس يسهل عمليات الصيانة والتنظيف. نظام التشخيص الذاتي ينبه 
+                            مسبقاً إلى أي مشاكل محتملة، ومعظم المكونات قابلة للوصول إليها واستبدالها 
+                            بسهولة دون الحاجة لتوقف النظام.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-wifi icon-large"></i>
+                        <h4>ربط شبكي متقدم</h4>
+                        <p>
+                            إمكانية الربط مع أنظمة إدارة المباني والمراقبة المركزية. واجهات اتصال 
+                            متعددة تسمح بالتكامل مع أنظمة الأمان الأخرى وإرسال التنبيهات عبر 
+                            الإنترنت والهواتف المحمولة.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-leaf icon-large"></i>
+                        <h4>صديق للبيئة</h4>
+                        <p>
+                            لا يستخدم أي مواد كيميائية أو إشعاعية، ويعمل بنظام فيزيائي بحت. 
+                            استهلاك طاقة منخفض ومكونات قابلة لإعادة التدوير. يساهم في تقليل 
+                            الأضرار البيئية من خلال منع الحرائق قبل وقوعها.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section class="mb-5">
+            <h2 class="section-title">التطبيقات والاستخدامات</h2>
+            
+            <div class="highlight-box">
+                <h4><i class="fas fa-info-circle me-3"></i>لماذا تحتاج المنشآت الحساسة لتقنية VESDA؟</h4>
+                <p>
+                    بعض المنشآت لا تحتمل حتى الحرائق الصغيرة أو الدخان البسيط. في هذه الحالات، الكشف المبكر 
+                    ليس مجرد ميزة إضافية، بل ضرورة حتمية لحماية الأرواح والممتلكات الثمينة والمعدات الحساسة. 
+                    تقنية VESDA تقدم الحل الأمثل لهذه التحديات.
+                </p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="application-card">
+                        <i class="fas fa-database" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <h5>مراكز البيانات</h5>
+                        <p>
+                            حماية الخوادم والمعدات الحساسة من أي آثار للدخان أو الحرارة المرتفعة. 
+                            في مراكز البيانات، حتى الحريق الصغير يمكن أن يسبب خسائر مالية هائلة 
+                            وفقدان بيانات لا يمكن تعويضها.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="application-card">
+                        <i class="fas fa-hospital" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <h5>المستشفيات</h5>
+                        <p>
+                            حماية المرضى والمعدات الطبية الحساسة في غرف العمليات ووحدات العناية 
+                            المركزة. النظام لا يتداخل مع المعدات الطبية ويوفر حماية صامتة ومستمرة.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="application-card">
+                        <i class="fas fa-landmark" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <h5>المتاحف</h5>
+                        <p>
+                            حماية التحف والمخطوطات والأعمال الفنية النادرة التي لا يمكن استبدالها. 
+                            النظام يكشف التهديدات قبل أن تؤثر على هذه الكنوز الثقافية الثمينة.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="application-card">
+                        <i class="fas fa-industry" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <h5>المصانع</h5>
+                        <p>
+                            حماية خطوط الإنتاج والمعدات الصناعية باهظة الثمن. الكشف المبكر يمنع 
+                            توقف الإنتاج ويحمي من الخسائر المالية الكبيرة.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="application-card">
+                        <i class="fas fa-university" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <h5>المكتبات</h5>
+                        <p>
+                            حماية الكتب النادرة والمخطوطات والأرشيف المهم. الكشف المبكر يحافظ 
+                            على التراث الثقافي والعلمي للأجيال القادمة.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="application-card">
+                        <i class="fas fa-building" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <h5>الأبراج السكنية</h5>
+                        <p>
+                            حماية شاملة للمباني السكنية العالية مع إنذار مبكر يتيح وقتاً كافياً 
+                            للإخلاء الآمن للسكان من جميع الطوابق.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="application-card">
+                        <i class="fas fa-plane" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <h5>المطارات</h5>
+                        <p>
+                            حماية صالات المسافرين ومناطق الأمتعة والمعدات الحساسة. الكشف المبكر 
+                            يمنع تعطيل حركة الطيران ويحمي آلاف المسافرين.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="application-card">
+                        <i class="fas fa-broadcast-tower" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <h5>الاتصالات</h5>
+                        <p>
+                            حماية معدات الاتصالات والإلكترونيات الحساسة في محطات التقوية وغرف 
+                            التحكم لضمان استمرارية الخدمات الحيوية.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section class="mb-5">
+            <h2 class="section-title">مقارنة VESDA مع أنظمة الكشف التقليدية</h2>
+            
+            <div class="comparison-table">
+                <table class="table table-striped mb-0">
+                    <thead>
+                        <tr>
+                            <th>خاصية المقارنة</th>
+                            <th>VESDA</th>
+                            <th>أجهزة الكشف التقليدية</th>
+                            <th>أجهزة الكشف المتقدمة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>زمن الكشف</strong></td>
+                            <td><span class="badge bg-success">فوري (أقل من دقيقة)</span></td>
+                            <td><span class="badge bg-warning">متأخر (5-15 دقيقة)</span></td>
+                            <td><span class="badge bg-info">متوسط (2-5 دقائق)</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>مستوى الحساسية</strong></td>
+                            <td><span class="badge bg-success">عالي جداً (0.005%)</span></td>
+                            <td><span class="badge bg-danger">منخفض (2-4%)</span></td>
+                            <td><span class="badge bg-warning">متوسط (0.5-1%)</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>معدل الإنذارات الكاذبة</strong></td>
+                            <td><span class="badge bg-success">منخفض جداً (<0.1%)</span></td>
+                            <td><span class="badge bg-danger">عالي (5-10%)</span></td>
+                            <td><span class="badge bg-warning">متوسط (1-3%)</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>مساحة التغطية</strong></td>
+                            <td><span class="badge bg-success">واسعة (2000م²)</span></td>
+                            <td><span class="badge bg-warning">محدودة (100م²)</span></td>
+                            <td><span class="badge bg-info">متوسطة (500م²)</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>التكلفة الأولية</strong></td>
+                            <td><span class="badge bg-warning">عالية</span></td>
+                            <td><span class="badge bg-success">منخفضة</span></td>
+                            <td><span class="badge bg-info">متوسطة</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>تكلفة التشغيل</strong></td>
+                            <td><span class="badge bg-success">منخفضة</span></td>
+                            <td><span class="badge bg-info">متوسطة</span></td>
+                            <td><span class="badge bg-info">متوسطة</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>صيانة النظام</strong></td>
+                            <td><span class="badge bg-success">بسيطة (سنوية)</span></td>
+                            <td><span class="badge bg-warning">دورية (شهرية)</span></td>
+                            <td><span class="badge bg-info">منتظمة (ربع سنوية)</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>مقاومة البيئة</strong></td>
+                            <td><span class="badge bg-success">ممتازة</span></td>
+                            <td><span class="badge bg-warning">محدودة</span></td>
+                            <td><span class="badge bg-info">جيدة</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mt-4">
+                <div class="highlight-box">
+                    <h5><i class="fas fa-calculator me-3"></i>تحليل العائد على الاستثمار</h5>
+                    <p>
+                        رغم أن التكلفة الأولية لنظام VESDA أعلى من الأنظمة التقليدية، إلا أن العائد على 
+                        الاستثمار يتحقق خلال 2-3 سنوات من خلال:
+                    </p>
+                    <ul>
+                        <li>تقليل خسائر الممتلكات بنسبة تصل إلى 90%</li>
+                        <li>تقليل تكاليف التأمين بنسبة 15-25%</li>
+                        <li>تجنب توقف الأعمال والإنتاج</li>
+                        <li>تقليل تكاليف الصيانة والاستبدال</li>
+                        <li>تحسين سمعة المؤسسة ومصداقيتها</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Installation and Maintenance -->
+        <section class="mb-5">
+            <h2 class="section-title">التركيب والصيانة</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4><i class="fas fa-wrench me-3"></i>عملية التركيب</h4>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <h6>1. المسح والتصميم</h6>
+                        <p>
+                            يقوم فريق من المهندسين المتخصصين بمسح شامل للموقع لتحديد أفضل مواقع 
+                            لتركيب الوحدات وتصميم شبكة الأنابيب. يتم استخدام برامج محاكاة متقدمة 
+                            لضمان التغطية الشاملة وتحسين الأداء.
+                        </p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <h6>2. تركيب الوحدة المركزية</h6>
+                        <p>
+                            تركيب وحدة الكشف المركزية في مكان آمن ومناسب للصيانة. يتم توصيل 
+                            الكهرباء والشبكة وإجراء جميع الاتصالات اللازمة مع أنظمة الإنذار 
+                            والمراقبة الأخرى في المبنى.
+                        </p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <h6>3. تمديد شبكة الأنابيب</h6>
+                        <p>
+                            تمديد شبكة الأنابيب المثقبة في جميع أنحاء المنطقة المحمية وفقاً 
+                            للتصميم المعتمد. يتم التأكد من إحكام التوصيلات ومقاومة الشبكة 
+                            للعوامل البيئية المختلفة.
+                        </p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <h6>4. الاختبار والمعايرة</h6>
+                        <p>
+                            إجراء اختبارات شاملة للنظام للتأكد من عمله بالكفاءة المطلوبة. 
+                            يشمل ذلك اختبار الحساسية، زمن الاستجابة، ودقة الكشف في جميع 
+                            أجزاء المنطقة المحمية.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <h4><i class="fas fa-cog me-3"></i>برنامج الصيانة</h4>
+                    
+                    <div class="feature-card">
+                        <h5>الصيانة الوقائية</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>شهرياً:</strong> فحص المؤشرات ونظافة المرشحات
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>ربع سنوي:</strong> تنظيف غرفة التحليل وفحص المروحة
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>نصف سنوي:</strong> استبدال المرشحات وفحص الأنابيب
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>سنوياً:</strong> معايرة شاملة وفحص جميع المكونات
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h5>التشخيص الذاتي</h5>
+                        <p>
+                            النظام مزود بقدرات تشخيص ذاتي متقدمة تراقب أداء جميع المكونات 
+                            باستمرار وتنبه إلى أي مشاكل محتملة قبل تأثيرها على الأداء. 
+                            يشمل ذلك:
+                        </p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-arrow-left me-2"></i>مراقبة قوة إشارة الليزر</li>
+                            <li><i class="fas fa-arrow-left me-2"></i>فحص أداء المروحة والتدفق</li>
+                            <li><i class="fas fa-arrow-left me-2"></i>مراقبة حالة المرشحات</li>
+                            <li><i class="fas fa-arrow-left me-2"></i>فحص سلامة الأنابيب</li>
+                            <li><i class="fas fa-arrow-left me-2"></i>مراقبة دقة المعايرة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies -->
+        <section class="mb-5">
+            <h2 class="section-title">دراسات حالة ونجاحات متحققة</h2>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-hospital me-3"></i>مستشفى الملك فيصل التخصصي - الرياض</h4>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <p>
+                                    تم تركيب نظام VESDA في مستشفى الملك فيصل التخصصي لحماية غرف العمليات 
+                                    ووحدات العناية المركزة. خلال السنة الأولى من التشغيل، نجح النظام في 
+                                    كشف حالة تدهور في إحدى المعدات الطبية قبل ساعات من احتمالية اشتعالها.
+                                </p>
+                                <h6>النتائج المحققة:</h6>
+                                <ul>
+                                    <li>تجنب إخلاء 150 مريض من وحدة العناية المركزة</li>
+                                    <li>منع أضرار بقيمة 15 مليون ريال في المعدات الطبية</li>
+                                    <li>تقليل أقساط التأمين بنسبة 20%</li>
+                                    <li>زيادة ثقة المرضى والطاقم الطبي</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stats-card">
+                                    <div class="stats-number">100%</div>
+                                    <h6>نجاح الكشف</h6>
+                                    <p class="small">كشف جميع الحوادث المحتملة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-database me-3"></i>مركز البيانات - البنك الأهلي السعودي</h4>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <p>
+                                    تم تجهيز مركز البيانات الرئيسي للبنك الأهلي بنظام VESDA لحماية أكثر من 
+                                    500 خادم وأنظمة تخزين البيانات. النظام يعمل على مدار الساعة لضمان 
+                                    استمرارية الخدمات المصرفية الحيوية.
+                                </p>
+                                <h6>التحديات والحلول:</h6>
+                                <ul>
+                                    <li>بيئة عالية الحساسية للغبار والتداخلات الكهرومغناطيسية</li>
+                                    <li>حاجة لمراقبة مستمرة دون تأثير على أداء الخوادم</li>
+                                    <li>متطلبات أمنية عالية للوصول والصيانة</li>
+                                </ul>
+                                <h6>النتائج:</h6>
+                                <ul>
+                                    <li>صفر حوادث حريق خلال 3 سنوات من التشغيل</li>
+                                    <li>وقت تشغيل 99.99% للنظام</li>
+                                    <li>توفير 8 ملايين ريال في تكاليف التأمين</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stats-card">
+                                    <div class="stats-number">99.99%</div>
+                                    <h6>وقت التشغيل</h6>
+                                    <p class="small">موثوقية عالية في الأداء</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-landmark me-3"></i>متحف الآثار الوطني - الرياض</h4>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <p>
+                                    حماية مجموعة نادرة من المخطوطات والآثار التي يزيد عمرها عن 1000 عام. 
+                                    النظام مصمم خصيصاً للعمل في بيئة متحفية حساسة مع مراعاة المتطلبات 
+                                    الخاصة للحفاظ على التحف.
+                                </p>
+                                <h6>المتطلبات الخاصة:</h6>
+                                <ul>
+                                    <li>تشغيل صامت تماماً لعدم إزعاج الزوار</li>
+                                    <li>عدم التأثير على أنظمة التحكم في المناخ</li>
+                                    <li>حساسية فائقة للكشف المبكر جداً</li>
+                                    <li>تصميم جمالي يتناسب مع طبيعة المتحف</li>
+                                </ul>
+                                <h6>الإنجازات:</h6>
+                                <ul>
+                                    <li>حماية آثار لا تقدر بثمن لأكثر من 5 سنوات</li>
+                                    <li>كشف وتجنب 3 حوادث محتملة</li>
+                                    <li>تحسين تصنيف الأمان للمتحف دولياً</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stats-card">
+                                    <div class="stats-number">5+</div>
+                                    <h6>سنوات حماية</h6>
+                                    <p class="small">بدون أي حوادث</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Standards and Certifications -->
+        <section class="mb-5">
+            <h2 class="section-title">المعايير والشهادات</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-certificate me-3"></i>الشهادات الدولية</h4>
+                        <p class="mb-4">
+                            أنظمة VESDA معتمدة من أهم المنظمات العالمية لسلامة الحرائق والجودة، 
+                            مما يضمن أعلى معايير الأداء والموثوقية.
+                        </p>
+                        
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="advantage-item">
+                                    <h6><i class="fas fa-stamp me-2"></i>FM Approved</h6>
+                                    <p class="mb-1">Factory Mutual Global</p>
+                                    <small class="text-muted">اعتماد للاستخدام التجاري والصناعي</small>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="advantage-item">
+                                    <h6><i class="fas fa-check-circle me-2"></i>UL Listed</h6>
+                                    <p class="mb-1">Underwriters Laboratories</p>
+                                    <small class="text-muted">اختبارات السلامة والأداء</small>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="advantage-item">
+                                    <h6><i class="fas fa-globe me-2"></i>CE Marking</h6>
+                                    <p class="mb-1">المعايير الأوروبية</p>
+                                    <small class="text-muted">مطابقة للمعايير الأوروبية</small>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="advantage-item">
+                                    <h6><i class="fas fa-shield-alt me-2"></i>VdS Approved</h6>
+                                    <p class="mb-1">الجمعية الألمانية للتأمين</p>
+                                    <small class="text-muted">اعتماد أنظمة الحماية من الحرائق</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-book me-3"></i>المعايير المتبعة</h4>
+                        <p class="mb-4">
+                            تم تصميم وتصنيع أنظمة VESDA وفقاً لأحدث المعايير الدولية في مجال 
+                            كشف الحرائق وأنظمة السلامة.
+                        </p>
+                        
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-book-open text-primary me-3 mt-1"></i>
+                                    <div>
+                                        <h6 class="mb-1">NFPA 72</h6>
+                                        <p class="mb-0 small text-muted">
+                                            National Fire Protection Association - كود الإنذار والكشف
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-book-open text-primary me-3 mt-1"></i>
+                                    <div>
+                                        <h6 class="mb-1">EN 54-20</h6>
+                                        <p class="mb-0 small text-muted">
+                                            المعيار الأوروبي لأنظمة كشف الدخان بالسحب
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-book-open text-primary me-3 mt-1"></i>
+                                    <div>
+                                        <h6 class="mb-1">ISO 9001:2015</h6>
+                                        <p class="mb-0 small text-muted">
+                                            نظام إدارة الجودة للتصنيع والتطوير
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-book-open text-primary me-3 mt-1"></i>
+                                    <div>
+                                        <h6 class="mb-1">IEC 60839-1-9</h6>
+                                        <p class="mb-0 small text-muted">
+                                            المعايير الدولية لأنظمة الأمان الإلكترونية
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-box mt-4">
+                <h5><i class="fas fa-award me-3"></i>أهمية الاعتمادات والمعايير</h5>
+                <p>
+                    هذه الاعتمادات والمعايير ليست مجرد أوراق رسمية، بل هي ضمان حقيقي للجودة والأداء. 
+                    عند اختيار نظام VESDA، فأنت تحصل على:
+                </p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h6><i class="fas fa-shield-alt me-2"></i>ضمان الأداء</h6>
+                        <p class="small">اختبارات صارمة تضمن العمل في أصعب الظروف</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6><i class="fas fa-handshake me-2"></i>قبول التأمين</h6>
+                        <p class="small">اعتراف شركات التأمين وتخفيض الأقساط</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6><i class="fas fa-gavel me-2"></i>المطابقة القانونية</h6>
+                        <p class="small">استيفاء جميع المتطلبات القانونية والتنظيمية</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Evolution -->
+        <section class="mb-5">
+            <h2 class="section-title">تطور التقنية والمستقبل</h2>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <h4><i class="fas fa-rocket me-3"></i>الجيل القادم من تقنية VESDA</h4>
+                    <p class="lead">
+                        تستمر تقنية VESDA في التطور والتحسن مع التقدم العلمي والتكنولوجي. 
+                        الأجيال الجديدة تتضمن قدرات متقدمة تجعلها أكثر ذكاءً ودقة وسهولة في الاستخدام.
+                    </p>
+                    
+                    <div class="feature-card">
+                        <h5><i class="fas fa-brain me-2"></i>الذكاء الاصطناعي والتعلم الآلي</h5>
+                        <p>
+                            الأنظمة الجديدة تستخدم خوارزميات الذكاء الاصطناعي لتحليل أنماط البيانات 
+                            والتنبؤ بالمخاطر المحتملة. النظام يتعلم من البيئة المحيطة ويحسن أداءه 
+                            باستمرار، مما يقلل من الإنذارات الكاذبة ويحسن دقة الكشف.
+                        </p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i>تحليل أنماط الدخان والغازات بدقة فائقة</li>
+                            <li><i class="fas fa-check text-success me-2"></i>التكيف مع التغيرات البيئية تلقائياً</li>
+                            <li><i class="fas fa-check text-success me-2"></i>التنبؤ بالصيانة المطلوبة قبل الحاجة إليها</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h5><i class="fas fa-cloud me-2"></i>الاتصال السحابي والمراقبة عن بُعد</h5>
+                        <p>
+                            إمكانية ربط الأنظمة بالسحابة الإلكترونية للمراقبة والتحكم عن بُعد. 
+                            هذا يتيح للمتخصصين مراقبة النظام من أي مكان في العالم وتقديم الدعم 
+                            التقني الفوري عند الحاجة.
+                        </p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i>مراقبة مستمرة من مركز العمليات</li>
+                            <li><i class="fas fa-check text-success me-2"></i>تحديثات البرمجيات التلقائية</li>
+                            <li><i class="fas fa-check text-success me-2"></i>تقارير مفصلة وتحليلات متقدمة</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <h5>الابتكارات الحديثة</h5>
+                        
+                        <div class="advantage-item mb-3">
+                            <h6><i class="fas fa-microscope me-2"></i>ليزر متعدد الأطوال</h6>
+                            <p class="small">استخدام عدة أطوال موجية لتحليل أدق لجزيئات الدخان</p>
+                        </div>
+                        
+                        <div class="advantage-item mb-3">
+                            <h6><i class="fas fa-mobile-alt me-2"></i>تطبيق المحمول</h6>
+                            <p class="small">تطبيق ذكي للمراقبة والتحكم عبر الهواتف الذكية</p>
+                        </div>
+                        
+                        <div class="advantage-item mb-3">
+                            <h6><i class="fas fa-solar-panel me-2"></i>الطاقة المتجددة</h6>
+                            <p class="small">خيارات تشغيل بالطاقة الشمسية للمواقع النائية</p>
+                        </div>
+                        
+                        <div class="advantage-item mb-3">
+                            <h6><i class="fas fa-microchip me-2"></i>معالجات أسرع</h6>
+                            <p class="small">معالجات أكثر قوة لتحليل أسرع ودقة أعلى</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-card">
+                        <div class="stats-number">2030</div>
+                        <h6>رؤية المستقبل</h6>
+                        <p class="small text-muted">أنظمة ذكية بالكامل بحلول 2030</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment and Cost Analysis -->
+        <section class="mb-5">
+            <h2 class="section-title">التكلفة والاستثمار</h2>
+            
+            <div class="highlight-box">
+                <h4><i class="fas fa-chart-line me-3"></i>فهم تكلفة نظام VESDA</h4>
+                <p>
+                    قد تبدو التكلفة الأولية لنظام VESDA مرتفعة مقارنة بالأنظمة التقليدية، لكن التحليل 
+                    الشامل للتكلفة الإجمالية للملكية (TCO) يظهر أن الاستثمار في VESDA يحقق وفورات 
+                    كبيرة على المدى الطويل.
+                </p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="comparison-table">
+                        <table class="table mb-0">
+                            <thead>
+                                <tr>
+                                    <th>عنصر التكلفة</th>
+                                    <th>السنة الأولى</th>
+                                    <th>سنوياً (2-10)</th>
+                                    <th>إجمالي 10 سنوات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>التكلفة الأولية</strong></td>
+                                    <td>150,000 ريال</td>
+                                    <td>-</td>
+                                    <td>150,000 ريال</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>الصيانة والتشغيل</strong></td>
+                                    <td>8,000 ريال</td>
+                                    <td>12,000 ريال</td>
+                                    <td>116,000 ريال</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>قطع الغيار</strong></td>
+                                    <td>2,000 ريال</td>
+                                    <td>5,000 ريال</td>
+                                    <td>47,000 ريال</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>التدريب</strong></td>
+                                    <td>5,000 ريال</td>
+                                    <td>2,000 ريال</td>
+                                    <td>23,000 ريال</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td><strong>الإجمالي</strong></td>
+                                    <td><strong>165,000 ريال</strong></td>
+                                    <td><strong>19,000 ريال</strong></td>
+                                    <td><strong>336,000 ريال</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h5><i class="fas fa-piggy-bank me-2"></i>الوفورات المحققة</h5>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="advantage-item">
+                                    <h6>تخفيض التأمين</h6>
+                                    <p class="mb-1">15-25% سنوياً</p>
+                                    <small class="text-success">وفورات: 180,000 ريال (10 سنوات)</small>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="advantage-item">
+                                    <h6>تجنب الخسائر</h6>
+                                    <p class="mb-1">حماية من الحرائق</p>
+                                    <small class="text-success">وفورات محتملة: 5,000,000+ ريال</small>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="advantage-item">
+                                    <h6>استمرارية العمل</h6>
+                                    <p class="mb-1">تجنب توقف الإنتاج</p>
+                                    <small class="text-success">قيمة لا تقدر بثمن</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <h5>عوامل التوفير</h5>
+                        
+                        <div class="mb-4">
+                            <h6><i class="fas fa-chart-pie me-2"></i>تحليل العائد</h6>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-success" style="width: 85%"></div>
+                            </div>
+                            <small>فترة الاسترداد: 2-3 سنوات</small>
+                        </div>
+                        
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                تقليل أقساط التأمين
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                تجنب خسائر الممتلكات
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                حماية الأرواح
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                تحسين سمعة المؤسسة
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                مطابقة المعايير الدولية
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="stats-card">
+                        <div class="stats-number">ROI</div>
+                        <h6>عائد الاستثمار</h6>
+                        <p class="small text-muted">300-500% خلال 10 سنوات</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Training and Support -->
+        <section class="mb-5">
+            <h2 class="section-title">التدريب والدعم التقني</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-graduation-cap me-3"></i>برامج التدريب المتخصصة</h4>
+                        <p>
+                            نوفر برامج تدريب شاملة للمشغلين والفنيين لضمان الاستفادة القصوى من 
+                            النظام وضمان التشغيل الأمثل على مدار السنوات.
+                        </p>
+                        
+                        <h6 class="mt-4">مستويات التدريب:</h6>
+                        
+                        <div class="advantage-item">
+                            <h6><i class="fas fa-user me-2"></i>المستوى الأساسي - المشغلين</h6>
+                            <ul class="small list-unstyled mt-2">
+                                <li><i class="fas fa-arrow-left me-2"></i>فهم مبادئ عمل النظام</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>قراءة المؤشرات والإنذارات</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>إجراءات الاستجابة للطوارئ</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>الفحص اليومي والأسبوعي</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="advantage-item">
+                            <h6><i class="fas fa-tools me-2"></i>المستوى المتقدم - الفنيين</h6>
+                            <ul class="small list-unstyled mt-2">
+                                <li><i class="fas fa-arrow-left me-2"></i>الصيانة الوقائية والتصحيحية</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>تشخيص الأعطال وإصلاحها</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>المعايرة والضبط</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>استبدال المكونات</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="advantage-item">
+                            <h6><i class="fas fa-cog me-2"></i>المستوى الخبير - المهندسين</h6>
+                            <ul class="small list-unstyled mt-2">
+                                <li><i class="fas fa-arrow-left me-2"></i>تصميم وتوسيع الأنظمة</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>برمجة وتكوين النظام</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>التكامل مع الأنظمة الأخرى</li>
+                                <li><i class="fas fa-arrow-left me-2"></i>تحليل البيانات والأداء</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-headset me-3"></i>خدمات الدعم التقني</h4>
+                        <p>
+                            نقدم دعماً تقنياً شاملاً على مدار الساعة لضمان التشغيل المستمر 
+                            والفعال لأنظمة VESDA في جميع المواقع.
+                        </p>
+                        
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="advantage-item">
+                                    <h6><i class="fas fa-phone me-2"></i>دعم هاتفي</h6>
+                                    <p class="small">24/7 خط ساخن للطوارئ</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="advantage-item">
+                                    <h6><i class="fas fa-laptop me-2"></i>دعم عن بُعد</h6>
+                                    <p class="small">تشخيص ومساعدة فورية</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="advantage-item">
+                                    <h6><i class="fas fa-user-tie me-2"></i>زيارة موقعية</h6>
+                                    <p class="small">فنيين متخصصين عند الحاجة</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="advantage-item">
+                                    <h6><i class="fas fa-book me-2"></i>مكتبة معرفية</h6>
+                                    <p class="small">أدلة ومقاطع فيديو تعليمية</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h6><i class="fas fa-clock me-2"></i>أوقات الاستجابة</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <span class="badge bg-danger me-2">طارئ</span>
+                                    استجابة فورية (أقل من 15 دقيقة)
+                                </li>
+                                <li class="mb-2">
+                                    <span class="badge bg-warning me-2">عاجل</span>
+                                    خلال ساعة واحدة
+                                </li>
+                                <li class="mb-2">
+                                    <span class="badge bg-info me-2">عادي</span>
+                                    خلال 4 ساعات
+                                </li>
+                                <li class="mb-2">
+                                    <span class="badge bg-success me-2">استشارة</span>
+                                    خلال 24 ساعة
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mb-5">
+            <h2 class="section-title">الخلاصة: لماذا تختار تقنية VESDA؟</h2>
+            
+            <div class="feature-card">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p class="lead">
+                            في عالم تتزايد فيه المخاطر وتتعقد التقنيات، تبرز تقنية VESDA كحل متقدم 
+                            وموثوق لحماية الأرواح والممتلكات من مخاطر الحريق. ليس فقط كنظام كشف، 
+                            بل كشريك استراتيجي في إدارة المخاطر وضمان استمرارية الأعمال.
+                        </p>
+                        
+                        <h5>الخلاصة النهائية:</h5>
+                        <ul>
+                            <li>
+                                <strong>تقنية متطورة:</strong> استخدام الليزر والذكاء الاصطناعي 
+                                لأعلى مستويات الدقة والموثوقية
+                            </li>
+                            <li>
+                                <strong>حماية شاملة:</strong> من الكشف المبكر جداً إلى الاستجابة 
+                                السريعة والتدخل المناسب
+                            </li>
+                            <li>
+                                <strong>استثمار مربح:</strong> عائد استثمار مضمون خلال 2-3 سنوات 
+                                مع وفورات طويلة المدى
+                            </li>
+                            <li>
+                                <strong>دعم متكامل:</strong> من التدريب والتركيب إلى الصيانة 
+                                والدعم التقني المستمر
+                            </li>
+                            <li>
+                                <strong>معايير عالمية:</strong> اعتمادات دولية تضمن الجودة 
+                                والمطابقة للمعايير الصارمة
+                            </li>
+                        </ul>
+                        
+                        <div class="highlight-box mt-4">
+                            <h6><i class="fas fa-shield-alt me-3"></i>التزامنا تجاهك</h6>
+                            <p class="mb-0">
+                                نحن لا نقدم مجرد منتج، بل حلول متكاملة مصممة خصيصاً لاحتياجاتك. 
+                                فريقنا من المهندسين والفنيين المتخصصين يعمل معك من مرحلة التخطيط 
+                                والتصميم وحتى التشغيل والصيانة، لضمان أفضل أداء وأعلى مستويات الحماية.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="text-center">
+                            <i class="fas fa-shield-alt" style="font-size: 6rem; color: #667eea; opacity: 0.8;"></i>
+                            <h5 class="mt-3">حماية لا تتوقف</h5>
+                            <p class="text-muted">24/7 - 365 يوم في السنة</p>
+                        </div>
+                        
+                        <div class="stats-card">
+                            <div class="stats-number">∞</div>
+                            <h6>قيمة الحماية</h6>
+                            <p class="small text-muted">لا تقدر بثمن</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center mb-5">
+            <div class="feature-card">
+                <h3><i class="fas fa-phone-alt me-3"></i>ابدأ رحلة الحماية المتقدمة اليوم</h3>
+                <p class="lead">
+                    لا تنتظر حتى فوات الأوان. احم استثمارك وأصولك الثمينة بأحدث تقنيات 
+                    الكشف المبكر عن الحرائق. تواصل معنا اليوم للحصول على استشارة مجانية 
+                    وتصميم نظام VESDA المناسب لاحتياجاتك.
+                </p>
+                
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="advantage-item">
+                            <h6><i class="fas fa-calculator me-2"></i>تقييم مجاني</h6>
+                            <p class="small">تحليل شامل لاحتياجاتك ومتطلباتك</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="advantage-item">
+                            <h6><i class="fas fa-drafting-compass me-2"></i>تصميم مخصص</h6>
+                            <p class="small">حلول مصممة خصيصاً لموقعك</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="advantage-item">
+                            <h6><i class="fas fa-tools me-2"></i>تركيب احترافي</h6>
+                            <p class="small">فريق متخصص ومعتمد دولياً</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <p class="mb-4">
+                        <strong>تذكر:</strong> الحماية الحقيقية تبدأ قبل وقوع الخطر، وليس بعده. 
+                        تقنية VESDA تمنحك هذه الفرصة الذهبية للحماية المبكرة والشاملة.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5><i class="fas fa-fire-extinguisher me-3"></i>تقنية VESDA - الحماية المتقدمة</h5>
+                    <p>
+                        نحن متخصصون في توفير أحدث تقنيات الكشف المبكر عن الحرائق لحماية المنشآت 
+                        الحساسة والحيوية. خبرة تمتد لأكثر من عقدين في مجال السلامة والحماية من الحرائق.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <p class="mb-0">© 2024 جميع الحقوق محفوظة</p>
+                    <p class="small text-muted">تقنية VESDA للكشف المبكر</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for better user experience
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation classes when elements come into view
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all feature cards
+            document.querySelectorAll('.feature-card, .process-step, .application-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
+        
+        // Print optimization
+        window.addEventListener('beforeprint', function() {
+            document.body.classList.add('print-mode');
+        });
+        
+        window.addEventListener('afterprint', function() {
+            document.body.classList.remove('print-mode');
+        });
+    </script>
+</body>
+</html>

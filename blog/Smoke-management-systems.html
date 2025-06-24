@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محطات مضخات الحريق المتكاملة وأنظمة إدارة الدخان المتطورة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            line-height: 1.8;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        .card {
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 20px;
+        }
+        
+        .icon-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 20px;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+            height: 100%;
+        }
+        
+        .technical-spec {
+            background: #f8f9fa;
+            border-right: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border: 2px solid rgba(102, 126, 234, 0.3);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .table-custom {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .table-custom thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .process-step {
+            position: relative;
+            padding: 20px;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .process-number {
+            position: absolute;
+            top: -15px;
+            right: 30px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .alert-custom {
+            border-right: 4px solid #dc3545;
+            background: #fff5f5;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-tabs-custom {
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .nav-tabs-custom .nav-link {
+            border: none;
+            color: #667eea;
+            font-weight: 600;
+            padding: 15px 25px;
+            border-radius: 10px 10px 0 0;
+            margin-left: 5px;
+        }
+        
+        .nav-tabs-custom .nav-link.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .tab-content {
+            background: white;
+            padding: 30px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        @media print {
+            .hero-section {
+                background: #667eea !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            
+            .card {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+            
+            .section {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+        
+        .safety-warning {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .code-snippet {
+            background: #2d3748;
+            color: #68d391;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-right: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: 15px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .timeline-marker {
+            position: absolute;
+            right: 5px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #667eea;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="display-4 fw-bold mb-4">محطات مضخات الحريق المتكاملة</h1>
+                <h2 class="h3 mb-4">وأنظمة إدارة الدخان المتطورة</h2>
+                <p class="lead mb-5">دليل شامل للتصميم والتنفيذ وفقاً لمعايير NFPA الدولية</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="text-center">
+                            <i class="fas fa-fire-extinguisher fa-3x mb-2"></i>
+                            <h5>محطات الإطفاء</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="text-center">
+                            <i class="fas fa-wind fa-3x mb-2"></i>
+                            <h5>إدارة الدخان</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="text-center">
+                            <i class="fas fa-cogs fa-3x mb-2"></i>
+                            <h5>التحكم الآلي</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="text-center">
+                            <i class="fas fa-shield-alt fa-3x mb-2"></i>
+                            <h5>معايير الأمان</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        
+        <!-- مقدمة شاملة -->
+        <section class="mb-5">
+            <h2 class="section-title">مقدمة شاملة عن أنظمة الحماية من الحريق المتكاملة</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="fs-5">تعتبر محطات مضخات الحريق المتكاملة وأنظمة إدارة الدخان المتطورة من أهم عناصر الحماية من الحريق في المباني الحديثة، خاصة في المباني العالية والمجمعات الكبرى. هذه الأنظمة تلعب دوراً حيوياً في حماية الأرواح والممتلكات من خلال توفير حلول متكاملة للكشف المبكر عن الحرائق، والتحكم في انتشار الدخان، وضمان الإخلاء الآمن للأشخاص.</p>
+                    
+                    <p>في عالم اليوم، مع التطور المستمر في تكنولوجيا البناء وازدياد ارتفاع المباني وتعقيد تصاميمها، أصبحت الحاجة ملحة لأنظمة حماية متطورة قادرة على التعامل مع التحديات الفريدة التي تواجه المباني الحديثة. هذا التطور يتطلب فهماً عميقاً للمعايير الدولية، وخاصة معايير الجمعية الوطنية للحماية من الحريق (NFPA)، والتي تعتبر المرجع الأساسي في هذا المجال.</p>
+                    
+                    <p>إن التكامل بين محطات مضخات الحريق وأنظمة إدارة الدخان ليس مجرد تجميع لأجهزة منفصلة، بل هو نظام متكامل يعمل بتناغم لتحقيق أقصى درجات الحماية والأمان. هذا التكامل يشمل أنظمة التحكم الآلي، وأنظمة المراقبة والإنذار، وأنظمة التهوية الميكانيكية، وأنظمة إدارة المباني (BMS)، جميعها تعمل معاً كوحدة واحدة متناسقة.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>نقاط رئيسية</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>حماية شاملة للأرواح والممتلكات</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>التوافق مع معايير NFPA الدولية</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>أنظمة تحكم آلي متطورة</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>تكامل مع أنظمة إدارة المباني</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>صيانة وفحص دوري منتظم</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- محطات مضخات الحريق المتكاملة -->
+        <section class="mb-5">
+            <h2 class="section-title">محطات مضخات الحريق المتكاملة</h2>
+            
+            <div class="highlight-box">
+                <h4 class="text-gradient mb-3">تعريف وأهمية محطات مضخات الحريق</h4>
+                <p>محطات مضخات الحريق المتكاملة هي مجموعة من المعدات والأجهزة المصممة خصيصاً لتوفير الضغط والتدفق المطلوبين لأنظمة مكافحة الحريق في المباني. تتكون هذه المحطات من عدة مكونات أساسية تعمل معاً بتناغم لضمان استجابة سريعة وفعالة في حالات الطوارئ.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card feature-card">
+                        <div class="icon-box">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h5>المضخة الرئيسية</h5>
+                        <p>المضخة الرئيسية هي قلب النظام، وتكون عادة مضخة طرد مركزي عالية الأداء مصممة لتوفير التدفق والضغط المطلوبين وفقاً لمعايير NFPA 20. تتميز هذه المضخات بقدرتها على العمل بشكل مستمر وموثوق في ظروف الطوارئ.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card feature-card">
+                        <div class="icon-box">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <h5>مضخة الضغط التلقائي</h5>
+                        <p>مضخة صغيرة الحجم تعمل على الحفاظ على الضغط في الشبكة، وتقوم بتشغيل النظام عند انخفاض الضغط. هذه المضخة تضمن الاستجابة الفورية للنظام وتمنع التشغيل غير الضروري للمضخة الرئيسية.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card feature-card">
+                        <div class="icon-box">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h5>لوحة التحكم</h5>
+                        <p>نظام تحكم إلكتروني متطور يدير جميع وظائف المحطة، بما في ذلك المراقبة المستمرة، وإرسال الإنذارات، والتحكم في التشغيل التلقائي. تتضمن شاشات عرض وأجهزة قياس متقدمة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-5 mb-4">مكونات محطة مضخات الحريق المتكاملة</h4>
+            
+            <div class="table-responsive">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>المكون</th>
+                            <th>الوظيفة</th>
+                            <th>المواصفات التقنية</th>
+                            <th>معايير الأمان</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>المضخة الرئيسية</strong></td>
+                            <td>توفير التدفق والضغط الأساسي للنظام</td>
+                            <td>500-5000 GPM، 50-300 PSI</td>
+                            <td>NFPA 20, UL Listed</td>
+                        </tr>
+                        <tr>
+                            <td><strong>المحرك الكهربائي</strong></td>
+                            <td>تشغيل المضخة الرئيسية</td>
+                            <td>15-500 HP، 3 Phase</td>
+                            <td>NEMA Premium Efficiency</td>
+                        </tr>
+                        <tr>
+                            <td><strong>مولد الديزل الاحتياطي</strong></td>
+                            <td>ضمان التشغيل عند انقطاع الكهرباء</td>
+                            <td>25-750 KW</td>
+                            <td>EPA Tier 4, UL 2200</td>
+                        </tr>
+                        <tr>
+                            <td><strong>خزان الوقود</strong></td>
+                            <td>تغذية المولد لمدة 8 ساعات كحد أدنى</td>
+                            <td>100-2000 Gallon</td>
+                            <td>UL 142, EPA Double Wall</td>
+                        </tr>
+                        <tr>
+                            <td><strong>نظام التحكم</strong></td>
+                            <td>إدارة وتنسيق جميع العمليات</td>
+                            <td>PLC Based, HMI Interface</td>
+                            <td>UL 864, NFPA 20</td>
+                        </tr>
+                        <tr>
+                            <td><strong>مضخة الضغط التلقائي</strong></td>
+                            <td>المحافظة على ضغط النظام</td>
+                            <td>5-25 GPM، 100-150 PSI</td>
+                            <td>UL Listed, NFPA 20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="technical-spec">
+                <h5><i class="fas fa-cog me-2"></i>المواصفات التقنية التفصيلية</h5>
+                <p><strong>ضغط التشغيل:</strong> يتراوح ضغط التشغيل العادي بين 100-175 PSI، مع قدرة على الوصول إلى 300 PSI في الأنظمة عالية الضغط. يجب أن تكون المضخة قادرة على توفير 150% من الضغط المطلوب عند التدفق المحدد.</p>
+                
+                <p><strong>معدل التدفق:</strong> يحدد معدل التدفق بناءً على متطلبات النظام، والذي يشمل عدد الرشاشات، ونوع النظام (رش مبكر، رش سريع، إلخ)، ومساحة التغطية. معدلات التدفق الشائعة تتراوح بين 500-5000 GPM.</p>
+                
+                <p><strong>الكفاءة:</strong> يجب أن تحقق المضخة كفاءة لا تقل عن 85% عند نقطة التشغيل المحددة، مع منحنى أداء مستقر يضمن عدم وجود تذبذب في الضغط أو التدفق.</p>
+            </div>
+
+            <h4 class="mt-5 mb-4">أنواع محطات مضخات الحريق</h4>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <h5>محطات التغذية المباشرة</h5>
+                        <p>تتصل مباشرة بشبكة المياه العامة وتعتمد على ضغط الشبكة كمصدر أساسي. تستخدم عادة في المباني منخفضة إلى متوسطة الارتفاع حيث يكون ضغط الشبكة كافياً.</p>
+                        <ul>
+                            <li>سهولة التركيب والصيانة</li>
+                            <li>تكلفة أقل نسبياً</li>
+                            <li>معتمدة على استقرار ضغط الشبكة العامة</li>
+                            <li>مناسبة للمباني حتى 10 طوابق</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <h5>محطات التغذية من الخزانات</h5>
+                        <p>تعتمد على خزانات مياه مخصصة لنظام الإطفاء، مما يضمن توفر كمية كافية من المياه حتى في حالة انقطاع التغذية من الشبكة العامة.</p>
+                        <ul>
+                            <li>استقلالية كاملة عن الشبكة العامة</li>
+                            <li>سعة تخزين محددة وفقاً للمعايير</li>
+                            <li>أنظمة تعبئة وتدوير متطورة</li>
+                            <li>مناسبة للمباني العالية والمجمعات الكبيرة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <h5>محطات التغذية المختلطة</h5>
+                        <p>تجمع بين مزايا النظامين السابقين، حيث تعتمد على الشبكة العامة كمصدر أساسي مع وجود خزان احتياطي للطوارئ.</p>
+                        <ul>
+                            <li>مرونة في التشغيل</li>
+                            <li>أمان إضافي من خلال التنويع</li>
+                            <li>تحكم ذكي في مصادر التغذية</li>
+                            <li>تحسين في الكفاءة التشغيلية</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">4</div>
+                        <h5>محطات متعددة المضخات</h5>
+                        <p>تحتوي على أكثر من مضخة رئيسية للحصول على تدفق أعلى أو لتوفير النسخ الاحتياطي في الأنظمة الحرجة.</p>
+                        <ul>
+                            <li>قدرة تدفق عالية جداً</li>
+                            <li>نسخ احتياطي متعدد</li>
+                            <li>تشغيل متدرج حسب الحاجة</li>
+                            <li>موثوقية عالية للتطبيقات الحرجة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert-custom">
+                <h5><i class="fas fa-exclamation-triangle me-2"></i>متطلبات التركيب والتشغيل</h5>
+                <p>يجب أن تتوافق جميع محطات مضخات الحريق مع معايير NFPA 20 والكودات المحلية. التركيب يتطلب مقاول مختص ومعتمد، مع ضرورة إجراء اختبارات الأداء والقبول قبل التشغيل الفعلي. كما يجب وضع برنامج صيانة دورية شامل يتضمن الفحص الأسبوعي والشهري والسنوي.</p>
+            </div>
+        </section>
+
+        <!-- أنظمة إدارة الدخان المتطورة -->
+        <section class="mb-5">
+            <h2 class="section-title">أنظمة إدارة الدخان المتطورة</h2>
+            
+            <div class="highlight-box">
+                <h4 class="text-gradient mb-3">مفهوم إدارة الدخان وأهميتها</h4>
+                <p>أنظمة إدارة الدخان هي مجموعة من الأنظمة الميكانيكية والإلكترونية المصممة للتحكم في حركة الدخان والغازات الساخنة أثناء الحريق. الهدف الأساسي هو الحفاظ على مسارات الإخلاء خالية من الدخان، وحماية مناطق اللجوء، وتسهيل عمليات الإطفاء والإنقاذ.</p>
+                <p>تعتبر هذه الأنظمة حيوية خاصة في المباني العالية والمجمعات الكبيرة، حيث أن الدخان يمكن أن ينتشر بسرعة عبر الممرات والسلالم، مما يعرض حياة الأشخاص للخطر حتى لو كان الحريق في منطقة بعيدة.</p>
+            </div>
+
+            <h4 class="mt-4 mb-3">مبادئ إدارة الدخان الأساسية</h4>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-arrows-alt me-2"></i>التحكم في الانتشار</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>منع انتشار الدخان من منطقة الحريق إلى المناطق الأخرى من خلال إنشاء حواجز ضغط وأنظمة إغلاق تلقائية.</p>
+                            <ul>
+                                <li>حواجز الدخان التلقائية</li>
+                                <li>أبواب مقاومة للحريق</li>
+                                <li>أنظمة الإغلاق التلقائي</li>
+                                <li>فواصل الدخان الميكانيكية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-wind me-2"></i>الإخلاء الميكانيكي</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>استخدام مراوح الشفط لإزالة الدخان من المناطق المغلقة وتوجيهه إلى الخارج بطريقة آمنة ومحكومة.</p>
+                            <ul>
+                                <li>مراوح شفط عالية الحرارة</li>
+                                <li>مجاري دخان مخصصة</li>
+                                <li>فتحات التهوية التلقائية</li>
+                                <li>أنظمة الشفط المتدرجة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-compress-arrows-alt me-2"></i>الضغط الإيجابي</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>إنشاء ضغط إيجابي في مناطق الحماية مثل السلالم ومناطق اللجوء لمنع دخول الدخان إليها.</p>
+                            <ul>
+                                <li>مراوح الضغط الإيجابي</li>
+                                <li>أنظمة التحكم في الضغط</li>
+                                <li>مراقبة الضغط المستمرة</li>
+                                <li>صمامات تحكم تلقائية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-5 mb-4">مكونات نظام إدارة الدخان</h4>
+            
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>أجهزة الكشف والإنذار</h5>
+                        <p>تشمل أجهزة كشف الدخان المتقدمة، وأجهزة كشف الحرارة، وأجهزة كشف الغازات. هذه الأجهزة تشكل الخط الأول للدفاع وتقوم بتفعيل باقي مكونات النظام فور اكتشاف الحريق.</p>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <strong>كاشفات الدخان الضوئية:</strong>
+                                <ul>
+                                    <li>حساسية عالية للجسيمات الدقيقة</li>
+                                    <li>استجابة سريعة للحرائق المشتعلة</li>
+                                    <li>تقنية LED متطورة</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <strong>كاشفات الدخان الأيونية:</strong>
+                                <ul>
+                                    <li>فعالة مع الحرائق السريعة</li>
+                                    <li>كشف الغازات اللامرئية</li>
+                                    <li>استجابة للجسيمات الصغيرة</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>مراوح إدارة الدخان</h5>
+                        <p>مراوح مصممة خصيصاً لتحمل درجات الحرارة العالية والعمل في بيئة الحريق. تنقسم إلى مراوح شفط لإزالة الدخان ومراوح ضغط لحماية مناطق الإخلاء.</p>
+                        
+                        <div class="table-responsive mt-3">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>نوع المروحة</th>
+                                        <th>درجة الحرارة</th>
+                                        <th>التدفق</th>
+                                        <th>التطبيق</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>مراوح الشفط F300</td>
+                                        <td>300°C لمدة ساعتين</td>
+                                        <td>5,000-50,000 m³/h</td>
+                                        <td>الأتريوم والمساحات الكبيرة</td>
+                                    </tr>
+                                    <tr>
+                                        <td>مراوح الشفط F400</td>
+                                        <td>400°C لمدة ساعتين</td>
+                                        <td>3,000-30,000 m³/h</td>
+                                        <td>المطابخ والمناطق الصناعية</td>
+                                    </tr>
+                                    <tr>
+                                        <td>مراوح الضغط</td>
+                                        <td>250°C لمدة ساعة</td>
+                                        <td>1,000-10,000 m³/h</td>
+                                        <td>السلالم ومناطق اللجوء</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>فتحات التهوية التلقائية (AOV)</h5>
+                        <p>فتحات تلقائية تفتح عند اكتشاف الحريق لإخراج الدخان والحرارة من المبنى. تتحكم فيها أنظمة إلكترونية متطورة ويمكن تشغيلها يدوياً في حالات الطوارئ.</p>
+                        
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <div class="technical-spec">
+                                    <h6>الفتحات السقفية</h6>
+                                    <ul>
+                                        <li>مساحة فتح تصل إلى 10 م²</li>
+                                        <li>فتح تلقائي خلال 60 ثانية</li>
+                                        <li>مقاومة للرياح 150 كم/ساعة</li>
+                                        <li>نظام إغلاق في حالة المطر</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="technical-spec">
+                                    <h6>الفتحات الجانبية</h6>
+                                    <ul>
+                                        <li>تركيب في الواجهات</li>
+                                        <li>تصميم معماري متكامل</li>
+                                        <li>حماية من العوامل الجوية</li>
+                                        <li>تحكم في اتجاه التدفق</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="technical-spec">
+                                    <h6>أنظمة التحكم</h6>
+                                    <ul>
+                                        <li>تحكم محلي ومركزي</li>
+                                        <li>حساسات الرياح والمطر</li>
+                                        <li>بطاريات احتياطية</li>
+                                        <li>إنذارات الأعطال</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="safety-warning">
+                <h5><i class="fas fa-exclamation-triangle me-2"></i>تحذير مهم</h5>
+                <p>يجب أن تكون جميع مكونات نظام إدارة الدخان قادرة على العمل بشكل مستقل عن أنظمة التكييف العادية، مع مصادر طاقة احتياطية منفصلة. كما يجب إجراء اختبارات دورية للتأكد من سلامة الأداء في جميع الظروف.</p>
+            </div>
+        </section>
+
+        <!-- معايير NFPA 92 -->
+        <section class="mb-5">
+            <h2 class="section-title">معايير NFPA 92 لأنظمة إدارة الدخان</h2>
+            
+            <div class="highlight-box">
+                <h4 class="text-gradient mb-3">نظرة عامة على معيار NFPA 92</h4>
+                <p>معيار NFPA 92 هو الدليل الأساسي لتصميم أنظمة التحكم في الدخان في المباني. يغطي هذا المعيار جميع جوانب أنظمة إدارة الدخان من التصميم الأولي إلى التشغيل والصيانة، ويقدم إرشادات مفصلة للمهندسين والمقاولين والمشغلين.</p>
+                <p>تم تطوير هذا المعيار بناءً على أبحاث علمية واسعة وخبرات عملية من حوادث حقيقية، ويتم تحديثه بانتظام ليواكب التطورات التكنولوجية والدروس المستفادة من الممارسات العملية.</p>
+            </div>
+
+            <h4 class="mt-4 mb-3">الأقسام الرئيسية لمعيار NFPA 92</h4>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-book me-2"></i>الفصل الأول: التعريفات والمبادئ</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>يحدد هذا الفصل المصطلحات الأساسية والمبادئ العلمية لإدارة الدخان، بما في ذلك:</p>
+                            <ul>
+                                <li><strong>الطفو الحراري:</strong> حركة الدخان الساخن نحو الأعلى</li>
+                                <li><strong>الضغط التفاضلي:</strong> الفرق في الضغط بين المناطق</li>
+                                <li><strong>معدل إنتاج الدخان:</strong> كمية الدخان المتولدة من النار</li>
+                                <li><strong>درجة الحرارة الحرجة:</strong> النقطة التي تصبح فيها البيئة غير قابلة للعيش</li>
+                                <li><strong>الرؤية:</strong> المسافة التي يمكن رؤيتها عبر الدخان</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-drafting-compass me-2"></i>الفصل الثاني: متطلبات التصميم</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>يقدم المتطلبات التفصيلية لتصميم أنظمة إدارة الدخان، تشمل:</p>
+                            <ul>
+                                <li><strong>تحليل الأحمال الحرارية:</strong> حساب كمية الحرارة والدخان المتوقعة</li>
+                                <li><strong>تصميم مسارات الإخلاء:</strong> ضمان بقائها خالية من الدخان</li>
+                                <li><strong>حسابات التدفق:</strong> تحديد قدرات المراوح والفتحات</li>
+                                <li><strong>توزيع الضغط:</strong> تصميم أنظمة الضغط الإيجابي</li>
+                                <li><strong>التكامل مع الأنظمة الأخرى:</strong> التنسيق مع أنظمة الإطفاء والإنذار</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-tools me-2"></i>الفصل الثالث: التركيب والتشغيل</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>يحدد متطلبات التركيب والتشغيل الآمن للأنظمة:</p>
+                            <ul>
+                                <li><strong>مواصفات المعدات:</strong> متطلبات الأداء لكل مكون</li>
+                                <li><strong>إجراءات التركيب:</strong> خطوات التركيب الصحيحة</li>
+                                <li><strong>اختبارات القبول:</strong> فحوصات ما قبل التشغيل</li>
+                                <li><strong>التدريب:</strong> متطلبات تدريب المشغلين</li>
+                                <li><strong>الوثائق:</strong> متطلبات التوثيق والسجلات</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-wrench me-2"></i>الفصل الرابع: الصيانة والفحص</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>يوضح متطلبات الصيانة الدورية والفحص المنتظم:</p>
+                            <ul>
+                                <li><strong>جداول الصيانة:</strong> تواتر الفحص لكل مكون</li>
+                                <li><strong>إجراءات الاختبار:</strong> طرق فحص الأداء</li>
+                                <li><strong>معايير القبول:</strong> المعايير المطلوبة للاجتياز</li>
+                                <li><strong>إجراءات الإصلاح:</strong> خطوات إصلاح الأعطال</li>
+                                <li><strong>السجلات:</strong> متطلبات توثيق الأنشطة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-5 mb-4">المتطلبات التقنية المحددة في NFPA 92</h4>
+            
+            <div class="technical-spec">
+                <h5><i class="fas fa-calculator me-2"></i>حسابات التصميم الأساسية</h5>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>معدل إنتاج الحرارة (HRR)</h6>
+                        <p>يحدد معيار NFPA 92 معادلات حساب معدل إنتاج الحرارة للمواد المختلفة:</p>
+                        <div class="code-snippet">
+Q = α × t²
+حيث:
+Q = معدل إنتاج الحرارة (kW)
+α = معامل نمو النار (kW/s²)
+t = الزمن من بداية الاشتعال (s)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>معدل إنتاج الدخان</h6>
+                        <p>حساب كمية الدخان المتولدة من الحريق:</p>
+                        <div class="code-snippet">
+Ms = Ys × Q
+حيث:
+Ms = معدل إنتاج الدخان (kg/s)
+Ys = معامل إنتاج الدخان (kg/kW)
+Q = معدل إنتاج الحرارة (kW)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="technical-spec">
+                <h5><i class="fas fa-wind me-2"></i>حسابات التهوية</h5>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>التدفق المطلوب للشفط</h6>
+                        <div class="code-snippet">
+V = K × As × √(2 × g × H × ΔT / T)
+حيث:
+V = معدل التدفق الحجمي (m³/s)
+K = معامل التصريف
+As = مساحة فتحة الشفط (m²)
+g = تسارع الجاذبية (9.81 m/s²)
+H = ارتفاع طبقة الدخان (m)
+ΔT = فرق درجة الحرارة (K)
+T = درجة الحرارة المطلقة (K)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>الضغط التفاضلي</h6>
+                        <div class="code-snippet">
+ΔP = 0.5 × ρ × v²
+حيث:
+ΔP = الضغط التفاضلي (Pa)
+ρ = كثافة الهواء (kg/m³)
+v = سرعة الهواء (m/s)
+
+الحد الأدنى: 12.5 Pa
+الحد الأقصى: 75 Pa
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-5 mb-4">أنواع أنظمة إدارة الدخان وفقاً لـ NFPA 92</h4>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <h5>أنظمة الاستخراج الطبيعي</h5>
+                        <p>تعتمد على الطفو الحراري الطبيعي لإزالة الدخان من خلال فتحات في السقف أو الجدران العلوية.</p>
+                        <ul>
+                            <li>لا تتطلب طاقة كهربائية</li>
+                            <li>صيانة أقل</li>
+                            <li>فعالة في المساحات الكبيرة</li>
+                            <li>تعتمد على ظروف الطقس</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <h5>أنظمة الاستخراج الميكانيكي</h5>
+                        <p>تستخدم مراوح لإزالة الدخان بقوة، مما يوفر تحكماً أكبر في عملية الإزالة.</p>
+                        <ul>
+                            <li>تحكم دقيق في معدل الإزالة</li>
+                            <li>فعالية في جميع الظروف</li>
+                            <li>قابلية للتكامل مع أنظمة أخرى</li>
+                            <li>تتطلب مصدر طاقة موثوق</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <h5>أنظمة الضغط التفاضلي</h5>
+                        <p>تقوم بحماية المناطق الحرجة من خلال إنشاء ضغط إيجابي يمنع دخول الدخان.</p>
+                        <ul>
+                            <li>حماية فعالة لمسارات الإخلاء</li>
+                            <li>تشغيل مستمر أثناء الحريق</li>
+                            <li>تكامل مع أنظمة الإنذار</li>
+                            <li>مراقبة مستمرة للضغط</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive mt-4">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>نوع المبنى</th>
+                            <th>النظام المطلوب</th>
+                            <th>معدل الاستخراج</th>
+                            <th>متطلبات خاصة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>الأتريوم (أقل من 15م)</td>
+                            <td>استخراج طبيعي أو ميكانيكي</td>
+                            <td>4-6 تغييرات/ساعة</td>
+                            <td>فتحات سقفية كافية</td>
+                        </tr>
+                        <tr>
+                            <td>الأتريوم (أكثر من 15م)</td>
+                            <td>استخراج ميكانيكي إجباري</td>
+                            <td>6-10 تغييرات/ساعة</td>
+                            <td>مراوح عالية الحرارة</td>
+                        </tr>
+                        <tr>
+                            <td>السلالم المغلقة</td>
+                            <td>ضغط إيجابي</td>
+                            <td>25-75 Pa</td>
+                            <td>مراوح ضغط في كل طابق</td>
+                        </tr>
+                        <tr>
+                            <td>المصاعد</td>
+                            <td>ضغط إيجابي</td>
+                            <td>25-50 Pa</td>
+                            <td>تحكم في فتح الأبواب</td>
+                        </tr>
+                        <tr>
+                            <td>الممرات الطويلة</td>
+                            <td>استخراج واستبدال</td>
+                            <td>2-4 تغييرات/ساعة</td>
+                            <td>توزيع متساوي للهواء</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- مراوح ضغط السلالم ومناطق اللجوء -->
+        <section class="mb-5">
+            <h2 class="section-title">مراوح ضغط السلالم ومناطق اللجوء</h2>
+            
+            <div class="highlight-box">
+                <h4 class="text-gradient mb-3">أهمية أنظمة الضغط الإيجابي</h4>
+                <p>تعتبر أنظمة الضغط الإيجابي في السلالم ومناطق اللجوء من أهم عناصر الحماية من الدخان في المباني العالية. هذه الأنظمة تقوم بإنشاء ضغط هواء أعلى داخل مناطق الحماية مقارنة بالمناطق المجاورة، مما يمنع دخول الدخان والغازات السامة إلى هذه المناطق الحرجة.</p>
+                <p>الهدف الأساسي هو ضمان بقاء مسارات الإخلاء صالحة للاستخدام أطول فترة ممكنة، وتوفير بيئة آمنة للأشخاص أثناء عملية الإخلاء أو اللجوء المؤقت.</p>
+            </div>
+
+            <h4 class="mt-4 mb-3">مبادئ عمل أنظمة الضغط الإيجابي</h4>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-compress-arrows-alt me-2"></i>مبدأ الضغط التفاضلي</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>يقوم النظام بإنشاء فرق ضغط بين منطقة الحماية والمناطق المجاورة، حيث يكون الضغط داخل منطقة الحماية أعلى. هذا الفرق في الضغط يخلق تياراً هوائياً يتدفق من الداخل إلى الخارج عند فتح الأبواب.</p>
+                            <ul>
+                                <li>الحد الأدنى للضغط التفاضلي: 12.5 Pa</li>
+                                <li>الحد الأقصى للضغط التفاضلي: 75 Pa</li>
+                                <li>الضغط المثالي: 25-50 Pa</li>
+                                <li>سرعة الهواء عند الأبواب: 0.75-2.5 m/s</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-arrows-alt-v me-2"></i>تأثير المدخنة الحرارية</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>في المباني العالية، يحدث تأثير المدخنة الحرارية بسبب اختلاف الكثافة بين الهواء الداخلي والخارجي. هذا التأثير يجب أخذه في الاعتبار عند تصميم أنظمة الضغط.</p>
+                            <ul>
+                                <li>تأثير أقوى في الأجواء الباردة</li>
+                                <li>يزيد مع ارتفاع المبنى</li>
+                                <li>يؤثر على توزيع الضغط في السلم</li>
+                                <li>يتطلب تعديل قدرة المراوح</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-4 mb-3">تصميم أنظمة مراوح الضغط</h4>
+            
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>حساب قدرة المراوح المطلوبة</h5>
+                        <p>يتم حساب قدرة المراوح بناءً على عدة عوامل تشمل حجم المنطقة المحمية، وعدد الأبواب، ومعدل التسرب المتوقع.</p>
+                        
+                        <div class="technical-spec">
+                            <h6>المعادلة الأساسية لحساب التدفق:</h6>
+                            <div class="code-snippet">
+Q = A × √(2 × ΔP / ρ)
+حيث:
+Q = معدل التدفق المطلوب (m³/s)
+A = مساحة الفتحات والتسريبات (m²)
+ΔP = الضغط التفاضلي المطلوب (Pa)
+ρ = كثافة الهواء (kg/m³)
+
+مثال:
+لسلم بمساحة 20 م²، مع باب واحد:
+- مساحة التسرب حول الباب: 0.01 م²
+- ضغط تفاضلي مطلوب: 50 Pa
+- كثافة الهواء: 1.2 kg/m³
+
+Q = 0.01 × √(2 × 50 / 1.2) = 0.091 m³/s
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>توزيع المراوح في المبنى</h5>
+                        <p>يجب توزيع المراوح بطريقة تضمن توزيعاً متساوياً للضغط في جميع أجزاء السلم. هناك عدة استراتيجيات للتوزيع:</p>
+                        
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="technical-spec">
+                                    <h6>التوزيع المتعدد المستويات</h6>
+                                    <ul>
+                                        <li>مروحة في كل 3-5 طوابق</li>
+                                        <li>توزيع متساوي للضغط</li>
+                                        <li>أداء أفضل في المباني العالية</li>
+                                        <li>صيانة أكثر تعقيداً</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="technical-spec">
+                                    <h6>التوزيع المركزي</h6>
+                                    <ul>
+                                        <li>مروحة واحدة كبيرة</li>
+                                        <li>توزيع عبر مجاري الهواء</li>
+                                        <li>أقل تكلفة في التركيب</li>
+                                        <li>مناسب للمباني المتوسطة</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="technical-spec">
+                                    <h6>التوزيع المختلط</h6>
+                                    <ul>
+                                        <li>مزيج من الاستراتيجيتين</li>
+                                        <li>مرونة في التحكم</li>
+                                        <li>أداء محسن</li>
+                                        <li>تكلفة متوسطة</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>أنواع المراوح المستخدمة</h5>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-custom">
+                                <thead>
+                                    <tr>
+                                        <th>نوع المروحة</th>
+                                        <th>التدفق</th>
+                                        <th>الضغط</th>
+                                        <th>المميزات</th>
+                                        <th>التطبيق</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>الطرد المركزي</td>
+                                        <td>500-5000 m³/h</td>
+                                        <td>100-1000 Pa</td>
+                                        <td>ضغط عالي، هادئة</td>
+                                        <td>السلالم المغلقة</td>
+                                    </tr>
+                                    <tr>
+                                        <td>المحورية</td>
+                                        <td>1000-10000 m³/h</td>
+                                        <td>50-500 Pa</td>
+                                        <td>تدفق عالي، مدمجة</td>
+                                        <td>المساحات الكبيرة</td>
+                                    </tr>
+                                    <tr>
+                                        <td>المختلطة</td>
+                                        <td>800-8000 m³/h</td>
+                                        <td>200-800 Pa</td>
+                                        <td>متوازنة الأداء</td>
+                                        <td>التطبيقات العامة</td>
+                                    </tr>
+                                    <tr>
+                                        <td>النفاثة</td>
+                                        <td>200-2000 m³/h</td>
+                                        <td>50-200 Pa</td>
+                                        <td>سرعة عالية، مدمجة</td>
+                                        <td>المساحات الضيقة</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-5 mb-4">مناطق اللجوء وأنظمة حمايتها</h4>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-shield-alt me-2"></i>تعريف مناطق اللجوء</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>مناطق اللجوء هي مساحات محمية في المباني مصممة لإيواء الأشخاص مؤقتاً أثناء حالات الطوارئ، خاصة للأشخاص ذوي الاحتياجات الخاصة الذين قد يحتاجون مساعدة في الإخلاء.</p>
+                            
+                            <h6 class="mt-3">المتطلبات الأساسية:</h6>
+                            <ul>
+                                <li>مقاومة للحريق لمدة ساعتين على الأقل</li>
+                                <li>نظام اتصال مع مركز التحكم</li>
+                                <li>إضاءة طوارئ مستقلة</li>
+                                <li>تهوية مستقلة أو ضغط إيجابي</li>
+                                <li>مساحة كافية للأشخاص المنتظرين</li>
+                                <li>وصول سهل لفرق الإنقاذ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-users me-2"></i>أنواع مناطق اللجوء</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <h6>مناطق اللجوء الأفقية</h6>
+                                <p>مساحات في نفس الطابق محمية بحواجز مقاومة للحريق</p>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <h6>مناطق اللجوء العمودية</h6>
+                                <p>سلالم مضغوطة أو مناطق آمنة في طوابق مختلفة</p>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <h6>غرف الأمان</h6>
+                                <p>غرف مصممة خصيصاً للحماية من الحريق والدخان</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="technical-spec">
+                <h5><i class="fas fa-ruler-combined me-2"></i>معايير التصميم لمناطق اللجوء</h5>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>المساحة المطلوبة</h6>
+                        <ul>
+                            <li><strong>للأشخاص العاديين:</strong> 0.28 م² لكل شخص</li>
+                            <li><strong>لمستخدمي الكراسي المتحركة:</strong> 0.84 م² لكل شخص</li>
+                            <li><strong>الحد الأدنى للعرض:</strong> 0.9 متر</li>
+                            <li><strong>الحد الأدنى للارتفاع:</strong> 2.1 متر</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>متطلبات الضغط والتهوية</h6>
+                        <ul>
+                            <li><strong>الضغط الإيجابي:</strong> 12.5-25 Pa</li>
+                            <li><strong>معدل تجديد الهواء:</strong> 1-2 تغيير/ساعة</li>
+                            <li><strong>مدة الحماية:</strong> 2-4 ساعات كحد أدنى</li>
+                            <li><strong>مصدر هواء مستقل:</strong> إجباري</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="safety-warning">
+                <h5><i class="fas fa-exclamation-triangle me-2"></i>تحذيرات مهمة للتشغيل</h5>
+                <ul>
+                    <li>يجب اختبار أنظمة الضغط شهرياً للتأكد من سلامة الأداء</li>
+                    <li>يجب صيانة المراوح والمحركات وفقاً لجدول زمني محدد</li>
+                    <li>يجب التأكد من عدم وجود عوائق في مجاري الهواء</li>
+                    <li>يجب فحص أجهزة القياس والتحكم بانتظام</li>
+                    <li>يجب تدريب الموظفين على إجراءات التشغيل اليدوي</li>
+                    <li>يجب توفير مصادر طاقة احتياطية للأنظمة الحرجة</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- أنظمة تهوية مناطق الحريق -->
+        <section class="mb-5">
+            <h2 class="section-title">أنظمة تهوية مناطق الحريق</h2>
+            
+            <div class="highlight-box">
+                <h4 class="text-gradient mb-3">مفهوم تهوية مناطق الحريق</h4>
+                <p>تهوية مناطق الحريق هي عملية منظمة لإزالة الحرارة والدخان والغازات السامة من المناطق المتأثرة بالحريق، وتوفير هواء نظيف لمساعدة عمليات الإطفاء والإنقاذ. هذه الأنظمة تلعب دوراً حيوياً في تحسين الرؤية، وتقليل درجات الحرارة، وخلق بيئة أكثر أماناً لرجال الإطفاء والمدنيين.</p>
+                <p>التهوية الفعالة يمكن أن تقلل بشكل كبير من انتشار الحريق، وتحد من الأضرار الناجمة عن الدخان، وتساعد في عمليات البحث والإنقاذ.</p>
+            </div>
+
+            <h4 class="mt-4 mb-3">استراتيجيات التهوية</h4>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-arrow-up me-2"></i>التهوية العمودية</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>تعتمد على إزالة الحرارة والدخان من أعلى المبنى، مستفيدة من الطفو الطبيعي للهواء الساخن.</p>
+                            
+                            <h6>المزايا:</h6>
+                            <ul>
+                                <li>فعالية عالية في إزالة الحرارة</li>
+                                <li>تحسين الرؤية في الطوابق السفلية</li>
+                                <li>تقليل انتشار الحريق أفقياً</li>
+                                <li>دعم العمليات الداخلية</li>
+                            </ul>
+                            
+                            <h6>التطبيقات:</h6>
+                            <ul>
+                                <li>المباني العالية</li>
+                                <li>المصانع ذات الأسقف العالية</li>
+                                <li>المستودعات</li>
+                                <li>الأتريوم</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-arrows-alt-h me-2"></i>التهوية الأفقية</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>تتضمن إزالة الدخان من النوافذ والفتحات الجانبية، مما يخلق تياراً أفقياً عبر المبنى.</p>
+                            
+                            <h6>المزايا:</h6>
+                            <ul>
+                                <li>سهولة التنفيذ</li>
+                                <li>تحكم أفضل في اتجاه التدفق</li>
+                                <li>إمكانية التطبيق في جميع الطوابق</li>
+                                <li>دعم الإخلاء الجانبي</li>
+                            </ul>
+                            
+                            <h6>التطبيقات:</h6>
+                            <ul>
+                                <li>المكاتب</li>
+                                <li>المدارس</li>
+                                <li>المستشفيات</li>
+                                <li>المباني السكنية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-4 mb-3">مكونات أنظمة التهوية</h4>
+            
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>مراوح الشفط عالية الحرارة</h5>
+                        <p>مراوح مصممة خصيصاً لتحمل درجات الحرارة العالية والعمل في بيئة الحريق لفترات طويلة.</p>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>المواصفة</th>
+                                        <th>F200</th>
+                                        <th>F300</th>
+                                        <th>F400</th>
+                                        <th>F600</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>درجة الحرارة</td>
+                                        <td>200°C/2hr</td>
+                                        <td>300°C/2hr</td>
+                                        <td>400°C/2hr</td>
+                                        <td>600°C/2hr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>التدفق</td>
+                                        <td>1,000-15,000 m³/h</td>
+                                        <td>2,000-30,000 m³/h</td>
+                                        <td>3,000-40,000 m³/h</td>
+                                        <td>5,000-60,000 m³/h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>الضغط</td>
+                                        <td>100-500 Pa</td>
+                                        <td>200-800 Pa</td>
+                                        <td>300-1000 Pa</td>
+                                        <td>400-1200 Pa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>التطبيق</td>
+                                        <td>المكاتب</td>
+                                        <td>المولات</td>
+                                        <td>المصانع</td>
+                                        <td>المناطق الصناعية</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>مجاري الهواء المقاومة للحريق</h5>
+                        <p>مجاري مصممة لنقل الهواء الساخن والدخان دون أن تتعرض للتلف أو تسمح بانتشار الحريق.</p>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>مواد البناء:</h6>
+                                <ul>
+                                    <li><strong>الصلب المجلفن:</strong> مقاوم للتآكل، سهل الصيانة</li>
+                                    <li><strong>الصلب المقاوم للصدأ:</strong> مقاومة عالية للحرارة</li>
+                                    <li><strong>الألومنيوم:</strong> خفيف الوزن، مقاوم للتآكل</li>
+                                    <li><strong>الخرسانة المسلحة:</strong> للتطبيقات الثقيلة</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>العزل الحراري:</h6>
+                                <ul>
+                                    <li><strong>الصوف المعدني:</strong> مقاوم للحريق، عازل جيد</li>
+                                    <li><strong>الألياف الخزفية:</strong> مقاومة عالية للحرارة</li>
+                                    <li><strong>البيرلايت:</strong> خفيف الوزن، عازل طبيعي</li>
+                                    <li><strong>الأسبستوس البديل:</strong> آمن وفعال</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>صمامات التحكم في الحريق</h5>
+                        <p>صمامات تلقائية تتحكم في تدفق الهواء أثناء الحريق، وتمنع انتشار الدخان والنار عبر مجاري الهواء.</p>
+                        
+                        <div class="technical-spec">
+                            <h6>أنواع الصمامات:</h6>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <strong>صمامات الدخان:</strong>
+                                    <ul>
+                                        <li>تفعيل بواسطة كاشف الدخان</li>
+                                        <li>إغلاق تلقائي في 10 ثوان</li>
+                                        <li>تسرب أقل من 3%</li>
+                                        <li>تشغيل يدوي طارئ</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <strong>صمامات الحريق:</strong>
+                                    <ul>
+                                        <li>تفعيل حراري في 72°C</li>
+                                        <li>مقاومة للحريق 90-180 دقيقة</li>
+                                        <li>إغلاق محكم</li>
+                                        <li>إعادة تشغيل يدوي</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <strong>صمامات مركبة:</strong>
+                                    <ul>
+                                        <li>تجمع وظائف متعددة</li>
+                                        <li>تحكم ذكي متقدم</li>
+                                        <li>مراقبة مستمرة</li>
+                                        <li>صيانة مبسطة</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-5 mb-4">تصميم أنظمة التهوية الشاملة</h4>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="technical-spec">
+                        <h5><i class="fas fa-drafting-compass me-2"></i>خطوات التصميم</h5>
+                        
+                        <div class="process-step">
+                            <div class="process-number">1</div>
+                            <h6>تحليل المبنى والمخاطر</h6>
+                            <p>دراسة شاملة لطبيعة المبنى، والأنشطة داخله، والمواد القابلة للاشتعال، وتحديد السيناريوهات المحتملة للحريق.</p>
+                            <ul>
+                                <li>تحديد مناطق الخطر العالي</li>
+                                <li>تقييم أحمال الحريق</li>
+                                <li>تحليل مسارات انتشار الدخان</li>
+                                <li>تحديد نقاط الإخلاء الحرجة</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">2</div>
+                            <h6>حساب متطلبات التهوية</h6>
+                            <p>حساب كمية الهواء المطلوبة لإزالة الحرارة والدخان بفعالية، وتحديد مواقع المراوح والفتحات.</p>
+                            <div class="code-snippet">
+حساب معدل الاستخراج:
+V = Q / (ρ × Cp × ΔT)
+
+حيث:
+V = معدل التدفق الحجمي (m³/s)
+Q = معدل إنتاج الحرارة (kW)
+ρ = كثافة الهواء (kg/m³)
+Cp = الحرارة النوعية (kJ/kg.K)
+ΔT = فرق درجة الحرارة (K)
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">3</div>
+                            <h6>تصميم شبكة التوزيع</h6>
+                            <p>تصميم مجاري الهواء والفتحات لضمان توزيع متساوي وفعال للتهوية في جميع أنحاء المبنى.</p>
+                            <ul>
+                                <li>حساب أقطار المجاري</li>
+                                <li>تحديد مواقع الفتحات</li>
+                                <li>تصميم نظام التحكم</li>
+                                <li>تحديد نقاط الصيانة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-chart-line me-2"></i>معايير الأداء</h5>
+                        </div>
+                        <div class="card-body">
+                            <h6>معدلات التهوية المطلوبة:</h6>
+                            <ul>
+                                <li><strong>المكاتب:</strong> 4-6 تغييرات/ساعة</li>
+                                <li><strong>المولات:</strong> 6-10 تغييرات/ساعة</li>
+                                <li><strong>المصانع:</strong> 8-15 تغييرات/ساعة</li>
+                                <li><strong>المستودعات:</strong> 2-4 تغييرات/ساعة</li>
+                            </ul>
+                            
+                            <h6>معايير الأداء:</h6>
+                            <ul>
+                                <li><strong>الرؤية:</strong> 10 متر كحد أدنى</li>
+                                <li><strong>درجة الحرارة:</strong> أقل من 60°C</li>
+                                <li><strong>تركيز CO:</strong> أقل من 1400 ppm</li>
+                                <li><strong>تركيز O₂:</strong> أكثر من 15%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert-custom">
+                <h5><i class="fas fa-exclamation-triangle me-2"></i>اعتبارات التصميم المهمة</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>العوامل البيئية:</h6>
+                        <ul>
+                            <li>اتجاه وسرعة الرياح السائدة</li>
+                            <li>درجات الحرارة الخارجية</li>
+                            <li>الرطوبة والأمطار</li>
+                            <li>التلوث الهوائي المحيط</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>العوامل الهيكلية:</h6>
+                        <ul>
+                            <li>مقاومة المبنى للحريق</li>
+                            <li>توزيع الأحمال الهيكلية</li>
+                            <li>إمكانية الوصول للصيانة</li>
+                            <li>التكامل مع الأنظمة الأخرى</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- أنظمة التحكم الآلي المتكاملة -->
+        <section class="mb-5">
+            <h2 class="section-title">أنظمة التحكم الآلي المتكاملة</h2>
+            
+            <div class="highlight-box">
+                <h4 class="text-gradient mb-3">مفهوم التحكم الآلي في أنظمة الحماية من الحريق</h4>
+                <p>أنظمة التحكم الآلي المتكاملة هي العقل المدبر لجميع أنظمة الحماية من الحريق في المبنى. هذه الأنظمة تقوم بتنسيق العمل بين جميع المكونات المختلفة، من أجهزة الكشف والإنذار، إلى محطات المضخات، وأنظمة إدارة الدخان، وأنظمة الإخلاء. الهدف هو تحقيق استجابة سريعة ومنسقة وفعالة في حالات الطوارئ.</p>
+                <p>هذه الأنظمة تستخدم تقنيات متقدمة مثل المعالجات المبرمجة (PLC)، وأنظمة الإشراف والتحكم (SCADA)، وتقنيات الذكاء الاصطناعي لتحليل البيانات واتخاذ القرارات في الوقت الفعلي.</p>
+            </div>
+
+            <h4 class="mt-4 mb-3">مكونات نظام التحكم الآلي</h4>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card feature-card">
+                        <div class="icon-box">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h5>وحدة التحكم المركزية</h5>
+                        <p>قلب النظام الذي يقوم بجمع البيانات من جميع أجهزة الاستشعار، ومعالجتها، واتخاذ القرارات المناسبة، وإرسال الأوامر إلى الأجهزة التنفيذية.</p>
+                        <ul>
+                            <li>معالج مركزي عالي الأداء</li>
+                            <li>ذاكرة تخزين للبيانات والبرامج</li>
+                            <li>واجهات اتصال متعددة</li>
+                            <li>نظام تشغيل في الوقت الفعلي</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card feature-card">
+                        <div class="icon-box">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h5>شبكة الاتصالات</h5>
+                        <p>نظام اتصالات متقدم يربط جميع مكونات النظام ويسمح بتبادل البيانات والأوامر بسرعة وموثوقية عالية.</p>
+                        <ul>
+                            <li>بروتوكولات اتصال صناعية</li>
+                            <li>شبكات مقاومة للحريق</li>
+                            <li>أنظمة احتياطية متعددة</li>
+                            <li>تشفير وحماية البيانات</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card feature-card">
+                        <div class="icon-box">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h5>واجهة المستخدم</h5>
+                        <p>نظام عرض وتحكم يسمح للمشغلين بمراقبة حالة النظام، وتلقي الإنذارات، والتدخل اليدوي عند الحاجة.</p>
+                        <ul>
+                            <li>شاشات عرض عالية الدقة</li>
+                            <li>واجهة رسومية سهلة الاستخدام</li>
+                            <li>أنظمة إنذار صوتية ومرئية</li>
+                            <li>تحكم عن بعد</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-4 mb-3">وظائف النظام الأساسية</h4>
+            
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>الكشف والإنذار المبكر</h5>
+                        <p>النظام يراقب باستمرار جميع أجهزة الكشف في المبنى، ويحلل البيانات لتحديد وجود حريق أو خطر محتمل.</p>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>أنواع الكشف:</h6>
+                                <ul>
+                                    <li><strong>كشف الدخان:</strong> ضوئي، أيوني، بالأشعة تحت الحمراء</li>
+                                    <li><strong>كشف الحرارة:</strong> ثابت، معدل الارتفاع، خطي</li>
+                                    <li><strong>كشف اللهب:</strong> أشعة فوق بنفسجية، تحت حمراء</li>
+                                    <li><strong>كشف الغازات:</strong> أول أكسيد الكربون، غازات قابلة للاشتعال</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>معالجة الإشارات:</h6>
+                                <ul>
+                                    <li>تحليل الإشارات المتعددة</li>
+                                    <li>تأكيد الإنذارات</li>
+                                    <li>تحديد موقع الحريق</li>
+                                    <li>منع الإنذارات الكاذبة</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>تفعيل أنظمة الإطفاء</h5>
+                        <p>عند تأكيد وجود حريق، يقوم النظام بتفعيل أنظمة الإطفاء المناسبة بشكل تلقائي وفوري.</p>
+                        
+                        <div class="technical-spec">
+                            <h6>سلسلة التفعيل:</h6>
+                            <div class="code-snippet">
+1. تأكيد الإنذار (خلال 10-30 ثانية)
+2. تحديد نوع ومكان الحريق
+3. تفعيل النظام المناسب:
+   - نظام الرش التلقائي للحرائق العادية
+   - نظام الغازات للمعدات الحساسة
+   - نظام الرغوة للمواد البترولية
+4. تشغيل محطة مضخات الحريق
+5. فتح الصمامات المطلوبة
+6. مراقبة الضغط والتدفق
+7. إرسال إشارة لمركز الإطفاء
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>تشغيل أنظمة إدارة الدخان</h5>
+                        <p>تفعيل وتنسيق جميع أنظمة إدارة الدخان لضمان إخلاء آمن وفعال.</p>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>إجراءات الضغط الإيجابي:</h6>
+                                <ul>
+                                    <li>تشغيل مراوح ضغط السلالم</li>
+                                    <li>إغلاق أبواب مناطق الحريق</li>
+                                    <li>فتح أبواب مناطق اللجوء</li>
+                                    <li>مراقبة مستويات الضغط</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>إجراءات استخراج الدخان:</h6>
+                                <ul>
+                                    <li>تشغيل مراوح الشفط</li>
+                                    <li>فتح فتحات التهوية التلقائية</li>
+                                    <li>إيقاف أنظمة التكييف العادية</li>
+                                    <li>توجيه تدفق الهواء</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>التحكم في الوصول والإخلاء</h5>
+                        <p>إدارة أنظمة الوصول والإخلاء لتسهيل خروج الأشخاص ودخول فرق الإنقاذ.</p>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>الإجراء</th>
+                                        <th>التوقيت</th>
+                                        <th>الوصف</th>
+                                        <th>النتيجة المتوقعة</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>فتح أبواب الطوارئ</td>
+                                        <td>فوري</td>
+                                        <td>فتح جميع مخارج الطوارئ تلقائياً</td>
+                                        <td>تسهيل الإخلاء السريع</td>
+                                    </tr>
+                                    <tr>
+                                        <td>إيقاف المصاعد</td>
+                                        <td>خلال 30 ثانية</td>
+                                        <td>إرسال المصاعد للطابق الأرضي</td>
+                                        <td>منع استخدامها أثناء الحريق</td>
+                                    </tr>
+                                    <tr>
+                                        <td>تشغيل الإضاءة الطارئة</td>
+                                        <td>فوري</td>
+                                        <td>تفعيل جميع وحدات الإضاءة الاحتياطية</td>
+                                        <td>رؤية واضحة لمسارات الإخلاء</td>
+                                    </tr>
+                                    <tr>
+                                        <td>تفعيل نظام التوجيه الصوتي</td>
+                                        <td>خلال 60 ثانية</td>
+                                        <td>بث تعليمات الإخلاء بعدة لغات</td>
+                                        <td>توجيه منظم للأشخاص</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-5 mb-4">تقنيات التحكم المتقدمة</h4>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-brain me-2"></i>الذكاء الاصطناعي</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>استخدام تقنيات الذكاء الاصطناعي لتحسين دقة الكشف وسرعة الاستجابة.</p>
+                            
+                            <h6>التطبيقات:</h6>
+                            <ul>
+                                <li><strong>التعلم الآلي:</strong> تحليل أنماط الإنذارات الكاذبة</li>
+                                <li><strong>التنبؤ:</strong> توقع انتشار الحريق</li>
+                                <li><strong>التحسين:</strong> تحسين استراتيجيات الإطفاء</li>
+                                <li><strong>التشخيص:</strong> اكتشاف الأعطال المبكرة</li>
+                            </ul>
+                            
+                            <h6>الفوائد:</h6>
+                            <ul>
+                                <li>تقليل الإنذارات الكاذبة بنسبة 90%</li>
+                                <li>تحسين زمن الاستجابة بنسبة 50%</li>
+                                <li>تحسين دقة تحديد الموقع</li>
+                                <li>تحسين فعالية الإطفاء</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-cloud me-2"></i>الحوسبة السحابية</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>الاستفادة من قوة الحوسبة السحابية لتحسين الأداء والإدارة.</p>
+                            
+                            <h6>المميزات:</h6>
+                            <ul>
+                                <li><strong>التخزين:</strong> نسخ احتياطية للبيانات</li>
+                                <li><strong>المعالجة:</strong> تحليل البيانات الضخمة</li>
+                                <li><strong>المراقبة:</strong> مراقبة عن بعد مستمرة</li>
+                                <li><strong>التحديث:</strong> تحديثات تلقائية للبرمجيات</li>
+                            </ul>
+                            
+                            <h6>الفوائد:</h6>
+                            <ul>
+                                <li>قابلية التوسع غير المحدودة</li>
+                                <li>تكاليف تشغيل أقل</li>
+                                <li>موثوقية عالية</li>
+                                <li>وصول من أي مكان</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="technical-spec">
+                <h5><i class="fas fa-cogs me-2"></i>بروتوكولات الاتصال المستخدمة</h5>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <h6>البروتوكولات السلكية:</h6>
+                        <ul>
+                            <li><strong>BACnet:</strong> معيار دولي لأنظمة المباني</li>
+                            <li><strong>Modbus:</strong> بروتوكول صناعي موثوق</li>
+                            <li><strong>Ethernet/IP:</strong> شبكات صناعية عالية السرعة</li>
+                            <li><strong>Profibus:</strong> اتصالات صناعية متقدمة</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>البروتوكولات اللاسلكية:</h6>
+                        <ul>
+                            <li><strong>WiFi:</strong> اتصال عالي السرعة</li>
+                            <li><strong>Zigbee:</strong> شبكات حساسات منخفضة الطاقة</li>
+                            <li><strong>LoRaWAN:</strong> اتصالات طويلة المدى</li>
+                            <li><strong>Bluetooth:</strong> اتصالات قريبة المدى</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>بروتوكولات الطوارئ:</h6>
+                        <ul>
+                            <li><strong>HART:</strong> اتصالات عبر الكابلات</li>
+                            <li><strong>AS-i:</strong> شبكات حساسات بسيطة</li>
+                            <li><strong>DeviceNet:</strong> شبكات الأجهزة الذكية</li>
+                            <li><strong>Foundation Fieldbus:</strong> اتصالات حقلية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="safety-warning">
+                <h5><i class="fas fa-exclamation-triangle me-2"></i>متطلبات الأمان والموثوقية</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>الأمان السيبراني:</h6>
+                        <ul>
+                            <li>تشفير جميع البيانات المنقولة</li>
+                            <li>أنظمة مصادقة متعددة المستويات</li>
+                            <li>حماية من الهجمات السيبرانية</li>
+                            <li>تحديثات أمنية دورية</li>
+                            <li>مراقبة مستمرة للتهديدات</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>الموثوقية التشغيلية:</h6>
+                        <ul>
+                            <li>أنظمة احتياطية متعددة</li>
+                            <li>مصادر طاقة مستقلة</li>
+                            <li>اختبارات دورية شاملة</li>
+                            <li>صيانة وقائية منتظمة</li>
+                            <li>توثيق شامل للعمليات</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- التكامل مع أنظمة إدارة المباني (BMS) -->
+        <section class="mb-5">
+            <h2 class="section-title">التكامل مع أنظمة إدارة المباني (BMS)</h2>
+            
+            <div class="highlight-box">
+                <h4 class="text-gradient mb-3">أهمية التكامل مع BMS</h4>
+                <p>التكامل بين أنظمة الحماية من الحريق وأنظمة إدارة المباني (Building Management Systems - BMS) يمثل نقلة نوعية في مجال أمان وكفاءة المباني الذكية. هذا التكامل يسمح بتنسيق شامل بين جميع الأنظمة في المبنى، مما يحسن من الاستجابة للطوارئ ويحسن الكفاءة التشغيلية.</p>
+                <p>من خلال هذا التكامل، يمكن لنظام BMS أن يتخذ إجراءات منسقة عند حدوث حريق، مثل إيقاف أنظمة التكييف، وإعادة برمجة المصاعد، وتشغيل الإضاءة الطارئة، وإدارة أنظمة الأمان الأخرى.</p>
+            </div>
+
+            <h4 class="mt-4 mb-3">مكونات التكامل</h4>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-plug me-2"></i>واجهات الاتصال</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>أنظمة اتصال متقدمة تربط بين أنظمة الحماية من الحريق ونظام BMS.</p>
+                            
+                            <h6>أنواع الواجهات:</h6>
+                            <ul>
+                                <li><strong>BACnet Gateway:</strong> تحويل البروتوكولات</li>
+                                <li><strong>Modbus Interface:</strong> اتصال مباشر</li>
+                                <li><strong>OPC Server:</strong> تبادل البيانات</li>
+                                <li><strong>API Integration:</strong> تكامل تطبيقي</li>
+                            </ul>
+                            
+                            <h6>الوظائف:</h6>
+                            <ul>
+                                <li>ترجمة البروتوكولات</li>
+                                <li>تزامن البيانات</li>
+                                <li>معالجة الأخطاء</li>
+                                <li>تسجيل العمليات</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-database me-2"></i>إدارة البيانات</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>نظام شامل لجمع وتخزين وتحليل البيانات من جميع أنظمة المبنى.</p>
+                            
+                            <h6>أنواع البيانات:</h6>
+                            <ul>
+                                <li><strong>بيانات الحالة:</strong> حالة تشغيل الأنظمة</li>
+                                <li><strong>بيانات الإنذار:</strong> تفاصيل الإنذارات</li>
+                                <li><strong>بيانات الأداء:</strong> معايير الأداء</li>
+                                <li><strong>بيانات التشخيص:</strong> حالة المعدات</li>
+                            </ul>
+                            
+                            <h6>التحليل:</h6>
+                            <ul>
+                                <li>تحليل الاتجاهات</li>
+                                <li>كشف الشذوذ</li>
+                                <li>التنبؤ بالأعطال</li>
+                                <li>تحسين الأداء</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5><i class="fas fa-cogs me-2"></i>منطق التحكم</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>خوارزميات ذكية تحدد الإجراءات المطلوبة بناءً على حالة الأنظمة المختلفة.</p>
+                            
+                            <h6>أنواع المنطق:</h6>
+                            <ul>
+                                <li><strong>منطق الأولوية:</strong> ترتيب الإجراءات</li>
+                                <li><strong>منطق التتابع:</strong> تسلسل العمليات</li>
+                                <li><strong>منطق الشروط:</strong> إجراءات مشروطة</li>
+                                <li><strong
+  
+                            
+                                
+                            </body>
+                            </html>

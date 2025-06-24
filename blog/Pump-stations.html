@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محطات مضخات الحريق المتكاملة - الدليل الشامل</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <!-- Google Fonts Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        
+        .hero-section h1 {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-section p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .content-section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .content-section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section-title {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        .subsection-title {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #333;
+            margin: 30px 0 20px 0;
+            border-right: 4px solid #667eea;
+            padding-right: 15px;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+            border-right: 5px solid #e17055;
+        }
+        
+        .tech-spec-box {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+            border-right: 5px solid #00b894;
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, #ffb3ba 0%, #ffdfba 100%);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+            border-right: 5px solid #e84393;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, #bae1ff 0%, #baffc9 100%);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+            border-right: 5px solid #0984e3;
+        }
+        
+        .icon-feature {
+            text-align: center;
+            padding: 30px;
+            margin: 20px 0;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .icon-feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .icon-feature i {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .icon-feature h4 {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .table-custom {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .table-custom thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .table-custom tbody tr:hover {
+            background-color: #f8f9ff;
+        }
+        
+        .step-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-right: 5px solid #667eea;
+            transition: all 0.3s ease;
+        }
+        
+        .step-card:hover {
+            transform: translateX(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .step-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .feature-card i {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .conclusion-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .conclusion-section h2 {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        
+        .nav-pills .nav-link {
+            background: #f8f9fa;
+            color: #667eea;
+            border-radius: 25px;
+            margin: 0 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-pills .nav-link.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .toc-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 20px;
+        }
+        
+        .toc-section h3 {
+            font-family: 'Tajawal', sans-serif;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .toc-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .toc-section li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .toc-section a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .toc-section a:hover {
+            color: #667eea;
+        }
+        
+        .comparison-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin: 30px 0;
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-table tr:hover {
+            background-color: #f8f9ff;
+        }
+        
+        .maintenance-schedule {
+            background: linear-gradient(135deg, #e17055 0%, #f39c12 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .maintenance-schedule h4 {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        
+        .process-flow {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 40px 0;
+        }
+        
+        .process-step {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 10px;
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .process-step::after {
+            content: '→';
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: #667eea;
+        }
+        
+        .process-step:last-child::after {
+            display: none;
+        }
+        
+        .statistics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-top: 5px solid #667eea;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .content-section {
+                padding: 20px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-flow {
+                flex-direction: column;
+            }
+            
+            .process-step::after {
+                content: '↓';
+                right: 50%;
+                top: 100%;
+                transform: translateX(50%);
+            }
+        }
+        
+        /* Print styles for PDF export */
+        @media print {
+            body {
+                background: white !important;
+            }
+            
+            .hero-section,
+            .conclusion-section {
+                background: #667eea !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .content-section {
+                box-shadow: none !important;
+                border: 1px solid #ddd;
+            }
+            
+            .step-card,
+            .feature-card,
+            .icon-feature {
+                box-shadow: none !important;
+                border: 1px solid #ddd;
+                break-inside: avoid;
+            }
+            
+            .highlight-box,
+            .tech-spec-box,
+            .warning-box,
+            .info-box {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1><i class="fas fa-fire-extinguisher"></i> محطات مضخات الحريق المتكاملة</h1>
+            <p class="lead">الدليل الشامل لتصميم وتركيب وصيانة أنظمة مضخات الحريق وفقاً لمعايير NFPA 20</p>
+            <div class="mt-4">
+                <i class="fas fa-cog fa-2x mx-3 text-warning"></i>
+                <i class="fas fa-fire fa-2x mx-3 text-danger"></i>
+                <i class="fas fa-shield-alt fa-2x mx-3 text-success"></i>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <!-- Table of Contents -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="toc-section">
+                    <h3><i class="fas fa-list"></i> فهرس المحتويات</h3>
+                    <ul>
+                        <li><a href="#introduction">مقدمة</a></li>
+                        <li><a href="#nfpa-standards">معايير NFPA 20</a></li>
+                        <li><a href="#pump-types">أنواع المضخات</a></li>
+                        <li><a href="#dual-power">نظام الضخ المزدوج</a></li>
+                        <li><a href="#jockey-pumps">مضخات Jockey</a></li>
+                        <li><a href="#control-systems">أنظمة التحكم</a></li>
+                        <!-- <li><a href="#remote-monitoring">المراقبة عن بُعد</a></li>
+                        <li><a href="#design-installation">التصميم والتركيب</a></li>
+                        <li><a href="#maintenance">الصيانة والتشغيل</a></li>
+                        <li><a href="#troubleshooting">استكشاف الأخطاء</a></li>
+                        <li><a href="#safety">معايير السلامة</a></li>
+                        <li><a href="#conclusion">الخلاصة</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-9">
+                <!-- Introduction Section -->
+                <section id="introduction" class="content-section">
+                    <h2 class="section-title"><i class="fas fa-info-circle"></i> مقدمة عن محطات مضخات الحريق المتكاملة</h2>
+                    
+                    <p>تُعد محطات مضخات الحريق المتكاملة العمود الفقري لأنظمة مكافحة الحريق في المباني والمنشآت الصناعية والتجارية. هذه الأنظمة المعقدة والمتطورة تلعب دوراً حيوياً في حماية الأرواح والممتلكات من خطر الحرائق، حيث توفر ضغط المياه المطلوب لتشغيل أنظمة الرش التلقائي وصنابير الحريق وأنظمة إطفاء الحريق المختلفة.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-water"></i>
+                            <h4>ضمان الضغط المناسب</h4>
+                            <p>توفير ضغط مياه ثابت ومناسب لجميع أنظمة الحريق في المبنى</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-clock"></i>
+                            <h4>الاستجابة السريعة</h4>
+                            <p>التشغيل التلقائي والفوري عند الحاجة دون تدخل بشري</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>الموثوقية العالية</h4>
+                            <p>أنظمة احتياطية متعددة لضمان العمل في جميع الظروف</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">أهمية محطات مضخات الحريق في البنية التحتية</h3>
+                    
+                    <p>في عالم اليوم، حيث تزداد المباني ارتفاعاً وتعقيداً، تصبح محطات مضخات الحريق أكثر أهمية من أي وقت مضى. فالاعتماد على ضغط المياه الطبيعي من الشبكة العامة لم يعد كافياً لتلبية متطلبات السلامة في المباني الشاهقة أو المجمعات الصناعية الكبيرة. لذلك، تأتي محطات مضخات الحريق لتكون الحل الأمثل لضمان وصول المياه بالضغط المطلوب إلى جميع أجزاء المبنى، حتى الطوابق العلوية.</p>
+                    
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-exclamation-triangle"></i> حقائق مهمة</h4>
+                        <ul>
+                            <li>أكثر من 85% من حالات فشل أنظمة الحريق ترجع إلى عدم كفاية ضغط المياه</li>
+                            <li>محطات مضخات الحريق تقلل من زمن الاستجابة بنسبة 60%</li>
+                            <li>الأنظمة المتكاملة تزيد من فعالية الإطفاء بنسبة 75%</li>
+                            <li>تكلفة تركيب محطة مضخات حريق تقل عن 2% من تكلفة إعادة البناء بعد الحريق</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-title">تطور تقنيات محطات مضخات الحريق</h3>
+                    
+                    <p>شهدت تقنيات محطات مضخات الحريق تطوراً كبيراً على مدى العقود الماضية. من الأنظمة البسيطة التي تعتمد على مضخة واحدة وتحكم يدوي، إلى الأنظمة المتطورة الحالية التي تتضمن مضخات متعددة، أنظمة تحكم ذكية، مراقبة عن بُعد، وأنظمة تشخيص متقدمة. هذا التطور جاء استجابة للحاجة المتزايدة لأنظمة حريق أكثر موثوقية وفعالية.</p>
+                    
+                    <div class="statistics-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">99.9%</div>
+                            <div class="stat-label">معدل الموثوقية</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">ثانية متوسط الاستجابة</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">25</div>
+                            <div class="stat-label">سنة متوسط العمر الافتراضي</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">مراقبة مستمرة</div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">مكونات محطة مضخات الحريق الأساسية</h3>
+                    
+                    <p>تتكون محطة مضخات الحريق المتكاملة من عدة مكونات رئيسية تعمل جميعها بتناغم لضمان الأداء الأمثل. هذه المكونات تشمل المضخات الرئيسية، أنظمة الطاقة المزدوجة، أنظمة التحكم والمراقبة، خزانات المياه، وأنظمة الحماية والسلامة. كل مكون له دور محدد ومهم في عملية الإطفاء الشاملة.</p>
+                    
+                    <div class="process-flow">
+                        <div class="process-step">
+                            <i class="fas fa-tint fa-2x text-primary"></i>
+                            <h5>مصدر المياه</h5>
+                            <p>خزانات أو شبكة عامة</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-cogs fa-2x text-success"></i>
+                            <h5>المضخات</h5>
+                            <p>رئيسية واحتياطية</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-bolt fa-2x text-warning"></i>
+                            <h5>أنظمة الطاقة</h5>
+                            <p>كهربائية وديزل</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-microchip fa-2x text-info"></i>
+                            <h5>أنظمة التحكم</h5>
+                            <p>تحكم ذكي ومراقبة</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-fire-extinguisher fa-2x text-danger"></i>
+                            <h5>أنظمة الإطفاء</h5>
+                            <p>رش وصنابير</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- NFPA Standards Section -->
+                <section id="nfpa-standards" class="content-section">
+                    <h2 class="section-title"><i class="fas fa-book"></i> معايير NFPA 20 للمضخات الثابتة لأنظمة الحماية من الحريق</h2>
+                    
+                    <p>تُعد معايير NFPA 20 (National Fire Protection Association Standard 20) المرجع الأساسي والأكثر شمولية لتصميم وتركيب وصيانة واختبار المضخات الثابتة لأنظمة الحماية من الحريق. هذه المعايير، التي تم تطويرها على مدى عقود من الخبرة والبحث، تضع الأسس العلمية والتقنية لضمان الأداء الأمثل لمحطات مضخات الحريق في جميع أنحاء العالم.</p>
+                    
+                    <div class="info-box">
+                        <h4><i class="fas fa-info-circle"></i> نظرة عامة على NFPA 20</h4>
+                        <p>تم نشر معيار NFPA 20 لأول مرة في عام 1931، ومنذ ذلك الحين يتم تحديثه بشكل دوري ليواكب التطورات التقنية والدروس المستفادة من الحوادث. النسخة الحالية تحتوي على أكثر من 200 صفحة من المتطلبات التفصيلية والمواصفات التقنية التي تغطي جميع جوانب أنظمة مضخات الحريق.</p>
+                    </div>
+                    
+                    <h3 class="subsection-title">المتطلبات الأساسية للمضخات حسب NFPA 20</h3>
+                    
+                    <p>يحدد معيار NFPA 20 مجموعة شاملة من المتطلبات التي يجب أن تلتزم بها جميع مضخات الحريق. هذه المتطلبات تشمل الأداء الهيدروليكي، المواد المستخدمة في التصنيع، طرق التركيب والتشغيل، وأنظمة التحكم والمراقبة. كما يحدد المعيار أيضاً متطلبات الطاقة والمحركات المستخدمة لتشغيل المضخات.</p>
+                    
+                    <table class="table table-striped comparison-table">
+                        <thead>
+                            <tr>
+                                <th>المتطلب</th>
+                                <th>المواصفة</th>
+                                <th>الغرض</th>
+                                <th>الأهمية</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>منحنى الأداء</td>
+                                <td>ضغط ثابت من 100% إلى 150% من التدفق المقنن</td>
+                                <td>ضمان الأداء المستقر</td>
+                                <td>عالية جداً</td>
+                            </tr>
+                            <tr>
+                                <td>مواد التصنيع</td>
+                                <td>حديد زهر أو برونز للأجزاء المتحركة</td>
+                                <td>مقاومة التآكل والتآكل</td>
+                                <td>عالية</td>
+                            </tr>
+                            <tr>
+                                <td>الختم الميكانيكي</td>
+                                <td>مقاوم للحرارة والضغط</td>
+                                <td>منع التسرب</td>
+                                <td>عالية جداً</td>
+                            </tr>
+                            <tr>
+                                <td>أنظمة التحكم</td>
+                                <td>لوحة تحكم معتمدة من UL أو FM</td>
+                                <td>التشغيل الآمن والموثوق</td>
+                                <td>عالية جداً</td>
+                            </tr>
+                            <tr>
+                                <td>نظام الطاقة الاحتياطي</td>
+                                <td>ديزل أو مولد كهربائي</td>
+                                <td>ضمان العمل في حالات الطوارئ</td>
+                                <td>عالية جداً</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3 class="subsection-title">متطلبات الأداء الهيدروليكي</h3>
+                    
+                    <p>يضع معيار NFPA 20 متطلبات صارمة للأداء الهيدروليكي للمضخات. هذه المتطلبات تشمل منحنى الأداء المطلوب، حيث يجب أن تحافظ المضخة على ضغط لا يقل عن 65% من الضغط المقنن عند 150% من التدفق المقنن. كما يجب ألا يزيد الضغط عن 140% من الضغط المقنن عند الإغلاق الكامل (zero flow).</p>
+                    
+                    <div class="tech-spec-box">
+                        <h4><i class="fas fa-chart-line"></i> مواصفات الأداء المطلوبة</h4>
+                        <ul>
+                            <li><strong>عند 100% من التدفق المقنن:</strong> الضغط المقنن بالكامل</li>
+                            <li><strong>عند 150% من التدفق المقنن:</strong> لا يقل عن 65% من الضغط المقنن</li>
+                            <li><strong>عند الإغلاق الكامل:</strong> لا يزيد عن 140% من الضغط المقنن</li>
+                            <li><strong>الكفاءة:</strong> لا تقل عن 60% عند النقطة المقننة</li>
+                            <li><strong>NPSH المطلوب:</strong> محدد حسب نوع المضخة وحجمها</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-title">متطلبات أنظمة التحكم والمراقبة</h3>
+                    
+                    <p>يحدد معيار NFPA 20 متطلبات شاملة لأنظمة التحكم والمراقبة في محطات مضخات الحريق. هذه الأنظمة يجب أن تكون قادرة على تشغيل المضخة تلقائياً عند انخفاض الضغط، ومراقبة حالة المضخة والمحرك باستمرار، وإرسال إنذارات في حالة حدوث أي خلل أو عطل. كما يجب أن تتضمن هذه الأنظمة وسائل للتشغيل والإيقاف اليدوي عند الحاجة.</p>
+                    
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h4>التشغيل التلقائي</h4>
+                        <p>يجب أن تبدأ المضخة في العمل تلقائياً عند انخفاض الضغط إلى ما دون 10 psi من الضغط المقنن. هذا يضمن الاستجابة السريعة في حالات الطوارئ دون الحاجة لتدخل بشري.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h4>المراقبة المستمرة</h4>
+                        <p>يجب مراقبة المعاملات التالية باستمرار: ضغط الدخل والخرج، سرعة المحرك، درجة حرارة المحرك، مستوى الوقود (للمحركات الديزل)، وحالة الكهرباء الرئيسية.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h4>نظام الإنذار</h4>
+                        <p>يجب أن يتضمن النظام إنذارات صوتية ومرئية لجميع الأعطال والحالات غير الطبيعية. هذه الإنذارات يجب أن تكون واضحة ومسموعة من مسافة معقولة.</p>
+                    </div>
+                    
+                    <h3 class="subsection-title">متطلبات مصادر الطاقة</h3>
+                    
+                    <p>يشدد معيار NFPA 20 على أهمية وجود مصادر طاقة موثوقة ومتعددة لمحطات مضخات الحريق. المصدر الأساسي للطاقة يجب أن يكون مستقلاً ومخصصاً لمضخة الحريق فقط، مع وجود مصدر طاقة احتياطي (ديزل أو مولد كهربائي) يتم تشغيله تلقائياً في حالة فقدان المصدر الأساسي.</p>
+                    
+                    <div class="warning-box">
+                        <h4><i class="fas fa-exclamation-triangle"></i> متطلبات الطاقة الحرجة</h4>
+                        <ul>
+                            <li>المصدر الأساسي يجب أن يكون مستقلاً ومخصصاً للمضخة فقط</li>
+                            <li>لا يجوز استخدام مفاتيح أو قواطع مشتركة مع أحمال أخرى</li>
+                            <li>يجب وجود مصدر طاقة احتياطي بقدرة لا تقل عن 125% من الحمل المقنن</li>
+                            <li>زمن التحويل للمصدر الاحتياطي يجب ألا يزيد عن 10 ثوانٍ</li>
+                            <li>يجب اختبار المصدر الاحتياطي شهرياً لمدة لا تقل عن 30 دقيقة</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-title">متطلبات الاختبار والصيانة</h3>
+                    
+                    <p>يحدد معيار NFPA 20 برنامجاً شاملاً للاختبار والصيانة الدورية لمحطات مضخات الحريق. هذا البرنامج يتضمن اختبارات يومية وأسبوعية وشهرية وسنوية، كل منها يهدف إلى التأكد من جاهزية النظام للعمل في حالات الطوارئ. كما يحدد المعيار متطلبات التوثيق والتسجيل لجميع عمليات الاختبار والصيانة.</p>
+                    
+                    <div class="maintenance-schedule">
+                        <h4><i class="fas fa-calendar-alt"></i> جدول الصيانة حسب NFPA 20</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>الاختبارات الأسبوعية</h5>
+                                <ul>
+                                    <li>فحص مستوى الوقود</li>
+                                    <li>فحص الضغط</li>
+                                    <li>فحص أنظمة الإنذار</li>
+                                    <li>تشغيل المضخة لمدة 10 دقائق</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>الاختبارات الشهرية</h5>
+                                <ul>
+                                    <li>اختبار الأداء الكامل</li>
+                                    <li>فحص أنظمة التحكم</li>
+                                    <li>اختبار المصدر الاحتياطي</li>
+                                    <li>فحص الاهتزازات والضوضاء</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">التطبيق العملي لمعايير NFPA 20</h3>
+                    
+                    <p>تطبيق معايير NFPA 20 في الواقع العملي يتطلب فهماً عميقاً للمتطلبات والمواصفات، بالإضافة إلى خبرة واسعة في تصميم وتركيب أنظمة مضخات الحريق. المهندسون والفنيون العاملون في هذا المجال يجب أن يكونوا على دراية كاملة بجميع أقسام المعيار، من التصميم الأولي وحتى الصيانة الدورية.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="icon-feature">
+                                <i class="fas fa-drafting-compass"></i>
+                                <h4>مرحلة التصميم</h4>
+                                <p>تطبيق المعايير في اختيار المضخات وتصميم النظام الهيدروليكي وأنظمة التحكم</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="icon-feature">
+                                <i class="fas fa-tools"></i>
+                                <h4>مرحلة التركيب</h4>
+                                <p>ضمان التركيب الصحيح وفقاً للمواصفات والمتطلبات الفنية المحددة</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="icon-feature">
+                                <i class="fas fa-clipboard-check"></i>
+                                <h4>مرحلة التشغيل</h4>
+                                <p>تنفيذ برامج الاختبار والصيانة الدورية والتوثيق المطلوب</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Pump Types Section -->
+                <section id="pump-types" class="content-section">
+                    <h2 class="section-title"><i class="fas fa-cogs"></i> أنواع المضخات المستخدمة في أنظمة الحريق</h2>
+                    
+                    <p>تتنوع أنواع المضخات المستخدمة في أنظمة الحريق بناءً على التطبيق المحدد، متطلبات الأداء، والظروف البيئية. كل نوع من هذه المضخات له خصائص فريدة تجعله مناسباً لتطبيقات معينة. فهم هذه الأنواع وخصائصها ضروري لاختيار النظام الأمثل لكل مشروع.</p>
+                    
+                    <h3 class="subsection-title">المضخات الطاردة المركزية (Centrifugal Pumps)</h3>
+                    
+                    <p>تُعد المضخات الطاردة المركزية النوع الأكثر شيوعاً في أنظمة الحريق، وذلك لبساطة تصميمها، موثوقيتها العالية، وسهولة صيانتها. هذه المضخات تعمل على مبدأ القوة الطاردة المركزية، حيث يقوم الدوار (Impeller) بتحويل الطاقة الحركية إلى طاقة ضغط، مما يدفع المياه عبر النظام بالضغط المطلوب.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tech-spec-box">
+                                <h4><i class="fas fa-plus-circle"></i> المزايا</h4>
+                                <ul>
+                                    <li>تصميم بسيط وموثوق</li>
+                                    <li>صيانة سهلة ومتطلبات قليلة</li>
+                                    <li>تشغيل هادئ وسلس</li>
+                                    <li>كفاءة عالية في نطاق التشغيل المناسب</li>
+                                    <li>عمر افتراضي طويل</li>
+                                    <li>تكلفة أولية منخفضة نسبياً</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="warning-box">
+                                <h4><i class="fas fa-minus-circle"></i> العيوب</h4>
+                                <ul>
+                                    <li>حساسية لوجود الهواء في النظام</li>
+                                    <li>انخفاض الكفاءة عند الأحمال المنخفضة</li>
+                                    <li>تحتاج لتهيئة أولية (Priming)</li>
+                                    <li>أداء متغير مع تغير الضغط</li>
+                                    <li>قد تحتاج لمضخات تقوية في التطبيقات عالية الضغط</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="mt-4">الأنواع الفرعية للمضخات الطاردة المركزية</h4>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-arrows-alt-h"></i>
+                            <h4>المضخات الأفقية</h4>
+                            <p>الأكثر شيوعاً، سهلة الصيانة، مناسبة للتطبيقات العامة</p>
+                            <div class="mt-3">
+                                <small><strong>التطبيقات:</strong> المباني التجارية، المجمعات السكنية</small>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-arrows-alt-v"></i>
+                            <h4>المضخات الرأسية</h4>
+                            <p>توفر مساحة، مناسبة للمساحات المحدودة</p>
+                            <div class="mt-3">
+                                <small><strong>التطبيقات:</strong> المباني الشاهقة، المساحات المحدودة</small>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-layer-group"></i>
+                            <h4>المضخات متعددة المراحل</h4>
+                            <p>ضغط عالي، مناسبة للمباني الشاهقة</p>
+                            <div class="mt-3">
+                                <small><strong>التطبيقات:</strong> المباني عالية الارتفاع، الأنظمة عالية الضغط</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">المضخات الغاطسة (Submersible Pumps)</h3>
+                    
+                    <p>تُستخدم المضخات الغاطسة في الحالات التي يكون فيها مصدر المياه تحت مستوى المضخة، مثل الخزانات الأرضية أو الآبار. هذه المضخات مصممة للعمل تحت الماء، مما يلغي مشاكل التهيئة الأولية ويضمن عدم دخول الهواء إلى النظام.</p>
+                    
+                    <div class="info-box">
+                        <h4><i class="fas fa-water"></i> خصائص المضخات الغاطسة</h4>
+                        <p>تتميز المضخات الغاطسة بتصميمها المحكم والمقاوم للماء، مع محركات كهربائية مخصصة للعمل تحت الماء. هذه المضخات تلغي الحاجة لأنابيب الشفط الطويلة وتقلل من مشاكل التجويف (Cavitation) والضوضاء.</p>
+                    </div>
+                    
+                    <h3 class="subsection-title">المضخات الإزاحية الموجبة (Positive Displacement Pumps)</h3>
+                    
+                    <p>تُستخدم المضخات الإزاحية الموجبة في التطبيقات الخاصة التي تتطلب ضغطاً عالياً أو تدفقاً ثابتاً بغض النظر عن الضغط الخلفي. هذه المضخات تعمل على مبدأ إزاحة كمية ثابتة من السائل مع كل دورة، مما يوفر تدفقاً ثابتاً ومتوقعاً.</p>
+                    
+                    <div class="comparison-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>النوع</th>
+                                    <th>مبدأ العمل</th>
+                                    <th>المزايا الرئيسية</th>
+                                    <th>التطبيقات المناسبة</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>المضخات الترددية</td>
+                                    <td>حركة ترددية للمكبس</td>
+                                    <td>ضغط عالي جداً، تدفق دقيق</td>
+                                    <td>أنظمة الضغط العالي، الاختبارات</td>
+                                </tr>
+                                <tr>
+                                    <td>المضخات الدوارة</td>
+                                    <td>دوران المسننات أو اللوحات</td>
+                                    <td>تدفق ثابت، عمل هادئ</td>
+                                    <td>أنظمة التحكم الدقيق، التطبيقات الخاصة</td>
+                                </tr>
+                                <tr>
+                                    <td>المضخات الحلزونية</td>
+                                    <td>حركة حلزونية للمسمار</td>
+                                    <td>مناسبة للسوائل اللزجة</td>
+                                    <td>أنظمة الرغوة، السوائل الخاصة</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3 class="subsection-title">معايير اختيار نوع المضخة</h3>
+                    
+                    <p>اختيار نوع المضخة المناسب يعتمد على عدة عوامل مهمة يجب تقييمها بعناية. هذه العوامل تشمل متطلبات الأداء، الظروف البيئية، متطلبات الصيانة، والاعتبارات الاقتصادية. التقييم الصحيح لهذه العوامل يضمن اختيار النظام الأمثل لكل تطبيق.</p>
+                    
+                    <div class="process-flow">
+                        <div class="process-step">
+                            <i class="fas fa-calculator fa-2x text-primary"></i>
+                            <h5>تحديد المتطلبات</h5>
+                            <p>التدفق والضغط المطلوبان</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-map-marked-alt fa-2x text-success"></i>
+                            <h5>تقييم الموقع</h5>
+                            <p>المساحة المتاحة والظروف البيئية</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-dollar-sign fa-2x text-warning"></i>
+                            <h5>التكلفة الإجمالية</h5>
+                            <p>التكلفة الأولية وتكاليف التشغيل</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-wrench fa-2x text-info"></i>
+                            <h5>متطلبات الصيانة</h5>
+                            <p>سهولة الصيانة والقطع البديلة</p>
+                        </div>
+                    </div>
+                    
+                    <h4>العوامل التقنية الرئيسية</h4>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="step-card">
+                                <div class="step-number">1</div>
+                                <h4>متطلبات الأداء</h4>
+                                <ul>
+                                    <li><strong>التدفق المطلوب:</strong> يحدد حجم المضخة ونوعها</li>
+                                    <li><strong>الضغط المطلوب:</strong> يؤثر على اختيار نوع المضخة وعدد المراحل</li>
+                                    <li><strong>منحنى الأداء:</strong> يجب أن يتطابق مع متطلبات النظام</li>
+                                    <li><strong>الكفاءة:</strong> تؤثر على تكاليف التشغيل طويلة المدى</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="step-card">
+                                <div class="step-number">2</div>
+                                <h4>الظروف البيئية</h4>
+                                <ul>
+                                    <li><strong>درجة الحرارة:</strong> تؤثر على أداء المضخة والمحرك</li>
+                                    <li><strong>الرطوبة:</strong> تحدد متطلبات الحماية من التآكل</li>
+                                    <li><strong>الارتفاع عن سطح البحر:</strong> يؤثر على أداء المحرك</li>
+                                    <li><strong>مستوى الضوضاء المسموح:</strong> يحدد نوع المضخة والعزل المطلوب</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">التطورات الحديثة في تقنيات المضخات</h3>
+                    
+                    <p>شهدت تقنيات المضخات تطوراً كبيراً في السنوات الأخيرة، مع التركيز على تحسين الكفاءة، تقليل استهلاك الطاقة، وزيادة الموثوقية. هذه التطورات تشمل استخدام مواد جديدة، تحسين التصميم الهيدروليكي، وتطوير أنظمة تحكم ذكية.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-microchip"></i>
+                            <h4>المضخات الذكية</h4>
+                            <p>تتضمن أجهزة استشعار متقدمة وأنظمة تحكم ذكية للمراقبة والتحكم التلقائي</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-leaf"></i>
+                            <h4>تقنيات موفرة للطاقة</h4>
+                            <p>محركات عالية الكفاءة ومحولات تردد متغير لتقليل استهلاك الطاقة</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>مواد متقدمة</h4>
+                            <p>استخدام مواد مقاومة للتآكل وطويلة العمر لتحسين الموثوقية</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Dual Power System Section -->
+                <section id="dual-power" class="content-section">
+                    <h2 class="section-title"><i class="fas fa-bolt"></i> نظام الضخ المزدوج (كهرباء وديزل)</h2>
+                    
+                    <p>يُعد نظام الضخ المزدوج الذي يجمع بين الطاقة الكهربائية ومحركات الديزل حجر الأساس في موثوقية محطات مضخات الحريق الحديثة. هذا النظام يضمن استمرارية العمل في جميع الظروف، حتى في حالات انقطاع التيار الكهربائي أو فشل أحد المصادر. التصميم المتقن لهذا النظام يتطلب فهماً عميقاً لخصائص كل نوع من المحركات ومتطلبات التكامل بينهما.</p>
+                    
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-star"></i> أهمية النظام المزدوج</h4>
+                        <p>إن الهدف الأساسي من نظام الضخ المزدوج هو ضمان توفر مصدر طاقة موثوق في جميع الأوقات. في حالات الطوارئ، وخاصة الحرائق، قد يكون انقطاع التيار الكهربائي أمراً شائعاً نتيجة لتلف الأسلاك أو المعدات الكهربائية. في هذه الحالات، يصبح محرك الديزل هو المصدر الوحيد الموثوق للطاقة.</p>
+                    </div>
+                    
+                    <h3 class="subsection-title">المضخات الكهربائية - الخصائص والمزايا</h3>
+                    
+                    <p>تُعد المضخات الكهربائية المصدر الأساسي للطاقة في معظم محطات مضخات الحريق. هذه المضخات تتميز بسهولة التشغيل، التحكم الدقيق، والصيانة المحدودة. المحركات الكهربائية الحديثة تتمتع بكفاءة عالية وموثوقية ممتازة، مما يجعلها الخيار المفضل للتشغيل اليومي العادي.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tech-spec-box">
+                                <h4><i class="fas fa-plus"></i> مزايا المضخات الكهربائية</h4>
+                                <ul>
+                                    <li><strong>البدء الفوري:</strong> تشغيل سريع دون فترة إحماء</li>
+                                    <li><strong>التحكم الدقيق:</strong> إمكانية التحكم الدقيق في السرعة والأداء</li>
+                                    <li><strong>الصيانة المحدودة:</strong> عدد قليل من الأجزاء المتحركة</li>
+                                    <li><strong>التشغيل الهادئ:</strong> مستوى ضوضاء منخفض</li>
+                                    <li><strong>الكفاءة العالية:</strong> كفاءة تصل إلى 95%</li>
+                                    <li><strong>الاستجابة السريعة:</strong> تشغيل فوري عند الحاجة</li>
+                                    <li><strong>التكلفة المنخفضة:</strong> تكاليف تشغيل وصيانة أقل</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="warning-box">
+                                <h4><i class="fas fa-exclamation-triangle"></i> القيود والتحديات</h4>
+                                <ul>
+                                    <li><strong>الاعتماد على الكهرباء:</strong> لا تعمل عند انقطاع التيار</li>
+                                    <li><strong>التأثر بالظروف الجوية:</strong> قد تتأثر بالعواصف الكهربائية</li>
+                                    <li><strong>جودة الطاقة:</strong> حساسة لتقلبات الجهد والتردد</li>
+                                    <li><strong>الحاجة لحماية:</strong> تحتاج لأنظمة حماية من الحمل الزائد</li>
+                                    <li><strong>القيود البيئية:</strong> قد تتأثر بالحرارة والرطوبة العالية</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4>المواصفات التقنية للمحركات الكهربائية</h4>
+                    
+                    <table class="table table-striped comparison-table">
+                        <thead>
+                            <tr>
+                                <th>المواصفة</th>
+                                <th>القيمة المعيارية</th>
+                                <th>الغرض</th>
+                                <th>ملاحظات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>نوع المحرك</td>
+                                <td>تحريضي ثلاثي الطور</td>
+                                <td>الموثوقية والكفاءة</td>
+                                <td>الأكثر شيوعاً في التطبيقات الصناعية</td>
+                            </tr>
+                            <tr>
+                                <td>فئة العزل</td>
+                                <td>F أو H</td>
+                                <td>تحمل درجات الحرارة العالية</td>
+                                <td>ضروري لبيئات التشغيل القاسية</td>
+                            </tr>
+                            <tr>
+                                <td>درجة الحماية</td>
+                                <td>IP55 أو أعلى</td>
+                                <td>الحماية من الغبار والماء</td>
+                                <td>مناسب للبيئات الصناعية</td>
+                            </tr>
+                            <tr>
+                                <td>معامل الخدمة</td>
+                                <td>1.15 أو أعلى</td>
+                                <td>القدرة على التحميل الزائد</td>
+                                <td>يضمن الأداء في الظروف الصعبة</td>
+                            </tr>
+                            <tr>
+                                <td>الكفاءة</td>
+                                <td>IE3 أو أعلى</td>
+                                <td>توفير الطاقة</td>
+                                <td>يقلل من تكاليف التشغيل</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3 class="subsection-title">مضخات الديزل - الموثوقية في الظروف الحرجة</h3>
+                    
+                    <p>تُعد مضخات الديزل العمود الفقري لأنظمة الطوارئ في محطات مضخات الحريق. هذه المضخات مصممة للعمل في أقسى الظروف وتوفر مصدر طاقة مستقل تماماً عن الشبكة الكهربائية. محركات الديزل الحديثة المخصصة لأنظمة الحريق تتمتع بموثوقية استثنائية وقدرة على البدء السريع حتى في درجات الحرارة المنخفضة.</p>
+                    
+                    <div class="info-box">
+                        <h4><i class="fas fa-industry"></i> خصائص محركات الديزل للحريق</h4>
+                        <p>محركات الديزل المخصصة لأنظمة الحريق تخضع لمواصفات خاصة تتطلب بدء سريع (أقل من 15 ثانية)، تشغيل موثوق لفترات طويلة، ومقاومة للظروف البيئية القاسية. هذه المحركات عادة ما تكون مزودة بأنظمة بدء متعددة وخزانات وقود كبيرة لضمان التشغيل المستمر.</p>
+                    </div>
+                    
+                    <h4>المزايا الرئيسية لمضخات الديزل</h4>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-bolt"></i>
+                            <h4>الاستقلالية الكاملة</h4>
+                            <p>تعمل بشكل مستقل عن الشبكة الكهربائية، مما يضمن العمل حتى في حالات انقطاع التيار الشامل</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-clock"></i>
+                            <h4>البدء السريع</h4>
+                            <p>قادرة على البدء والوصول للأداء الكامل خلال 10-15 ثانية من إعطاء الإشارة</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-fire"></i>
+                            <h4>التشغيل طويل المدى</h4>
+                            <p>قادرة على العمل لساعات أو أيام متواصلة دون انقطاع</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-thermometer-half"></i>
+                            <h4>تحمل الظروف القاسية</h4>
+                            <p>تعمل في درجات حرارة متطرفة ولا تتأثر بالغبار أو الرطوبة</p>
+                        </div>
+                    </div>
+                    
+                    <h4>التحديات والقيود</h4>
+                    
+                    <div class="warning-box">
+                        <h4><i class="fas fa-exclamation-triangle"></i> التحديات الرئيسية</h4>
+                        <ul>
+                            <li><strong>الصيانة المعقدة:</strong> تحتاج لصيانة دورية أكثر تعقيداً</li>
+                            <li><strong>فترة الإحماء:</strong> قد تحتاج لفترة قصيرة للوصول للأداء الأمثل</li>
+                            <li><strong>الانبعاثات:</strong> تنتج انبعاثات عادم تحتاج لنظام تهوية</li>
+                            <li><strong>الضوضاء:</strong> مستوى ضوضاء أعلى من المحركات الكهربائية</li>
+                            <li><strong>تكلفة الوقود:</strong> تكاليف تشغيل أعلى نسبياً</li>
+                            <li><strong>التخزين:</strong> تحتاج لمساحة أكبر لخزانات الوقود</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-title">نظام التحويل التلقائي</h3>
+                    
+                    <p>يُعد نظام التحويل التلقائي بين المصدر الكهربائي ومحرك الديزل جوهر فعالية النظام المزدوج. هذا النظام يجب أن يكون قادراً على اكتشاف فشل المصدر الأساسي وتشغيل المصدر الاحتياطي في أقل وقت ممكن. التصميم الصحيح لهذا النظام يتطلب فهماً دقيقاً لخصائص كلا المصدرين ومتطلبات التحويل.</p>
+                    
+                    <div class="process-flow">
+                        <div class="process-step">
+                            <i class="fas fa-search fa-2x text-primary"></i>
+                            <h5>اكتشاف العطل</h5>
+                            <p>مراقبة مستمرة للجهد والتردد</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-exclamation-triangle fa-2x text-danger"></i>
+                            <h5>تأكيد العطل</h5>
+                            <p>فترة تأكيد لتجنب التحويل الخاطئ</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-play fa-2x text-success"></i>
+                            <h5>بدء الديزل</h5>
+                            <p>تشغيل محرك الديزل تلقائياً</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-exchange-alt fa-2x text-info"></i>
+                            <h5>التحويل</h5>
+                            <p>تحويل الحمل للمصدر الاحتياطي</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-bell fa-2x text-warning"></i>
+                            <h5>الإنذار</h5>
+                            <p>إرسال إشارات التنبيه</p>
+                        </div>
+                    </div>
+                    
+                    <h4>مراحل التحويل التلقائي بالتفصيل</h4>
+                    
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h4>مرحلة المراقبة المستمرة</h4>
+                        <p>يقوم النظام بمراقبة مستمرة للمعاملات الكهربائية للمصدر الأساسي، بما في ذلك الجهد على الأطوار الثلاثة، التردد، وتسلسل الأطوار. أي انحراف عن القيم المقبولة يؤدي إلى تفعيل إجراءات التحويل.</p>
+                        <div class="mt-3">
+                            <strong>المعاملات المراقبة:</strong>
+                            <ul>
+                                <li>الجهد: ±10% من القيمة الاسمية</li>
+                                <li>التردد: ±5% من القيمة الاسمية</li>
+                                <li>تسلسل الأطوار: L1-L2-L3</li>
+                                <li>عدم توازن الأطوار: أقل من 2%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h4>مرحلة التأكيد والتأخير</h4>
+                        <p>عند اكتشاف عطل في المصدر الأساسي، يقوم النظام بفترة تأكيد (عادة 3-5 ثوان) لتجنب التحويل غير الضروري بسبب انقطاعات مؤقتة. هذه الفترة قابلة للتعديل حسب متطلبات التطبيق.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h4>مرحلة بدء محرك الديزل</h4>
+                        <p>يتم إرسال إشارة بدء لمحرك الديزل، والذي يجب أن يبدأ ويصل إلى السرعة المقننة خلال 10-15 ثانية. يقوم النظام بمراقبة معاملات المحرك مثل السرعة، ضغط الزيت، ودرجة حرارة الماء.</p>
+                    </div>
+                    
+                    <h3 class="subsection-title">التكامل والتنسيق بين النظامين</h3>
+                    
+                    <p>نجاح نظام الضخ المزدوج يعتمد على التكامل السلس بين النظامين الكهربائي والديزل. هذا التكامل يشمل التصميم الميكانيكي، الأنظمة الكهربائية، وأنظمة التحكم. كل عنصر يجب أن يكون مصمماً للعمل بتناغم مع الآخر لضمان الانتقال السلس بين المصدرين.</p>
+                    
+                    <div class="tech-spec-box">
+                        <h4><i class="fas fa-cogs"></i> عوامل التكامل الرئيسية</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>التكامل الميكانيكي</h5>
+                                <ul>
+                                    <li>توصيل المضخات بنفس الخط الرئيسي</li>
+                                    <li>صمامات عدم الرجوع لمنع التداخل</li>
+                                    <li>تصميم الأنابيب للتدفق الأمثل</li>
+                                    <li>عزل الاهتزازات والضوضاء</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>التكامل الكهربائي</h5>
+                                <ul>
+                                    <li>نظام تحويل تلقائي متطور</li>
+                                    <li>حماية من التشغيل المتزامن</li>
+                                    <li>مراقبة حالة كلا النظامين</li>
+                                    <li>نظام إنذار موحد</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">اختبار وصيانة النظام المزدوج</h3>
+                    
+                    <p>تتطلب أنظمة الضخ المزدوج برنامج اختبار وصيانة شامل ومتخصص. هذا البرنامج يجب أن يغطي كلا النظامين بشكل منفصل ومتكامل، مع التركيز على اختبار عمليات التحويل التلقائي والتأكد من جاهزية النظام الاحتياطي للعمل في أي وقت.</p>
+                    
+                    <div class="maintenance-schedule">
+                        <h4><i class="fas fa-calendar-check"></i> برنامج الصيانة الشامل</h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5>الاختبارات الأسبوعية</h5>
+                                <ul>
+                                    <li>فحص مستوى الوقود</li>
+                                    <li>فحص شحن البطاريات</li>
+                                    <li>اختبار الإنذارات</li>
+                                    <li>فحص الضغط والتدفق</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>الاختبارات الشهرية</h5>
+                                <ul>
+                                    <li>اختبار التحويل التلقائي</li>
+                                    <li>تشغيل محرك الديزل</li>
+                                    <li>اختبار الأداء الكامل</li>
+                                    <li>فحص أنظمة التبريد</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>الاختبارات السنوية</h5>
+                                <ul>
+                                    <li>اختبار الأداء الكامل</li>
+                                    <li>صيانة شاملة للمحرك</li>
+                                    <li>فحص جميع الأنظمة</li>
+                                    <li>تحديث البرمجيات</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Jockey Pumps Section -->
+                <section id="jockey-pumps" class="content-section">
+                    <h2 class="section-title"><i class="fas fa-tachometer-alt"></i> مضخات Jockey للحفاظ على ضغط الشبكة</h2>
+                    
+                    <p>تُعد مضخات Jockey أو مضخات الحفاظ على الضغط عنصراً أساسياً في أنظمة مضخات الحريق المتكاملة. هذه المضخات الصغيرة ولكن الحيوية تلعب دوراً مهماً في الحفاظ على ضغط الشبكة عند المستوى المطلوب، وتعويض التسرب الطبيعي، ومنع التشغيل غير الضروري للمضخات الرئيسية. فهم وظيفة وتصميم هذه المضخات ضروري لضمان الأداء الأمثل لنظام الحريق بأكمله.</p>
+                    
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-lightbulb"></i> الوظيفة الأساسية لمضخات Jockey</h4>
+                        <p>الغرض الأساسي من مضخة Jockey هو الحفاظ على ضغط الشبكة في النطاق المطلوب دون الحاجة لتشغيل المضخة الرئيسية. هذا يحقق عدة فوائد مهمة: توفير الطاقة، تقليل البلى على المضخة الرئيسية، وضمان الاستجابة السريعة عند الحاجة الفعلية للمضخة الرئيسية.</p>
+                    </div>
+                    
+                    <h3 class="subsection-title">مبدأ عمل مضخة Jockey</h3>
+                    
+                    <p>تعمل مضخة Jockey على مبدأ بسيط ولكن فعال. عندما ينخفض ضغط الشبكة نتيجة للتسرب الطبيعي أو الاستهلاك المحدود، تقوم مضخة Jockey بالتشغيل التلقائي لرفع الضغط إلى المستوى المطلوب، ثم تتوقف عند الوصول لضغط الإيقاف المحدد. هذه العملية تحدث باستمرار دون تدخل بشري.</p>
+                    
+                    <div class="process-flow">
+                        <div class="process-step">
+                            <i class="fas fa-arrow-down fa-2x text-danger"></i>
+                            <h5>انخفاض الضغط</h5>
+                            <p>ضغط الشبكة ينخفض بسبب التسرب</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-play fa-2x text-success"></i>
+                            <h5>تشغيل المضخة</h5>
+                            <p>مضخة Jockey تبدأ العمل تلقائياً</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-arrow-up fa-2x text-primary"></i>
+                            <h5>رفع الضغط</h5>
+                            <p>الضغط يرتفع إلى المستوى المطلوب</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-stop fa-2x text-warning"></i>
+                            <h5>إيقاف المضخة</h5>
+                            <p>المضخة تتوقف عند الوصول لضغط الإيقاف</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">أنواع مضخات Jockey</h3>
+                    
+                    <p>تتنوع مضخات Jockey حسب التطبيق والمتطلبات المحددة. كل نوع له خصائص معينة تجعله مناسباً لتطبيقات محددة. الاختيار الصحيح لنوع المضخة يعتمد على حجم النظام، معدل التسرب المتوقع، والضغط المطلوب.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-water"></i>
+                            <h4>المضخات الطاردة المركزية</h4>
+                            <p>الأكثر شيوعاً، مناسبة للأنظمة متوسطة الحجم</p>
+                            <div class="mt-3">
+                                <strong>المواصفات النموذجية:</strong>
+                                <ul>
+                                    <li>التدفق: 1-10 GPM</li>
+                                    <li>الضغط: 10-20 PSI أعلى من المضخة الرئيسية</li>
+                                    <li>المحرك: 0.5-3 HP</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-cogs"></i>
+                            <h4>المضخات الإزاحية</h4>
+                            <p>مناسبة للأنظمة الصغيرة ومعدلات التسرب المنخفضة</p>
+                            <div class="mt-3">
+                                <strong>المواصفات النموذجية:</strong>
+                                <ul>
+                                    <li>التدفق: 0.5-5 GPM</li>
+                                    <li>الضغط: ثابت بغض النظر عن التدفق</li>
+                                    <li>المحرك: 0.25-1 HP</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-layer-group"></i>
+                            <h4>المضخات متعددة المراحل</h4>
+                            <p>للأنظمة عالية الضغط والمباني الشاهقة</p>
+                            <div class="mt-3">
+                                <strong>المواصفات النموذجية:</strong>
+                                <ul>
+                                    <li>التدفق: 2-15 GPM</li>
+                                    <li>الضغط: 100+ PSI</li>
+                                    <li>المحرك: 1-5 HP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">تصميم وحساب مضخة Jockey</h3>
+                    
+                    <p>تصميم مضخة Jockey يتطلب حسابات دقيقة لتحديد التدفق والضغط المطلوبين. هذه الحسابات تعتمد على عدة عوامل مهمة بما في ذلك حجم النظام، معدل التسرب المتوقع، والضغط المطلوب للحفاظ على الشبكة. التصميم الصحيح يضمن عمل المضخة بكفاءة دون إفراط في التشغيل.</p>
+                    
+                    <div class="tech-spec-box">
+                        <h4><i class="fas fa-calculator"></i> معادلات التصميم الأساسية</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>حساب التدفق المطلوب</h5>
+                                <div class="code-block">
+Q_jockey = Leakage_Rate + Safety_Factor
+حيث:
+Q_jockey = تدفق مضخة Jockey (GPM)
+Leakage_Rate = معدل التسرب المتوقع (GPM)
+Safety_Factor = عامل الأمان (25-50% من معدل التسرب)
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>حساب الضغط المطلوب</h5>
+                                <div class="code-block">
+P_jockey = P_main + ΔP
+حيث:
+P_jockey = ضغط مضخة Jockey (PSI)
+P_main = ضغط بدء المضخة الرئيسية (PSI)
+ΔP = الفرق المطلوب (10-20 PSI)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">نظام التحكم في مضخة Jockey</h3>
+                    
+                    <p>نظام التحكم في مضخة Jockey يجب أن يكون دقيقاً وموثوقاً لضمان الأداء المثالي. هذا النظام يتضمن أجهزة استشعار الضغط، محولات الإشارة، وأنظمة التحكم المنطقي. التصميم المتقن لهذا النظام يضمن عدم التداخل مع المضخة الرئيسية ويمنع التشغيل غير الضروري.</p>
+                    
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h4>نقاط الضغط الحرجة</h4>
+                        <p>يجب تحديد نقاط الضغط بدقة لضمان التشغيل الصحيح:</p>
+                        <ul>
+                            <li><strong>ضغط بدء Jockey:</strong> عادة 10-15 PSI أعلى من ضغط بدء المضخة الرئيسية</li>
+                            <li><strong>ضغط إيقاف Jockey:</strong> عادة 5-10 PSI أعلى من ضغط البدء</li>
+                            <li><strong>ضغط بدء المضخة الرئيسية:</strong> الضغط الأدنى المقبول في الشبكة</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h4>أنظمة الحماية والإنذار</h4>
+                        <p>تشمل أنظمة الحماية عدة مكونات مهمة:</p>
+                        <ul>
+                            <li><strong>حماية الحمل الزائد:</strong> لحماية المحرك من التلف</li>
+                            <li><strong>حماية التشغيل الجاف:</strong> لمنع التلف عند انخفاض مستوى المياه</li>
+                            <li><strong>إنذار الفشل:</strong> لتنبيه المشغلين عند حدوث خلل</li>
+                            <li><strong>مراقبة الأداء:</strong> لتتبع عدد مرات التشغيل ومدة العمل</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-title">التكامل مع النظام الرئيسي</h3>
+                    
+                    <p>تكامل مضخة Jockey مع النظام الرئيسي يتطلب تصميماً دقيقاً لضمان عدم التداخل أو التضارب في العمل. هذا التكامل يشمل الجوانب الهيدروليكية، الكهربائية، وأنظمة التحكم. التصميم الصحيح يضمن أن مضخة Jockey تعمل بشكل متناغم مع المضخة الرئيسية.</p>
+                    
+                    <table class="table table-striped comparison-table">
+                        <thead>
+                            <tr>
+                                <th>جانب التكامل</th>
+                                <th>المتطلبات</th>
+                                <th>الاعتبارات الخاصة</th>
+                                <th>النتائج المتوقعة</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>الهيدروليكي</td>
+                                <td>توصيل مناسب، صمامات عدم الرجوع</td>
+                                <td>تجنب التدفق العكسي</td>
+                                <td>تدفق سلس وآمن</td>
+                            </tr>
+                            <tr>
+                                <td>الكهربائي</td>
+                                <td>دوائر منفصلة، حماية مستقلة</td>
+                                <td>عدم التأثير على المضخة الرئيسية</td>
+                                <td>تشغيل مستقل وآمن</td>
+                            </tr>
+                            <tr>
+                                <td>التحكم</td>
+                                <td>نقاط ضغط محددة بدقة</td>
+                                <td>تجنب التداخل في التشغيل</td>
+                                <td>تشغيل متناغم ومنسق</td>
+                            </tr>
+                            <tr>
+                                <td>المراقبة</td>
+                                <td>أنظمة مراقبة متكاملة</td>
+                                <td>معلومات شاملة عن الأداء</td>
+                                <td>مراقبة فعالة ومتكاملة</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3 class="subsection-title">مشاكل شائعة وحلولها</h3>
+                    
+                    <p>مضخات Jockey، رغم بساطتها النسبية، قد تواجه عدة مشاكل شائعة. فهم هذه المشاكل وحلولها يساعد في الحفاظ على الأداء الأمثل للنظام وتجنب الأعطال غير المتوقعة.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="warning-box">
+                                <h4><i class="fas fa-exclamation-triangle"></i> المشاكل الشائعة</h4>
+                                <ul>
+                                    <li><strong>التشغيل المتكرر:</strong> تشغيل وإيقاف مستمر</li>
+                                    <li><strong>عدم البدء:</strong> فشل في التشغيل عند الحاجة</li>
+                                    <li><strong>الضغط غير الكافي:</strong> عدم الوصول للضغط المطلوب</li>
+                                    <li><strong>التسرب:</strong> تسرب من الختم الميكانيكي</li>
+                                    <li><strong>الاهتزاز:</strong> اهتزاز غير طبيعي أثناء التشغيل</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-box">
+                                <h4><i class="fas fa-tools"></i> الحلول المقترحة</h4>
+                                <ul>
+                                    <li><strong>تعديل نقاط الضغط:</strong> زيادة الفرق بين البدء والإيقاف</li>
+                                    <li><strong>فحص الكهرباء:</strong> التأكد من سلامة الدوائر الكهربائية</li>
+                                    <li><strong>تنظيف المضخة:</strong> إزالة الانسدادات والترسبات</li>
+                                    <li><strong>استبدال الختم:</strong> تركيب ختم ميكانيكي جديد</li>
+                                    <li><strong>محاذاة المضخة:</strong> إعادة ضبط المحاذاة</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">الصيانة الدورية</h3>
+                    
+                    <p>مضخات Jockey تحتاج لبرنامج صيانة دوري منتظم لضمان الأداء المثالي والعمر الافتراضي الطويل. هذا البرنامج يشمل الفحوصات الدورية، الصيانة الوقائية، واستبدال الأجزاء المتآكلة.</p>
+                    
+                    <div class="maintenance-schedule">
+                        <h4><i class="fas fa-calendar-alt"></i> برنامج الصيانة المقترح</h4>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>يومياً</h5>
+                                <ul>
+                                    <li>فحص الضغط</li>
+                                    <li>مراقبة التشغيل</li>
+                                    <li>فحص التسرب</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>أسبوعياً</h5>
+                                <ul>
+                                    <li>اختبار نقاط الضغط</li>
+                                    <li>فحص الاهتزاز</li>
+                                    <li>تنظيف المرشحات</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>شهرياً</h5>
+                                <ul>
+                                    <li>فحص الختم الميكانيكي</li>
+                                    <li>اختبار أنظمة الحماية</li>
+                                    <li>تسجيل الأداء</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>سنوياً</h5>
+                                <ul>
+                                    <li>فحص شامل للمضخة</li>
+                                    <li>استبدال الزيوت</li>
+                                    <li>معايرة أجهزة القياس</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Control Systems Section -->
+                <section id="control-systems" class="content-section">
+                    <h2 class="section-title"><i class="fas fa-microchip"></i> أنظمة التحكم الذكية</h2>
+                    
+                    <p>تُعد أنظمة التحكم الذكية قلب محطات مضخات الحريق الحديثة، حيث تدير وتنسق جميع العمليات بدءاً من المراقبة المستمرة وحتى التشغيل التلقائي والإنذار. هذه الأنظمة المتطورة تجمع بين التقنيات الحديثة مثل أجهزة الاستشعار المتقدمة، وحدات التحكم المنطقي المبرمج (PLC)، وأنظمة الاتصال الذكية لضمان الأداء الأمثل والموثوقية العالية.</p>
+                    
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-brain"></i> الذكاء الاصطناعي في أنظمة التحكم</h4>
+                        <p>الأنظمة الذكية الحديثة تستخدم خوارزميات الذكاء الاصطناعي لتحليل البيانات، التنبؤ بالأعطال، وتحسين الأداء تلقائياً. هذه التقنيات تمكن النظام من التعلم من الأنماط التشغيلية واتخاذ قرارات أكثر دقة وسرعة.</p>
+                    </div>
+                    
+                    <h3 class="subsection-title">مكونات نظام التحكم الذكي</h3>
+                    
+                    <p>يتكون نظام التحكم الذكي من عدة مكونات متكاملة تعمل جميعها في تناغم لضمان الأداء الأمثل. كل مكون له وظيفة محددة ومهمة في العملية الشاملة للتحكم والمراقبة.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-microchip"></i>
+                            <h4>وحدة التحكم المركزية (PLC)</h4>
+                            <p>المخ المدبر للنظام، يتولى معالجة جميع الإشارات واتخاذ القرارات</p>
+                            <div class="mt-3">
+                                <strong>المواصفات:</strong>
+                                <ul>
+                                    <li>معالج عالي السرعة</li>
+                                    <li>ذاكرة كبيرة للبرامج</li>
+                                    <li>مدخلات ومخرجات متعددة</li>
+                                    <li>اتصالات شبكية متقدمة</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-eye"></i>
+                            <h4>أجهزة الاستشعار</h4>
+                            <p>عيون النظام، تراقب جميع المعاملات الحيوية باستمرار</p>
+                            <div class="mt-3">
+                                <strong>الأنواع:</strong>
+                                <ul>
+                                    <li>أجهزة استشعار الضغط</li>
+                                    <li>أجهزة استشعار التدفق</li>
+                                    <li>أجهزة استشعار الحرارة</li>
+                                    <li>أجهزة استشعار الاهتزاز</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-desktop"></i>
+                            <h4>واجهة المستخدم (HMI)</h4>
+                            <p>النافذة التي يتفاعل من خلالها المشغل مع النظام</p>
+                            <div class="mt-3">
+                                <strong>المميزات:</strong>
+                                <ul>
+                                    <li>شاشة لمس ملونة</li>
+                                    <li>عرض بياني للبيانات</li>
+                                    <li>إنذارات مرئية وصوتية</li>
+                                    <li>تسجيل الأحداث</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">منطق التحكم والتشغيل</h3>
+                    
+                    <p>منطق التحكم في الأنظمة الذكية يعتمد على خوارزميات متطورة تأخذ في الاعتبار جميع المعاملات والظروف المختلفة. هذا المنطق يضمن اتخاذ القرارات الصحيحة في الوقت المناسب وبناءً على معلومات دقيقة وموثوقة.</p>
+                    
+                    <div class="process-flow">
+                        <div class="process-step">
+                            <i class="fas fa-search fa-2x text-primary"></i>
+                            <h5>جمع البيانات</h5>
+                            <p>استقبال إشارات من جميع أجهزة الاستشعار</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-brain fa-2x text-success"></i>
+                            <h5>معالجة البيانات</h5>
+                            <p>تحليل وتفسير البيانات المستقبلة</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-balance-scale fa-2x text-warning"></i>
+                            <h5>اتخاذ القرار</h5>
+                            <p>تحديد الإجراء المطلوب بناءً على التحليل</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-cog fa-2x text-info"></i>
+                            <h5>تنفيذ الإجراء</h5>
+                            <p>إرسال أوامر التحكم للأجهزة المختلفة</p>
+                        </div>
+                        <div class="process-step">
+                            <i class="fas fa-chart-line fa-2x text-danger"></i>
+                            <h5>مراقبة النتائج</h5>
+                            <p>متابعة تأثير الإجراء المتخذ</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">أنظمة الإنذار المتقدمة</h3>
+                    
+                    <p>تتضمن أنظمة التحكم الذكية أنظمة إنذار متطورة قادرة على تصنيف الإنذارات حسب الأولوية والخطورة. هذه الأنظمة لا تكتفي بإرسال إنذار بسيط، بل تقدم معلومات تفصيلية عن طبيعة المشكلة والإجراءات المقترحة لحلها.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="warning-box">
+                                <h4><i class="fas fa-exclamation-triangle"></i> أنواع الإنذارات</h4>
+                                <ul>
+                                    <li><strong>إنذارات حرجة:</strong> تتطلب تدخل فوري</li>
+                                    <li><strong>إنذارات تحذيرية:</strong> تنبه لحالات غير طبيعية</li>
+                                    <li><strong>إنذارات معلوماتية:</strong> تسجل الأحداث المهمة</li>
+                                    <li><strong>إنذارات الصيانة:</strong> تذكر بالصيانة الدورية</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-box">
+                                <h4><i class="fas fa-bell"></i> طرق الإنذار</h4>
+                                <ul>
+                                    <li><strong>إنذارات صوتية:</strong> أصوات مختلفة لكل نوع</li>
+                                    <li><strong>إنذارات مرئية:</strong> أضواء ملونة ومضيئة</li>
+                                    <li><strong>الرسائل النصية:</strong> رسائل SMS للهواتف</li>
+                                    <li><strong>البريد الإلكتروني:</strong> تقارير مفصلة</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">تسجيل البيانات والتقارير</h3>
+                    
+                    <p>تسجيل البيانات وإنتاج التقارير جزء أساسي من أنظمة التحكم الذكية. هذه الوظيفة تساعد في تتبع الأداء، تحليل الاتجاهات، وتحديد الحاجة للصيانة الوقائية. البيانات المسجلة تشمل جميع المعاملات التشغيلية والأحداث المهمة.</p>
+                    
+                    <div class="tech-spec-box">
+                        <h4><i class="fas fa-database"></i> أنواع البيانات المسجلة</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>البيانات التشغيلية</h5>
+                                <ul>
+                                    <li>الضغط والتدفق</li>
+                                    <li>سرعة المحرك</li>
+                                    <li>درجات الحرارة</li>
+                                    <li>استهلاك الطاقة</li>
+                                    <li>مستوى الوقود</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>بيانات الأحداث</h5>
+                                <ul>
+                                    <li>أوقات التشغيل والإيقاف</li>
+                                    <li>الإنذارات والأعطال</li>
+                                    <li>عمليات الصيانة</li>
+                                    <li>التغييرات في الإعدادات</li>
+                                    <li>اختبارات الأداء</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">التحكم التكيفي والتحسين التلقائي</h3>
+                    
+                    <p>الأنظمة الذكية المتقدمة تتضمن ميزات التحكم التكيفي التي تمكن النظام من تحسين أدائه تلقائياً بناءً على الظروف التشغيلية المختلفة. هذه التقنيات تستخدم خوارزميات الذكاء الاصطناعي والتعلم الآلي لتحليل الأنماط وتحسين الأداء.</p>
+                    
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h4>تحليل الأنماط</h4>
+                        <p>النظام يحلل البيانات التاريخية لتحديد الأنماط التشغيلية المختلفة. هذا التحليل يساعد في:</p>
+                        <ul>
+                            <li>تحديد أوقات الذروة والانخفاض في الاستخدام</li>
+                            <li>التنبؤ بمعدلات التسرب والاستهلاك</li>
+                            <li>تحديد الأعطال المحتملة قبل حدوثها</li>
+                            <li>تحسين جداول الصيانة الوقائية</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h4>التحسين التلقائي</h4>
+                        <p>بناءً على تحليل الأنماط، يقوم النظام بتحسين الأداء تلقائياً من خلال:</p>
+                        <ul>
+                            <li>تعديل نقاط البدء والإيقاف للمضخات</li>
+                            <li>تحسين تسلسل تشغيل المضخات المتعددة</li>
+                            <li>تقليل استهلاك الطاقة في أوقات الانخفاض</li>
+                            <li>تحسين زمن الاستجابة للطوارئ</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-title">أمان المعلومات والحماية السيبرانية</h3>
+                    
+                    <p>مع تزايد الاعتماد على التقنيات الرقمية والاتصالات الشبكية، تصبح الحماية السيبرانية أمراً بالغ الأهمية في أنظمة التحكم الذكية. هذه الأنظمة تحتاج لحماية متعددة المستويات لضمان أمان البيانات والحماية من الهجمات السيبرانية.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>حماية الشبكة</h4>
+                            <p>جداران ناري وأنظمة كشف التسلل لحماية الشبكة من الهجمات الخارجية</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-key"></i>
+                            <h4>التشفير المتقدم</h4>
+                            <p>تشفير جميع البيانات المنقولة والمخزنة لحماية المعلومات الحساسة</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-user-lock"></i>
+                            <h4>إدارة الهوية</h4>
+                            <p>أنظمة مصادقة متعددة العوامل وإدارة صلاحيات المستخدمين</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">التطبيقات المتقدمة والمستقبلية</h3>
+                    
+                    <p>تستمر أنظمة التحكم الذكية في التطور مع ظهور تقنيات جديدة مثل إنترنت الأشياء (IoT)، الحوسبة السحابية، والذكاء الاصطناعي المتقدم. هذه التقنيات تفتح آفاقاً جديدة لتحسين الأداء والموثوقية.</p>
+                    
+                    <div class="comparison-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>التقنية</th>
+                                    <th>الفوائد الحالية</th>
+                                    <th>التطبيقات المستقبلية</th>
+                                    <th>التحديات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>إنترنت الأشياء</td>
+                                    <td>مراقبة عن بُعد، تجميع البيانات</td>
+                

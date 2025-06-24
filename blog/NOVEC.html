@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أنظمة الإطفاء النظيفة NOVEC 1230 - الحل المتطور لحماية البيئة والمعدات</title>
+    
+    <!-- Bootstrap RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --success-color: #22c55e;
+            --info-color: #06b6d4;
+            --light-color: #f8fafc;
+            --dark-color: #1e293b;
+            --gradient-primary: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            --gradient-accent: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            --gradient-danger: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+            line-height: 1.8;
+            color: var(--dark-color);
+            background-color: #ffffff;
+            font-size: 16px;
+        }
+        
+        .hero-section {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.4rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 1px solid rgba(37, 99, 235, 0.1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-description {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .stats-section {
+            background: var(--light-color);
+            padding: 80px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+        }
+        
+        .comparison-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+        
+        .comparison-table th {
+            background: var(--gradient-primary);
+            color: white;
+            font-weight: 600;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .comparison-table td {
+            padding: 1.2rem;
+            text-align: center;
+            vertical-align: middle;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .comparison-table tr:hover {
+            background-color: #f8fafc;
+        }
+        
+        .advantage-badge {
+            background: var(--gradient-accent);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .disadvantage-badge {
+            background: var(--gradient-danger);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .neutral-badge {
+            background: #6b7280;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .application-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--accent-color);
+        }
+        
+        .application-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .technical-specs {
+            background: var(--light-color);
+            padding: 60px 0;
+        }
+        
+        .spec-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .spec-item:last-child {
+            border-bottom: none;
+        }
+        
+        .spec-label {
+            font-weight: 600;
+            color: var(--primary-color);
+            width: 200px;
+            flex-shrink: 0;
+        }
+        
+        .spec-value {
+            color: #6b7280;
+        }
+        
+        .process-step {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .process-number {
+            position: absolute;
+            top: -15px;
+            right: 2rem;
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .process-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .benefit-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .benefit-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            position: relative;
+            padding-right: 2rem;
+        }
+        
+        .benefit-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--success-color);
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .benefit-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .alert-custom {
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .alert-info {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            color: #1e40af;
+        }
+        
+        .alert-success {
+            background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+            color: #166534;
+        }
+        
+        .alert-warning {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            color: #92400e;
+        }
+        
+        .quote-section {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .quote-text {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .quote-author {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .footer-section {
+            background: var(--dark-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .environmental-impact {
+            background: var(--gradient-accent);
+            color: white;
+            padding: 60px 0;
+            margin: 60px 0;
+        }
+        
+        .impact-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .impact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .impact-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .safety-section {
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+            padding: 60px 0;
+            margin: 60px 0;
+        }
+        
+        .safety-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(239, 68, 68, 0.1);
+            border-left: 5px solid var(--danger-color);
+        }
+        
+        .maintenance-timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-right: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: 1rem;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: var(--primary-color);
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            right: 0.5rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--primary-color);
+            border-radius: 50%;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .cost-analysis {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+        
+        .cost-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .cost-item:last-child {
+            border-bottom: none;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .cost-label {
+            font-weight: 500;
+        }
+        
+        .cost-value {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .feature-card {
+                margin-bottom: 2rem;
+            }
+            
+            .spec-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .spec-label {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+        .print-only {
+            display: none;
+        }
+        
+        @media print {
+            .print-only {
+                display: block;
+            }
+            
+            .no-print {
+                display: none;
+            }
+            
+            .hero-section {
+                padding: 40px 0;
+            }
+            
+            .section {
+                padding: 30px 0;
+            }
+            
+            .feature-card,
+            .application-card,
+            .process-step {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 hero-content">
+                    <h1 class="hero-title">
+                        <i class="fas fa-fire-extinguisher me-3"></i>
+                        نظام NOVEC 1230
+                    </h1>
+                    <p class="hero-subtitle">
+                        الحل المتطور للإطفاء النظيف - حماية البيئة والمعدات والأشخاص بتقنية متقدمة وصديقة للبيئة
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="fas fa-leaf" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                                <h5>صديق للبيئة</h5>
+                                <p>تأثير صفري على طبقة الأوزون</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="fas fa-shield-alt" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                                <h5>آمن للأشخاص</h5>
+                                <p>غير سام ولا يسبب ضرراً للبشر</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <i class="fas fa-microchip" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                                <h5>يحمي المعدات</h5>
+                                <p>لا يتلف الإلكترونيات الحساسة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">ثوانٍ للإطفاء</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">تأثير على الأوزون</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">أيام في الغلاف الجوي</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title">مقدمة عن نظام NOVEC 1230</h2>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead">
+                                يُعد نظام NOVEC 1230 ثورة حقيقية في مجال أنظمة الإطفاء النظيفة، حيث يمثل الجيل الجديد من وسائل مكافحة الحرائق التي تجمع بين الفعالية القصوى في الإطفاء والحفاظ على البيئة وسلامة الأشخاص. تم تطوير هذا النظام بواسطة شركة 3M العالمية ليحل محل الأنظمة التقليدية التي تعتمد على الهالونات والمواد الكيميائية الضارة بالبيئة.
+                            </p>
+                            <p>
+                                يتميز NOVEC 1230 بكونه مركب فلوروكيتون يحمل الاسم الكيميائي (CF3CF2C(O)CF(CF3)2) والذي يُعرف تجارياً باسم FK-5-1-12. هذا المركب الفريد يعمل بآلية مزدوجة للإطفاء، حيث يمتص الحرارة من منطقة الاحتراق ويقطع التفاعل الكيميائي للحريق، مما يؤدي إلى إطفاء سريع وفعال دون ترك أي بقايا أو آثار جانبية.
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="alert alert-custom alert-info">
+                                <h5><i class="fas fa-info-circle me-2"></i>نقطة مهمة</h5>
+                                <p>
+                                    تم اعتماد نظام NOVEC 1230 من قبل وكالة حماية البيئة الأمريكية (EPA) والاتحاد الأوروبي كبديل آمن وفعال للهالونات المحظورة بموجب بروتوكول مونتريال لحماية طبقة الأوزون.
+                                </p>
+            
+
+                        </div>
+                            <p>
+                                إن الحاجة إلى نظام إطفاء متطور مثل NOVEC 1230 تنبع من التحديات الحديثة في حماية المنشآت الحساسة مثل مراكز البيانات والمختبرات والمتاحف والمرافق الطبية، حيث تتطلب هذه المنشآت حلولاً متخصصة تضمن الإطفاء السريع دون إلحاق أضرار بالمعدات الثمينة أو الأشخاص المتواجدين في المكان.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">المميزات الرئيسية لنظام NOVEC 1230</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4 class="feature-title">الإطفاء السريع</h4>
+                        <p class="feature-description">
+                            يعمل النظام على إطفاء الحرائق في غضون 10 ثوانٍ فقط من التفعيل، مما يقلل من الأضرار المحتملة إلى أدنى حد ممكن. هذه السرعة الفائقة تُعزى إلى الآلية المزدوجة للإطفاء التي تعمل على امتصاص الحرارة وقطع التفاعل الكيميائي للحريق بشكل متزامن.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4 class="feature-title">صديق للبيئة</h4>
+                        <p class="feature-description">
+                            يتميز بتأثير صفري على طبقة الأوزون (ODP = 0) وإمكانية احترار عالمي منخفضة جداً (GWP = 1). كما أن عمره في الغلاف الجوي قصير جداً (5 أيام فقط)، مما يعني أنه لا يتراكم في البيئة ولا يسبب أضراراً بيئية طويلة المدى.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="feature-title">آمن للأشخاص</h4>
+                        <p class="feature-description">
+                            يمكن للأشخاص البقاء في المناطق المحمية أثناء تفريغ النظام دون خطر على صحتهم. مستوى الأمان (NOAEL) يبلغ 10%، وهو أعلى من معظم الأنظمة الأخرى، مما يضمن سلامة الأشخاص حتى عند التعرض المباشر للغاز.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h4 class="feature-title">يحمي المعدات الحساسة</h4>
+                        <p class="feature-description">
+                            لا يترك أي بقايا أو رواسب بعد الإطفاء، مما يحمي المعدات الإلكترونية الحساسة والوثائق المهمة. النظام لا يسبب تآكل أو تلف للمعادن والبلاستيك والمطاط، ولا يؤثر على الخصائص الكهربائية للمعدات.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-thermometer-half"></i>
+                        </div>
+                        <h4 class="feature-title">مقاوم للظروف الجوية</h4>
+                        <p class="feature-description">
+                            يعمل بكفاءة في نطاق واسع من درجات الحرارة (-40°C إلى +50°C) والرطوبة، مما يجعله مناسباً للاستخدام في مختلف البيئات والمناخات. كما أنه مقاوم للاهتزازات والصدمات، مما يضمن موثوقية النظام تحت ظروف التشغيل المختلفة.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4 class="feature-title">سهولة الصيانة</h4>
+                        <p class="feature-description">
+                            يتطلب صيانة دورية بسيطة ومنخفضة التكلفة. نظام المراقبة المتقدم يوفر تنبيهات مبكرة عن أي مشاكل محتملة، كما أن إعادة تعبئة النظام بعد التفعيل أمر سهل وسريع، دون الحاجة لتنظيف المنطقة المحمية.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="technical-specs">
+        <div class="container">
+            <h2 class="section-title">المواصفات التقنية</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h4 class="feature-title">خصائص المادة الفعالة</h4>
+                        <div class="spec-item">
+                            <span class="spec-label">الاسم الكيميائي:</span>
+                            <span class="spec-value">CF3CF2C(O)CF(CF3)2</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">الاسم التجاري:</span>
+                            <span class="spec-value">FK-5-1-12</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">الوزن الجزيئي:</span>
+                            <span class="spec-value">316 جم/مول</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">نقطة الغليان:</span>
+                            <span class="spec-value">49.2°C</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">الكثافة السائلة:</span>
+                            <span class="spec-value">1.6 جم/سم³ عند 25°C</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">الكثافة البخارية:</span>
+                            <span class="spec-value">10.9 (الهواء = 1)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h4 class="feature-title">خصائص الأداء</h4>
+                        <div class="spec-item">
+                            <span class="spec-label">تركيز التصميم:</span>
+                            <span class="spec-value">4.2% - 5.8%</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">زمن الإطفاء:</span>
+                            <span class="spec-value">≤ 10 ثوانٍ</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">نطاق درجة الحرارة:</span>
+                            <span class="spec-value">-40°C إلى +50°C</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">مستوى الأمان (NOAEL):</span>
+                            <span class="spec-value">10%</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">مستوى التأثير الأدنى (LOAEL):</span>
+                            <span class="spec-value">>10%</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">فترة التثبيط:</span>
+                            <span class="spec-value">10 دقائق</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h4 class="feature-title">الخصائص البيئية</h4>
+                        <div class="spec-item">
+                            <span class="spec-label">تأثير طبقة الأوزون (ODP):</span>
+                            <span class="spec-value">0</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">إمكانية الاحترار العالمي (GWP):</span>
+                            <span class="spec-value">1</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">عمر الغلاف الجوي:</span>
+                            <span class="spec-value">5 أيام</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">إمكانية الأكسدة الضوئية:</span>
+                            <span class="spec-value">منخفضة جداً</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">التحلل الحيوي:</span>
+                            <span class="spec-value">لا ينطبق</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">التراكم الحيوي:</span>
+                            <span class="spec-value">لا يحدث</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-card">
+                        <h4 class="feature-title">خصائص التخزين والنقل</h4>
+                        <div class="spec-item">
+                            <span class="spec-label">ضغط التشغيل:</span>
+                            <span class="spec-value">25 بار عند 20°C</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">ضغط الاختبار:</span>
+                            <span class="spec-value">67.5 بار</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">مادة الأسطوانة:</span>
+                            <span class="spec-value">فولاذ كربوني أو ستانلس ستيل</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">نوع الصمام:</span>
+                            <span class="spec-value">صمام الإطلاق السريع</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">نظام المراقبة:</span>
+                            <span class="spec-value">24/7 مراقبة الضغط</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">صلاحية التخزين:</span>
+                            <span class="spec-value">20 سنة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Working Mechanism -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">آلية العمل</h2>
+            <div class="row">
+                <div class="col-12">
+                    <p class="lead text-center mb-5">
+                        يعمل نظام NOVEC 1230 بآلية مزدوجة فريدة تجمع بين الإطفاء الفيزيائي والكيميائي
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <h4 class="process-title">الكشف والتنبيه</h4>
+                        <p>
+                            يبدأ النظام بالعمل عند اكتشاف الحريق من خلال أجهزة الاستشعار المتطورة التي تتضمن كاشفات الدخان والحرارة والغازات. هذه الأجهزة مصممة للكشف المبكر عن الحرائق، حتى في مراحلها الأولية، مما يضمن التدخل السريع قبل انتشار النيران.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>كشف متعدد الطرق للحرائق</li>
+                            <li>إنذار مبكر وتنبيه فوري</li>
+                            <li>تكامل مع أنظمة الإنذار المركزية</li>
+                            <li>إمكانية التحكم اليدوي في الطوارئ</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <h4 class="process-title">الإطلاق والتوزيع</h4>
+                        <p>
+                            بعد الكشف، يتم إطلاق NOVEC 1230 من الأسطوانات المضغوطة عبر شبكة من الأنابيب والفوهات المصممة لضمان التوزيع المتجانس للغاز في جميع أنحاء المنطقة المحمية. النظام مصمم لتحقيق التركيز المطلوب خلال 10 ثوانٍ فقط.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>إطلاق سريع وموثوق</li>
+                            <li>توزيع متجانس للغاز</li>
+                            <li>تغطية شاملة للمنطقة المحمية</li>
+                            <li>نظام أنابيب محسّن للتدفق</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <h4 class="process-title">امتصاص الحرارة</h4>
+                        <p>
+                            يعمل NOVEC 1230 بشكل أساسي كمادة ماصة للحرارة، حيث يمتص الطاقة الحرارية من منطقة الاحتراق ويحولها إلى طاقة كامنة من خلال عملية التبخر. هذا الامتصاص السريع للحرارة يقلل من درجة الحرارة إلى ما دون نقطة الاشتعال، مما يؤدي إلى إطفاء النار.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>امتصاص سريع وفعال للحرارة</li>
+                            <li>تبريد سريع لمنطقة الاحتراق</li>
+                            <li>منع إعادة الاشتعال</li>
+                            <li>حماية المواد المحيطة من التلف الحراري</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="process-step">
+                        <div class="process-number">4</div>
+                        <h4 class="process-title">قطع التفاعل الكيميائي</h4>
+                        <p>
+                            بالإضافة للإطفاء الفيزيائي، يعمل NOVEC 1230 على قطع التفاعل الكيميائي للحريق من خلال التدخل في عملية الاحتراق على المستوى الجزيئي. يتفاعل مع الجذور الحرة المسؤولة عن استمرار الاحتراق، مما يوقف تفاعل السلسلة ويؤدي إلى إطفاء كامل للحريق.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>قطع فعال لسلسلة الاحتراق</li>
+                            <li>منع تكون جذور حرة جديدة</li>
+                            <li>إطفاء كامل وموثوق</li>
+                            <li>فعالية ضد أنواع مختلفة من الحرائق</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="process-step">
+                        <div class="process-number">5</div>
+                        <h4 class="process-title">التثبيط والحماية</h4>
+                        <p>
+                            بعد الإطفاء الأولي، يحافظ النظام على تركيز كافٍ من NOVEC 1230 في المنطقة المحمية لمدة 10 دقائق على الأقل لمنع إعادة الاشتعال. هذه المرحلة ضرورية لضمان الإطفاء الكامل والآمن، خاصة في الحرائق العميقة أو تلك التي تحتوي على مواد قابلة للاشتعال مدفونة.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>منع إعادة الاشتعال الفوري</li>
+                            <li>حماية مستمرة لفترة كافية</li>
+                            <li>ضمان الإطفاء الكامل</li>
+                            <li>وقت كافٍ لوصول فرق الإطفاء</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="process-step">
+                        <div class="process-number">6</div>
+                        <h4 class="process-title">التبديد والتنظيف</h4>
+                        <p>
+                            بعد انتهاء فترة التثبيط، يتبدد NOVEC 1230 بشكل طبيعي دون ترك أي بقايا أو رواسب. الغاز يتحول إلى الحالة الغازية ويخرج من المنطقة المحمية عبر أنظمة التهوية الطبيعية أو القسرية. هذا يعني عدم الحاجة لأي عمليات تنظيف خاصة بعد تفعيل النظام.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>تبديد طبيعي دون تدخل</li>
+                            <li>عدم وجود بقايا أو رواسب</li>
+                            <li>عودة سريعة لطبيعة التشغيل</li>
+                            <li>لا حاجة لتنظيف خاص</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Environmental Impact -->
+    <section class="environmental-impact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-white">التأثير البيئي والاستدامة</h2>
+                    <p class="lead">
+                        NOVEC 1230 يمثل نقلة نوعية في مجال الحماية البيئية مقارنة بأنظمة الإطفاء التقليدية
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="impact-card">
+                        <div class="text-center">
+                            <div class="impact-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h5 class="impact-title">حماية الأوزون</h5>
+                            <p>
+                                تأثير صفري على طبقة الأوزون (ODP = 0)، مما يعني عدم المساهمة في تدمير طبقة الأوزون التي تحمي الأرض من الأشعة فوق البنفسجية الضارة. هذا يجعله بديلاً مثالياً للهالونات المحظورة.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="impact-card">
+                        <div class="text-center">
+                            <div class="impact-icon">
+                                <i class="fas fa-thermometer-empty"></i>
+                            </div>
+                            <h5 class="impact-title">احترار عالمي منخفض</h5>
+                            <p>
+                                إمكانية احترار عالمي منخفضة جداً (GWP = 1)، مما يعني أن تأثيره على تغير المناخ مماثل لتأثير ثاني أكسيد الكربون الطبيعي، وهو أقل بكثير من غازات الإطفاء التقليدية.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="impact-card">
+                        <div class="text-center">
+                            <div class="impact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h5 class="impact-title">عمر قصير في الغلاف الجوي</h5>
+                            <p>
+                                يبقى في الغلاف الجوي لمدة 5 أيام فقط، مقارنة بعقود أو قرون للغازات الأخرى. هذا يعني أنه لا يتراكم في البيئة ولا يسبب تأثيرات بيئية طويلة المدى.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="impact-card">
+                        <div class="text-center">
+                            <div class="impact-icon">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <h5 class="impact-title">قابلية إعادة التدوير</h5>
+                            <p>
+                                يمكن استرداد وإعادة تدوير NOVEC 1230 بنسبة عالية، مما يقلل من الحاجة لإنتاج كميات جديدة ويساهم في الاقتصاد الدائري. كما أن عملية التصنيع نفسها صديقة للبيئة.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="alert alert-custom alert-success">
+                        <h5><i class="fas fa-leaf me-2"></i>شهادات الاستدامة</h5>
+                        <p class="mb-0">
+                            حصل NOVEC 1230 على شهادات الاستدامة من منظمات بيئية عالمية، وهو معتمد من وكالة حماية البيئة الأمريكية (EPA) والاتحاد الأوروبي كبديل آمن للبيئة. كما أنه متوافق مع معايير الاستدامة الدولية مثل LEED و BREEAM.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">تطبيقات النظام</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="application-card">
+                        <h4 class="application-title">
+                            <i class="fas fa-server me-2"></i>
+                            مراكز البيانات والحاسوب
+                        </h4>
+                        <p>
+                            تُعتبر مراكز البيانات من أهم التطبيقات لنظام NOVEC 1230، حيث تحتوي على معدات إلكترونية حساسة وثمينة تتطلب حماية فورية من الحرائق دون إتلاف المعدات. النظام يوفر حماية شاملة للخوادم وأنظمة التخزين والشبكات، مع ضمان استمرارية العمل بعد الإطفاء.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>حماية المعدات الحساسة من التلف</li>
+                            <li>عدم انقطاع الخدمات الرقمية</li>
+                            <li>حماية البيانات المهمة</li>
+                            <li>سرعة العودة للتشغيل العادي</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="application-card">
+                        <h4 class="application-title">
+                            <i class="fas fa-flask me-2"></i>
+                            المختبرات والمرافق الطبية
+                        </h4>
+                        <p>
+                            في المختبرات الطبية والعلمية، يوفر NOVEC 1230 حماية فعالة للمعدات الدقيقة والعينات الحساسة. النظام آمن للاستخدام في الأماكن التي قد يتواجد فيها أشخاص، مما يجعله مثالياً للمختبرات النشطة والمستشفيات.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>حماية المعدات الطبية المتطورة</li>
+                            <li>أمان كامل للمرضى والعاملين</li>
+                            <li>حفظ العينات والمواد الحساسة</li>
+                            <li>عدم تلوث البيئة المعقمة</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="application-card">
+                        <h4 class="application-title">
+                            <i class="fas fa-university me-2"></i>
+                            المتاحف والمكتبات
+                        </h4>
+                        <p>
+                            يوفر النظام حماية استثنائية للمواد الأثرية والوثائق التاريخية النادرة. عدم ترك أي بقايا يعني عدم تلف المواد الورقية أو الأقمشة أو الأعمال الفنية، مما يحافظ على التراث الثقافي للأجيال القادمة.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>حماية المواد الأثرية النادرة</li>
+                            <li>عدم تلف الوثائق التاريخية</li>
+                            <li>حفظ الأعمال الفنية الثمينة</li>
+                            <li>صيانة التراث الثقافي</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="application-card">
+                        <h4 class="application-title">
+                            <i class="fas fa-broadcast-tower me-2"></i>
+                            مراكز الاتصالات
+                        </h4>
+                        <p>
+                            في مراكز الاتصالات وشبكات الطوارئ، يضمن NOVEC 1230 استمرارية الخدمات الحيوية. النظام يحمي معدات الاتصالات من التلف ويحافظ على البنية التحتية للاتصالات، مما يضمن عدم انقطاع الخدمات الأساسية.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>ضمان استمرارية الاتصالات</li>
+                            <li>حماية الشبكات الحيوية</li>
+                            <li>عدم انقطاع خدمات الطوارئ</li>
+                            <li>حماية البنية التحتية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="application-card">
+                        <h4 class="application-title">
+                            <i class="fas fa-plane me-2"></i>
+                            صناعة الطيران والفضاء
+                        </h4>
+                        <p>
+                            يُستخدم في حماية المعدات الإلكترونية الحساسة في الطائرات والمركبات الفضائية. خفة وزن النظام ومقاومته للظروف الجوية القاسية يجعله مثالياً للتطبيقات الطيرانية، حيث كل كيلوغرام له أهمية.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>وزن منخفض للتطبيقات الطيرانية</li>
+                            <li>مقاومة للظروف الجوية القاسية</li>
+                            <li>حماية الأنظمة المهمة للطيران</li>
+                            <li>موثوقية عالية في الطوارئ</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="application-card">
+                        <h4 class="application-title">
+                            <i class="fas fa-ship me-2"></i>
+                            السفن والمنصات البحرية
+                        </h4>
+                        <p>
+                            في البيئة البحرية، يوفر NOVEC 1230 حماية موثوقة للمعدات الحساسة على السفن والمنصات البحرية. مقاومته للرطوبة والتآكل يجعله مناسباً للاستخدام في البيئات البحرية القاسية، مع ضمان عدم تلوث البيئة البحرية.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>مقاومة للبيئة البحرية القاسية</li>
+                            <li>عدم تلوث المياه البحرية</li>
+                            <li>حماية المعدات الملاحية</li>
+                            <li>موثوقية في الظروف الصعبة</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="application-card">
+                        <h4 class="application-title">
+                            <i class="fas fa-industry me-2"></i>
+                            المرافق الصناعية
+                        </h4>
+                        <p>
+                            يُستخدم في حماية غرف التحكم والمعدات الإلكترونية في المصانع ومحطات الطاقة. النظام يوفر حماية فعالة للأنظمة الصناعية المهمة دون تعطيل العمليات الإنتاجية، مما يضمن استمرارية الإنتاج وسلامة العاملين.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>حماية غرف التحكم الصناعية</li>
+                            <li>عدم تعطيل العمليات الإنتاجية</li>
+                            <li>سلامة العاملين في المصانع</li>
+                            <li>حماية الاستثمارات الصناعية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="application-card">
+                        <h4 class="application-title">
+                            <i class="fas fa-car me-2"></i>
+                            صناعة السيارات
+                        </h4>
+                        <p>
+                            في صناعة السيارات، يُستخدم لحماية المعدات المتطورة في خطوط الإنتاج وغرف الطلاء. النظام يحمي الروبوتات والمعدات الإلكترونية دون التأثير على جودة الإنتاج أو البيئة المحيطة، مما يضمن جودة المنتج النهائي.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>حماية خطوط الإنتاج المتطورة</li>
+                            <li>عدم التأثير على جودة الطلاء</li>
+                            <li>حماية الروبوتات الصناعية</li>
+                            <li>ضمان جودة المنتج النهائي</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">مقارنة مع أنظمة الإطفاء الأخرى</h2>
+            <div class="table-responsive">
+                <table class="table comparison-table">
+                    <thead>
+                        <tr>
+                            <th>المعيار</th>
+                            <th>NOVEC 1230</th>
+                            <th>CO2</th>
+                            <th>FM-200</th>
+                            <th>المياه</th>
+                            <th>الرغوة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>سرعة الإطفاء</strong></td>
+                            <td><span class="advantage-badge">≤ 10 ثوانٍ</span></td>
+                            <td><span class="neutral-badge">30-60 ثانية</span></td>
+                            <td><span class="advantage-badge">≤ 10 ثوانٍ</span></td>
+                            <td><span class="neutral-badge">دقائق</span></td>
+                            <td><span class="neutral-badge">1-2 دقيقة</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>تأثير طبقة الأوزون</strong></td>
+                            <td><span class="advantage-badge">0</span></td>
+                            <td><span class="advantage-badge">0</span></td>
+                            <td><span class="advantage-badge">0</span></td>
+                            <td><span class="advantage-badge">0</span></td>
+                            <td><span class="advantage-badge">0</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>إمكانية الاحترار العالمي</strong></td>
+                            <td><span class="advantage-badge">1</span></td>
+                            <td><span class="advantage-badge">1</span></td>
+                            <td><span class="disadvantage-badge">3220</span></td>
+                            <td><span class="advantage-badge">0</span></td>
+                            <td><span class="advantage-badge">0</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>عمر الغلاف الجوي</strong></td>
+                            <td><span class="advantage-badge">5 أيام</span></td>
+                            <td><span class="neutral-badge">دائم</span></td>
+                            <td><span class="disadvantage-badge">31 سنة</span></td>
+                            <td><span class="advantage-badge">لا ينطبق</span></td>
+                            <td><span class="advantage-badge">لا ينطبق</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>الأمان للأشخاص</strong></td>
+                            <td><span class="advantage-badge">آمن جداً</span></td>
+                            <td><span class="disadvantage-badge">خطير</span></td>
+                            <td><span class="neutral-badge">آمن نسبياً</span></td>
+                            <td><span class="advantage-badge">آمن</span></td>
+                            <td><span class="advantage-badge">آمن</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>تأثير على المعدات</strong></td>
+                            <td><span class="advantage-badge">لا يضر</span></td>
+                            <td><span class="advantage-badge">لا يضر</span></td>
+                            <td><span class="advantage-badge">لا يضر</span></td>
+                            <td><span class="disadvantage-badge">يتلف</span></td>
+                            <td><span class="disadvantage-badge">يتلف</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>البقايا بعد الإطفاء</strong></td>
+                            <td><span class="advantage-badge">لا توجد</span></td>
+                            <td><span class="advantage-badge">لا توجد</span></td>
+                            <td><span class="advantage-badge">لا توجد</span></td>
+                            <td><span class="disadvantage-badge">مياه</span></td>
+                            <td><span class="disadvantage-badge">رغوة</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>التكلفة الأولية</strong></td>
+                            <td><span class="neutral-badge">متوسطة</span></td>
+                            <td><span class="advantage-badge">منخفضة</span></td>
+                            <td><span class="neutral-badge">متوسطة</span></td>
+                            <td><span class="advantage-badge">منخفضة</span></td>
+                            <td><span class="advantage-badge">منخفضة</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>تكلفة الصيانة</strong></td>
+                            <td><span class="advantage-badge">منخفضة</span></td>
+                            <td><span class="advantage-badge">منخفضة</span></td>
+                            <td><span class="neutral-badge">متوسطة</span></td>
+                            <td><span class="advantage-badge">منخفضة</span></td>
+                            <td><span class="neutral-badge">متوسطة</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>مساحة التخزين</strong></td>
+                            <td><span class="advantage-badge">صغيرة</span></td>
+                            <td><span class="neutral-badge">متوسطة</span></td>
+                            <td><span class="advantage-badge">صغيرة</span></td>
+                            <td><span class="neutral-badge">متوسطة</span></td>
+                            <td><span class="disadvantage-badge">كبيرة</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <div class="alert alert-custom alert-success">
+                        <h5><i class="fas fa-trophy me-2"></i>المميزات الرئيسية</h5>
+                        <ul class="benefit-list">
+                            <li>أسرع نظام إطفاء متاح</li>
+                            <li>أقل تأثير بيئي</li>
+                            <li>أعلى مستوى أمان</li>
+                            <li>لا يتلف المعدات</li>
+                            <li>صيانة بسيطة</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="alert alert-custom alert-warning">
+                        <h5><i class="fas fa-balance-scale me-2"></i>اعتبارات التكلفة</h5>
+                        <p>
+                            رغم أن التكلفة الأولية قد تكون أعلى من بعض الأنظمة التقليدية، إلا أن NOVEC 1230 يوفر وفورات كبيرة في:
+                        </p>
+                        <ul class="benefit-list">
+                            <li>تكاليف الصيانة المنخفضة</li>
+                            <li>عدم الحاجة للتنظيف</li>
+                            <li>حماية المعدات من التلف</li>
+                            <li>تقليل التأمين</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="alert alert-custom alert-info">
+                        <h5><i class="fas fa-lightbulb me-2"></i>توصيات الاستخدام</h5>
+                        <p>
+                            يُنصح باستخدام NOVEC 1230 خاصة في:
+                        </p>
+                        <ul class="benefit-list">
+                            <li>الأماكن المأهولة</li>
+                            <li>المعدات الحساسة</li>
+                            <li>البيئات النظيفة</li>
+                            <li>المناطق ذات القيمة العالية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety and Health -->
+    <section class="safety-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">الأمان والصحة</h2>
+                    <p class="lead">
+                        أمان الأشخاص هو الأولوية القصوى في تصميم وتشغيل نظام NOVEC 1230
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="safety-card">
+                        <h4 class="feature-title">
+                            <i class="fas fa-user-shield me-2"></i>
+                            الأمان للأشخاص
+                        </h4>
+                        <p>
+                            تم اختبار NOVEC 1230 بشكل مكثف لضمان سلامة الأشخاص. مستوى عدم التأثير الضار (NOAEL) يبلغ 10%، وهو أعلى من تركيز التصميم المطلوب للإطفاء (4.2-5.8%). هذا يعني أن الأشخاص يمكنهم البقاء بأمان في المنطقة أثناء تفريغ النظام.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>مستوى أمان عالي (NOAEL = 10%)</li>
+                            <li>غير سام ولا يسبب تهيج</li>
+                            <li>لا يؤثر على الجهاز التنفسي</li>
+                            <li>لا يسبب تأثيرات جانبية</li>
+                            <li>آمن للملامسة المباشرة</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="safety-card">
+                        <h4 class="feature-title">
+                            <i class="fas fa-heartbeat me-2"></i>
+                            التأثيرات الصحية
+                        </h4>
+                        <p>
+                            دراسات السمية الشاملة أظهرت أن NOVEC 1230 لا يسبب أي تأثيرات صحية ضارة عند التعرض له بالتراكيز المطلوبة للإطفاء. النظام آمن للاستخدام في الأماكن المأهولة ولا يتطلب إخلاء فوري للأشخاص.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>لا يسبب تأثيرات على القلب</li>
+                            <li>لا يؤثر على الجهاز العصبي</li>
+                            <li>لا يسبب تهيج للعيون أو الجلد</li>
+                            <li>لا يوجد تأثيرات مسرطنة</li>
+                            <li>آمن للحوامل والأطفال</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="safety-card">
+                        <h4 class="feature-title">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            احتياطات السلامة
+                        </h4>
+                        <p>
+                            رغم أن NOVEC 1230 آمن للاستخدام، يُنصح باتباع إجراءات السلامة المعتادة عند تفعيل النظام. هذا يشمل التأكد من التهوية المناسبة وتجنب التعرض المفرط للغاز في الأماكن المغلقة.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>ضمان التهوية المناسبة</li>
+                            <li>تجنب التعرض لتراكيز عالية</li>
+                            <li>تدريب العاملين على الإجراءات</li>
+                            <li>فحص النظام دورياً</li>
+                            <li>وضع علامات تحذيرية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="safety-card">
+                        <h4 class="feature-title">
+                            <i class="fas fa-first-aid me-2"></i>
+                            الإسعافات الأولية
+                        </h4>
+                        <p>
+                            في حالة التعرض لتراكيز عالية من NOVEC 1230، الإسعافات الأولية بسيطة ومباشرة. معظم التأثيرات (إن وجدت) تزول بسرعة بمجرد الانتقال إلى الهواء الطلق. لا توجد حاجة لعلاجات خاصة أو معقدة.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>نقل الشخص إلى الهواء الطلق</li>
+                            <li>ضمان التنفس الطبيعي</li>
+                            <li>مراقبة العلامات الحيوية</li>
+                            <li>طلب المساعدة الطبية عند الحاجة</li>
+                            <li>توثيق الحادث للمراجعة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-custom alert-info">
+                        <h5><i class="fas fa-certificate me-2"></i>الشهادات والموافقات</h5>
+                        <p>
+                            حصل NOVEC 1230 على موافقات وشهادات السلامة من المنظمات الدولية المعترف بها، بما في ذلك:
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="benefit-list">
+                                    <li>وكالة حماية البيئة الأمريكية (EPA)</li>
+                                    <li>الاتحاد الأوروبي للمواد الكيميائية</li>
+                                    <li>منظمة الصحة العالمية (WHO)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="benefit-list">
+                                    <li>الجمعية الأمريكية للحماية من الحرائق (NFPA)</li>
+                                    <li>منظمة ISO للمعايير الدولية</li>
+                                    <li>معايير UL للسلامة</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation and Maintenance -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">التركيب والصيانة</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">عملية التركيب</h3>
+                    <div class="maintenance-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h5>التقييم والتصميم</h5>
+                                <p>
+                                    يبدأ التركيب بتقييم شامل للمنشأة وتحديد المتطلبات الخاصة لكل منطقة. يتم تصميم النظام وفقاً للمعايير الدولية مع مراعاة التحديات الفريدة لكل موقع.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h5>تركيب المعدات</h5>
+                                <p>
+                                    يتم تركيب الأسطوانات وشبكة الأنابيب والفوهات بواسطة فنيين مختصين. جميع المكونات مصممة للتركيب السهل والآمن مع الحد الأدنى من التعطيل للعمليات.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h5>التوصيل والبرمجة</h5>
+                                <p>
+                                    يتم توصيل النظام بأجهزة الكشف والإنذار وبرمجة وحدة التحكم. النظام يتكامل بسلاسة مع أنظمة الأمان الموجودة في المبنى.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h5>الاختبار والتشغيل</h5>
+                                <p>
+                                    يتم إجراء اختبارات شاملة للنظام للتأكد من عمله بالكفاءة المطلوبة. يشمل ذلك اختبار أجهزة الكشف والإنذار وأنظمة التحكم والتوزيع.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <h3 class="mb-4">برنامج الصيانة</h3>
+                    <div class="feature-card">
+                        <h4 class="feature-title">الصيانة الدورية</h4>
+                        <p>
+                            يتطلب نظام NOVEC 1230 صيانة دورية بسيطة للحفاظ على أدائه الأمثل. برنامج الصيانة المنتظم يضمن موثوقية النظام على المدى الطويل.
+                        </p>
+                        
+                        <h5 class="mt-4">الصيانة الشهرية</h5>
+                        <ul class="benefit-list">
+                            <li>فحص مؤشرات الضغط</li>
+                            <li>اختبار أجهزة الإنذار</li>
+                            <li>فحص اللوحات الإلكترونية</li>
+                            <li>مراجعة السجلات</li>
+                        </ul>
+                        
+                        <h5 class="mt-4">الصيانة الربع سنوية</h5>
+                        <ul class="benefit-list">
+                            <li>فحص شامل للأسطوانات</li>
+                            <li>اختبار أجهزة الكشف</li>
+                            <li>فحص شبكة الأنابيب</li>
+                            <li>اختبار أنظمة التحكم</li>
+                        </ul>
+                        
+                        <h5 class="mt-4">الصيانة السنوية</h5>
+                        <ul class="benefit-list">
+                            <li>فحص هيدروستاتيكي للأسطوانات</li>
+                            <li>اختبار شامل للنظام</li>
+                            <li>معايرة أجهزة القياس</li>
+                            <li>تحديث البرمجيات</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <div class="alert alert-custom alert-info">
+                        <h5><i class="fas fa-tools me-2"></i>أدوات الصيانة</h5>
+                        <p>
+                            تتطلب صيانة النظام أدوات بسيطة ومتوفرة بسهولة. معظم أعمال الصيانة يمكن إجراؤها بواسطة فنيين مدربين باستخدام أدوات قياسية.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="alert alert-custom alert-success">
+                        <h5><i class="fas fa-chart-line me-2"></i>مراقبة الأداء</h5>
+                        <p>
+                            نظام مراقبة متقدم يوفر بيانات مستمرة عن حالة النظام. التنبيهات المبكرة تساعد في تجنب المشاكل قبل حدوثها.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="alert alert-custom alert-warning">
+                        <h5><i class="fas fa-graduation-cap me-2"></i>التدريب</h5>
+                        <p>
+                            يوفر المورد تدريباً شاملاً لفرق الصيانة على جميع جوانب النظام. التدريب المستمر يضمن الصيانة الصحيحة والآمنة.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Analysis -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">تحليل التكلفة والعائد</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="cost-analysis">
+                        <h4 class="feature-title">مقارنة التكاليف</h4>
+                        <div class="cost-item">
+                            <span class="cost-label">التكلفة الأولية للنظام</span>
+                            <span class="cost-value">متوسطة إلى عالية</span>
+                        </div>
+                        <div class="cost-item">
+                            <span class="cost-label">تكلفة التركيب</span>
+                            <span class="cost-value">منخفضة</span>
+                        </div>
+                        <div class="cost-item">
+                            <span class="cost-label">تكلفة الصيانة السنوية</span>
+                            <span class="cost-value">منخفضة</span>
+                        </div>
+                        <div class="cost-item">
+                            <span class="cost-label">تكلفة إعادة التعبئة</span>
+                            <span class="cost-value">متوسطة</span>
+                        </div>
+                        <div class="cost-item">
+                            <span class="cost-label">تكلفة التنظيف بعد التفعيل</span>
+                            <span class="cost-value">صفر</span>
+                        </div>
+                        <div class="cost-item">
+                            <span class="cost-label">تكلفة تأمين المعدات</span>
+                            <span class="cost-value">منخفضة</span>
+                        </div>
+                        <div class="cost-item">
+                            <span class="cost-label">إجمالي التكلفة على 10 سنوات</span>
+                            <span class="cost-value">منخفضة نسبياً</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <h4 class="feature-title">العائد على الاستثمار</h4>
+                        <p>
+                            رغم التكلفة الأولية المرتفعة نسبياً، يوفر NOVEC 1230 عائداً ممتازاً على الاستثمار من خلال:
+                        </p>
+                        <ul class="benefit-list">
+                            <li>حماية المعدات الثمينة</li>
+                            <li>تقليل تكاليف التأمين</li>
+                            <li>عدم الحاجة للتنظيف</li>
+                            <li>تقليل وقت التوقف</li>
+                            <li>صيانة منخفضة التكلفة</li>
+                        </ul>
+                        
+                        <div class="alert alert-custom alert-success mt-3">
+                            <h6><i class="fas fa-calculator me-2"></i>حساب العائد</h6>
+                            <p class="mb-0">
+                                يسترد معظم العملاء تكلفة النظام خلال 3-5 سنوات من خلال الوفورات في التأمين وحماية المعدات.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Developments -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">التطورات المستقبلية</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4 class="feature-title">الذكاء الاصطناعي</h4>
+                        <p class="feature-description">
+                            تطوير أنظمة ذكية قادرة على التنبؤ بالحرائق قبل حدوثها وتحسين استراتيجيات الإطفاء باستخدام الذكاء الاصطناعي وتعلم الآلة. هذه الأنظمة ستقلل من الإنذارات الخاطئة وتحسن من كفاءة الاستجابة.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h4 class="feature-title">إنترنت الأشياء (IoT)</h4>
+                        <p class="feature-description">
+                            دمج تقنيات إنترنت الأشياء لمراقبة النظام عن بُعد وتوفير بيانات في الوقت الفعلي عن حالة النظام. هذا سيسمح بالصيانة التنبؤية وتحسين موثوقية النظام.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4 class="feature-title">تحسينات بيئية</h4>
+                        <p class="feature-description">
+                            البحث مستمر لتطوير مركبات أكثر استدامة وتقليل البصمة الكربونية لعمليات التصنيع والنقل. الهدف هو تحقيق نظام إطفاء محايد كربونياً بالكامل.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 class="feature-title">التطبيقات الذكية</h4>
+                        <p class="feature-description">
+                            تطوير تطبيقات متقدمة للهواتف الذكية والأجهزة اللوحية لمراقبة النظام والتحكم فيه عن بُعد. هذا سيوفر مرونة أكبر في الإدارة والصيانة.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standards and Certifications -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">المعايير والشهادات</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="feature-card">
+                        <h4 class="feature-title">
+                            <i class="fas fa-certificate me-2"></i>
+                            المعايير الدولية
+                        </h4>
+                        <p>
+                            يتوافق نظام NOVEC 1230 مع جميع المعايير الدولية المعترف بها لأنظمة الإطفاء. هذا يضمن الامتثال للقوانين المحلية والدولية ويوفر الثقة في موثوقية النظام.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>NFPA 2001 - معيار أنظمة الإطفاء النظيفة</li>
+                            <li>ISO 14520 - معايير غازات الإطفاء</li>
+                            <li>EN 15004 - المعايير الأوروبية للأنظمة الثابتة</li>
+                            <li>FM Global - معايير الأمان الصناعية</li>
+                            <li>UL Listed - شهادة UL للسلامة</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="feature-card">
+                        <h4 class="feature-title">
+                            <i class="fas fa-globe me-2"></i>
+                            الموافقات البيئية
+                        </h4>
+                        <p>
+                            حصل النظام على موافقات بيئية من أهم المنظمات العالمية، مما يؤكد على التزامه بحماية البيئة وتوافقه مع الاتفاقيات الدولية للحفاظ على البيئة.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>EPA SNAP - برنامج البدائل الآمنة الأمريكي</li>
+                            <li>EU F-Gas Regulation - لوائح الاتحاد الأوروبي</li>
+                            <li>Montreal Protocol - بروتوكول مونتريال</li>
+                            <li>UNEP - برنامج الأمم المتحدة للبيئة</li>
+                            <li>Green Building Standards - معايير المباني الخضراء</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="feature-card">
+                        <h4 class="feature-title">
+                            <i class="fas fa-shield-alt me-2"></i>
+                            شهادات الأمان
+                        </h4>
+                        <p>
+                            تم اختبار النظام بشكل مكثف من قبل مختبرات مستقلة للتأكد من سلامته للأشخاص والبيئة. هذه الشهادات تثبت أن النظام آمن للاستخدام في جميع البيئات.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>OSHA Compliance - معايير الأمان المهني</li>
+                            <li>NIOSH Certification - شهادة الصحة المهنية</li>
+                            <li>WHO Safety Standards - معايير منظمة الصحة العالمية</li>
+                            <li>ACGIH Guidelines - إرشادات النظافة الصناعية</li>
+                            <li>FDA Safety Review - مراجعة السلامة الغذائية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="feature-card">
+                        <h4 class="feature-title">
+                            <i class="fas fa-award me-2"></i>
+                            الجوائز والتقديرات
+                        </h4>
+                        <p>
+                            حصل NOVEC 1230 على العديد من الجوائز والتقديرات من المنظمات الصناعية والبيئية، مما يؤكد على تفوقه التقني والبيئي في مجال أنظمة الإطفاء.
+                        </p>
+                        <ul class="benefit-list">
+                            <li>Environmental Excellence Award</li>
+                            <li>Fire Safety Innovation Award</li>
+                            <li>Sustainable Technology Recognition</li>
+                            <li>Industry Best Practice Award</li>
+                            <li>Green Technology Innovation Prize</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <blockquote class="quote-text">
+                        "NOVEC 1230 يمثل مستقبل أنظمة الإطفاء - جمع بين الفعالية القصوى والأمان التام والحفاظ على البيئة. إنه الحل المثالي لحماية أهم أصولنا دون التضحية بسلامة كوكبنا."
+                    </blockquote>
+                    <cite class="quote-author">- خبراء هندسة الحماية من الحرائق</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">خلاصة وتوصيات</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="lead mb-4">
+                        يُعد نظام NOVEC 1230 الجيل القادم من أنظمة الإطفاء النظيفة، والذي يجمع بين الأداء الفائق والأمان التام والحفاظ على البيئة. هذا النظام المتطور يوفر حلاً شاملاً لحماية المنشآت الحساسة والأشخاص دون التأثير على البيئة أو المعدات.
+                    </p>
+                    
+                    <h4>الفوائد الرئيسية:</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="benefit-list">
+                                <li>إطفاء سريع وفعال في 10 ثوانٍ</li>
+                                <li>تأثير صفري على طبقة الأوزون</li>
+                                <li>آمن تماماً للأشخاص</li>
+                                <li>لا يتلف المعدات الحساسة</li>
+                                <li>لا يترك بقايا أو رواسب</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="benefit-list">
+                                <li>صيانة بسيطة ومنخفضة التكلفة</li>
+                                <li>عمر طويل وموثوقية عالية</li>
+                                <li>تطبيق واسع في مختلف المجالات</li>
+                                <li>متوافق مع المعايير الدولية</li>
+                                <li>عائد ممتاز على الاستثمار</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h4 class="mt-4">التوصيات:</h4>
+                    <p>
+                        نوصي بشدة باستخدام نظام NOVEC 1230 في جميع المنشآت التي تحتوي على معدات حساسة أو أشخاص، خاصة في:
+                    </p>
+                    <ul class="benefit-list">
+                        <li>مراكز البيانات والحاسوب</li>
+                        <li>المختبرات والمرافق الطبية</li>
+                        <li>المتاحف والمكتبات</li>
+                        <li>مراكز الاتصالات والتحكم</li>
+                        <li>المرافق الصناعية الحساسة</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="alert alert-custom alert-success">
+                        <h5><i class="fas fa-thumbs-up me-2"></i>لماذا NOVEC 1230؟</h5>
+                        <p>
+                            في عالم يتطلب توازناً دقيقاً بين الحماية الفعالة والحفاظ على البيئة، يقدم NOVEC 1230 الحل الأمثل. إنه ليس مجرد نظام إطفاء، بل استثمار في المستقبل المستدام.
+                        </p>
+                    </div>
+                    
+                    <div class="alert alert-custom alert-info">
+                        <h5><i class="fas fa-phone me-2"></i>للاستفسار والتوريد</h5>
+                        <p>
+                            للحصول على مزيد من المعلومات حول نظام NOVEC 1230 أو لطلب عرض أسعار مخصص لمنشأتك، يرجى التواصل مع فريق الخبراء لدينا.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">
+                        © 2024 نظام NOVEC 1230 للإطفاء النظيف. جميع الحقوق محفوظة.
+                        <br>
+                        تم تطوير هذا الدليل لتوفير معلومات شاملة عن أحدث تقنيات الإطفاء النظيفة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

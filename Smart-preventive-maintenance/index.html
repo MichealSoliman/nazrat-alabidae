@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصيانة الوقائية الذكية: ثورة في إدارة الأصول والتشغيل </title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="دليل شامل حول الصيانة الوقائية الذكية باستخدام إنترنت الأشياء (IoT) والذكاء الاصطناعي (AI) وأنظمة CMMS. تعلم كيفية تطبيق الصيانة التنبؤية لتقليل التكاليف وزيادة الكفاءة.">
+    <meta name="keywords" content="الصيانة الوقائية الذكية, إنترنت الأشياء, IoT, CMMS, الذكاء الاصطناعي, الصيانة التنبؤية, التوثيق الرقمي, مراقبة الأنظمة عن بعد">
+    <meta name="author" content="خبراء الصيانة الذكية">
+    <meta name="robots" content="index, follow">
+     <link rel="canonical" href="https://nazretelebdaa.com/Smart-preventive-maintenance/index.html">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="الصيانة الوقائية الذكية: ثورة في إدارة الأصول والتشغيل">
+    <meta property="og:description" content="دليل شامل حول الصيانة الوقائية الذكية باستخدام أحدث التقنيات الرقمية">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:url" content="https://nazretelebdaa.com/Smart-preventive-maintenance/index.html">
+    <meta property="og:image" content="https://nazretelebdaa.com/assets/img/Artboard3.webp">
+    
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="الصيانة الوقائية الذكية: ثورة في إدارة الأصول والتشغيل">
+    <meta name="twitter:description" content="دليل شامل حول الصيانة الوقائية الذكية باستخدام أحدث التقنيات الرقمية">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --secondary-color: #ff5722;
+            --accent-color: #ffc107;
+            --success-color: #27ae60;
+            --warning-color: #f39c12;
+            --dark-color: #212529;
+            --light-color: #ecf0f1;
+           
+            --gradient-accent: linear-gradient(135deg, #d32f2f 0%, #ff5722 100%);
+             --gradient-primary: linear-gradient(135deg, #d32f2f 0%, #ff5722 100%);
+            --gradient-secondary: linear-gradient(135deg, #ff5722 0%, #ffc107 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.8;
+            color: var(--dark-color);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        .hero-section {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="0,0 1000,0 1000,100 0,80"/></svg>');
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+            color: #fff;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color) !important;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: var(--dark-color) !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--secondary-color) !important;
+            transform: translateY(-2px);
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .content-card h3 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .content-card h4 {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.4rem;
+        }
+
+        .content-card p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .content-card ul {
+            margin-bottom: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .content-card li {
+            margin-bottom: 0.8rem;
+            position: relative;
+        }
+
+        .content-card li::before {
+            content: '✓';
+            position: absolute;
+            right: -1.5rem;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        /* Feature Cards */
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Table Styles */
+        .comparison-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+
+        .comparison-table table {
+            margin: 0;
+        }
+
+        .comparison-table th {
+            background: var(--gradient-primary);
+            color: white;
+            font-weight: 600;
+            padding: 1.5rem;
+            border: none;
+        }
+
+        .comparison-table td {
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            vertical-align: middle;
+        }
+
+        .comparison-table tr:hover {
+            background: rgba(52, 152, 219, 0.05);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--gradient-secondary);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            background: white;
+            color: var(--primary-color);
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .footer-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer-text {
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+            color: white;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .content-card {
+                padding: 1.5rem;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.8rem;
+            }
+        }
+
+        /* Scroll to Top Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-accent);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .scroll-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Loading Animation */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(52, 152, 219, 0.3);
+            border-top: 4px solid var(--secondary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-cogs me-2"></i>
+                الصيانة الذكية
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#iot">إنترنت الأشياء</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cmms">نظام CMMS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ai">الذكاء الاصطناعي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#benefits">الفوائد</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cases">دراسات الحالة</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center hero-content">
+                    <h1 class="hero-title">الصيانة الوقائية الذكية</h1>
+                    <p class="hero-subtitle">ثورة في إدارة الأصول والتشغيل باستخدام أحدث التقنيات الرقمية</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">40%</span>
+                            <span class="stat-label">تقليل التكاليف</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">70%</span>
+                            <span class="stat-label">تقليل وقت التوقف</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50%</span>
+                            <span class="stat-label">زيادة الكفاءة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">مقدمة: عصر جديد في الصيانة</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content-card fade-in-up">
+                        <p>في عالم اليوم الذي يتسم بالتطور التكنولوجي المتسارع، أصبحت إدارة الأصول والمعدات بكفاءة وفعالية أمرًا بالغ الأهمية لضمان استمرارية الأعمال وتحقيق الميزة التنافسية. لم تعد أساليب الصيانة التقليدية، التي تعتمد على رد الفعل بعد حدوث الأعطال أو الجدولة الزمنية الثابتة، كافية لتلبية متطلبات الصناعات الحديثة التي تسعى إلى تقليل وقت التوقف عن العمل، وخفض التكاليف التشغيلية، وزيادة العمر الافتراضي للأصول.</p>
+                        
+                        <h4>تعريف الصيانة الوقائية الذكية وأهميتها</h4>
+                        <p>الصيانة الوقائية الذكية (Smart Predictive Maintenance) هي استراتيجية متقدمة تجمع بين مبادئ الصيانة الوقائية والتنبؤية مع أحدث التقنيات الرقمية، مثل إنترنت الأشياء (IoT)، والذكاء الاصطناعي (AI)، والتعلم الآلي (ML)، وأنظمة إدارة الصيانة المحوسبة (CMMS).</p>
+                        
+                        <p>تكمن أهمية الصيانة الوقائية الذكية في قدرتها على تحويل إدارة الأصول من مجرد تكلفة تشغيلية إلى محرك للقيمة. فبدلاً من انتظار تعطل المعدة لإصلاحها، أو إجراء صيانة غير ضرورية بناءً على جدول زمني ثابت، تمكن الصيانة الذكية المؤسسات من:</p>
+                        
+                        <ul>
+                            <li><strong>تقليل وقت التوقف غير المخطط له:</strong> من خلال التنبؤ بالأعطال، يمكن جدولة الصيانة في أوقات مناسبة</li>
+                            <li><strong>خفض التكاليف التشغيلية:</strong> تجنب الإصلاحات الطارئة المكلفة وتحسين استخدام قطع الغيار</li>
+                            <li><strong>إطالة العمر الافتراضي للأصول:</strong> الحفاظ على المعدات في أفضل حالاتها التشغيلية</li>
+                            <li><strong>تحسين السلامة:</strong> تقليل مخاطر الأعطال المفاجئة يساهم في بيئة عمل أكثر أمانًا</li>
+                            <li><strong>زيادة الكفاءة التشغيلية:</strong> تحسين أداء المعدات وزيادة موثوقيتها</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evolution Section -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title">التحول من الصيانة التقليدية إلى الصيانة الذكية</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="comparison-table">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>نوع الصيانة</th>
+                                    <th>الوصف</th>
+                                    <th>المزايا</th>
+                                    <th>العيوب</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>الصيانة التفاعلية</strong></td>
+                                    <td>الإصلاح بعد حدوث العطل</td>
+                                    <td>لا توجد تكاليف صيانة مبدئية</td>
+                                    <td>وقت توقف طويل، تكاليف إصلاح عالية، مخاطر سلامة</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>الصيانة الوقائية المجدولة</strong></td>
+                                    <td>صيانة مجدولة بانتظام</td>
+                                    <td>تقليل الأعطال المفاجئة، عمر افتراضي أطول</td>
+                                    <td>صيانة غير ضرورية أحياناً، تكاليف مرتفعة</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>الصيانة التنبؤية</strong></td>
+                                    <td>صيانة تعتمد على مراقبة حالة المعدة</td>
+                                    <td>تقليل الصيانة غير الضرورية، تحسين استخدام الأصول</td>
+                                    <td>تتطلب استثماراً في التحليلات، تعقيد في التنفيذ</td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td><strong>الصيانة الوقائية الذكية</strong></td>
+                                    <td>دمج الصيانة التنبؤية مع IoT و AI/ML و CMMS</td>
+                                    <td>أقصى قدر من الكفاءة، تقليل التكاليف، زيادة الموثوقية</td>
+                                    <td>تتطلب استثماراً كبيراً، تحديات تكامل البيانات</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IoT Section -->
+    <section id="iot" class="content-section">
+        <div class="container">
+            <h2 class="section-title">إنترنت الأشياء (IoT): عيون وآذان الصيانة الذكية</h2>
+            <div class="row mb-5">
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3 class="feature-title">الاتصال المستمر</h3>
+                        <p>أجهزة استشعار ذكية متصلة تراقب المعدات على مدار الساعة وترسل البيانات في الوقت الفعلي</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="feature-title">جمع البيانات المتقدم</h3>
+                        <p>مراقبة شاملة للاهتزاز، درجة الحرارة، الضغط، الصوت، واستهلاك الطاقة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="feature-title">المراقبة عن بُعد</h3>
+                        <p>إمكانية مراقبة المعدات من أي مكان واكتشاف الأعطال قبل حدوثها</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content-card">
+                        <h3>كيف تعمل أجهزة استشعار IoT في الصيانة التنبؤية</h3>
+                        <p>تُثبت أجهزة استشعار IoT الذكية مباشرة على المعدات والأصول الحيوية. هذه المستشعرات مصممة لجمع أنواع مختلفة من البيانات التي تعكس الحالة التشغيلية للمعدة. تعمل هذه المستشعرات بشكل مستمر، وترسل البيانات لاسلكيًا إلى منصة مركزية لتحليلها.</p>
+                        
+                        <h4>العملية تتضمن الخطوات التالية:</h4>
+                        <ul>
+                            <li><strong>الاستشعار:</strong> جمع البيانات الفيزيائية من المعدة</li>
+                            <li><strong>الاتصال:</strong> إرسال البيانات عبر بروتوكولات مختلفة إلى السحابة</li>
+                            <li><strong>المعالجة والتخزين:</strong> معالجة البيانات وتخزينها للتحليل</li>
+                            <li><strong>التحليل:</strong> تطبيق خوارزميات AI/ML لتحديد الأنماط والتنبؤ بالأعطال</li>
+                            <li><strong>التنبيه والإجراء:</strong> إرسال تنبيهات لفرق الصيانة عند اكتشاف مؤشرات العطل</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CMMS Section -->
+    <section id="cmms" class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title">نظام إدارة الصيانة المحوسب (CMMS): العقل المدبر للعمليات</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content-card">
+                        <h3>تعريف CMMS ودوره في الصيانة الذكية</h3>
+                        <p>نظام إدارة الصيانة المحوسب (CMMS) هو برنامج حاسوبي مصمم لمساعدة المؤسسات على إدارة عمليات الصيانة بكفاءة. يقوم بتخزين وتنظيم المعلومات المتعلقة بالأصول، وجدولة مهام الصيانة، وتتبع أوامر العمل، وإدارة المخزون، وإصدار التقارير.</p>
+                        
+                        <h4>يُمكن CMMS المؤسسات من:</h4>
+                        <ul>
+                            <li><strong>مركزية البيانات:</strong> تجميع جميع معلومات الصيانة في مكان واحد</li>
+                            <li><strong>أتمتة المهام:</strong> جدولة مهام الصيانة تلقائياً وإصدار أوامر العمل</li>
+                            <li><strong>تحسين التخطيط:</strong> توفير رؤى حول أداء الأصول وتكاليف الصيانة</li>
+                            <li><strong>زيادة الكفاءة:</strong> تقليل الأعمال الورقية وتحسين التواصل</li>
+                            <li><strong>تحسين الامتثال:</strong> الاحتفاظ بسجلات دقيقة لجميع أنشطة الصيانة</li>
+                        </ul>
+                        
+                        <h4>التكامل بين CMMS و IoT</h4>
+                        <p>يكمن جوهر قوة الصيانة الوقائية الذكية في التكامل السلس بين CMMS و IoT. فبينما يجمع IoT البيانات من المعدات، يقوم CMMS بمعالجة هذه البيانات وتحويلها إلى إجراءات قابلة للتنفيذ. هذا التكامل يخلق حلقة ردود فعل مستمرة تضمن أن تكون قرارات الصيانة مدعومة بالبيانات في الوقت الفعلي.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Section -->
+    <section id="ai" class="content-section">
+        <div class="container">
+            <h2 class="section-title">الذكاء الاصطناعي (AI) والتعلم الآلي (ML): تحليل البيانات والتنبؤ بالأعطال</h2>
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="feature-title">تحليل الأنماط</h3>
+                        <p>اكتشاف العلاقات والأنماط الخفية في البيانات التي تشير إلى سلوك طبيعي أو غير طبيعي للمعدة</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 class="feature-title">الكشف عن الشذوذ</h3>
+                        <p>تحديد أي انحرافات عن السلوك الطبيعي للمعدة والتي قد تكون مؤشرات على عطل وشيك</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content-card">
+                        <h3>دور AI و ML في تحليل البيانات الضخمة من IoT</h3>
+                        <p>تُولد أجهزة IoT كميات هائلة من البيانات في الوقت الفعلي، والتي قد تكون معقدة ومتنوعة. هنا تبرز قدرة AI و ML على معالجة وتحليل هذه البيانات الضخمة بكفاءة تفوق القدرات البشرية بكثير.</p>
+                        
+                        <h4>نماذج التعلم الآلي للتنبؤ بالأعطال</h4>
+                        <ul>
+                            <li><strong>نماذج التصنيف:</strong> للتنبؤ بما إذا كانت المعدة ستتعطل خلال فترة زمنية معينة</li>
+                            <li><strong>نماذج الانحدار:</strong> للتنبؤ بالعمر المتبقي للمعدة أو شدة التدهور</li>
+                            <li><strong>نماذج الكشف عن الشذوذ:</strong> لتحديد نقاط البيانات التي تنحرف عن السلوك الطبيعي</li>
+                        </ul>
+                        
+                        <h4>الصيانة التنبؤية مقابل الصيانة الوقائية</h4>
+                        <p>تتفوق الصيانة التنبؤية، المدعومة بـ AI و ML، على الصيانة الوقائية التقليدية في قدرتها على تحديد الحاجة الحقيقية للصيانة بدقة، مما يقلل من الصيانة المفرطة ويمنع الأعطال المفاجئة. هذا يؤدي إلى تحسين كبير في كفاءة الأصول وتوفير التكاليف.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Documentation Section -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title">التوثيق الرقمي المتكامل: الشفافية والمساءلة</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content-card">
+                        <h3>أهمية التوثيق بالصور والفيديو في عمليات الصيانة</h3>
+                        <p>في عصر الصيانة الوقائية الذكية، لم يعد التوثيق مجرد إجراء إداري روتيني، بل أصبح جزءًا لا يتجزأ من عملية الصيانة نفسها، ومصدرًا حيويًا للبيانات والرؤى. يُعد التوثيق الرقمي المتكامل، خاصةً بالصور والفيديو، أداة قوية لتعزيز الشفافية، وتحسين المساءلة، وتوفير سجل تاريخي غني لحالة المعدات وأنشطة الصيانة.</p>
+                        
+                        <h4>تُقدم الصور والفيديو قيمة لا تقدر بثمن:</h4>
+                        <ul>
+                            <li><strong>توضيح الحالة البصرية:</strong> نقل تفاصيل دقيقة عن حالة المعدة بطريقة لا يمكن للكلمات وصفها</li>
+                            <li><strong>دليل مرئي:</strong> إثبات قاطع على الإجراءات المتخذة يعزز المساءلة</li>
+                            <li><strong>التدريب والتعلم:</strong> مصدر ممتاز للتدريب للفنيين الجدد</li>
+                            <li><strong>تحسين التواصل:</strong> تسهيل التواصل بين الفنيين والمهندسين والإدارة</li>
+                            <li><strong>تحليل الأسباب الجذرية:</strong> مراجعة السجلات المرئية لتحديد الأنماط والأخطاء</li>
+                        </ul>
+                        
+                        <h4>الإشعارات الآلية وتتبع صلاحية المعدات</h4>
+                        <p>تُعد الإشعارات الآلية ميزة حيوية في نظام الصيانة الذكية، حيث تضمن عدم تفويت أي موعد صيانة أو انتهاء صلاحية لمعدة أو قطعة غيار. يمكن للنظام إرسال تنبيهات تلقائية قبل انتهاء صلاحية المعدات، وعند الحاجة للصيانة الوقائية، وعند اكتشاف عطل وشيك.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="content-section">
+        <div class="container">
+            <h2 class="section-title">فوائد وتحديات تطبيق الصيانة الوقائية الذكية</h2>
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card">
+                        <h3 style="color: var(--success-color);">
+                            <i class="fas fa-check-circle me-2"></i>
+                            الفوائد الرئيسية
+                        </h3>
+                        <ul>
+                            <li><strong>تقليل وقت التوقف غير المخطط له:</strong> التنبؤ بالأعطال يسمح بجدولة الصيانة في أوقات مناسبة</li>
+                            <li><strong>خفض التكاليف التشغيلية:</strong> تقليل الإصلاحات الطارئة وتحسين إدارة قطع الغيار</li>
+                            <li><strong>زيادة الكفاءة التشغيلية:</strong> تحسين أداء المعدات واستخدام الموارد</li>
+                            <li><strong>إطالة العمر الافتراضي للأصول:</strong> الحفاظ على المعدات في أفضل حالاتها</li>
+                            <li><strong>تحسين السلامة:</strong> منع الأعطال المفاجئة التي قد تشكل مخاطر</li>
+                            <li><strong>اتخاذ قرارات مدعومة بالبيانات:</strong> توفير أساس قوي للقرارات الاستراتيجية</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="content-card">
+                        <h3 style="color: var(--warning-color);">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            التحديات المحتملة
+                        </h3>
+                        <ul>
+                            <li><strong>التكلفة الأولية للاستثمار:</strong> استثمار كبير في أجهزة الاستشعار والبرامج</li>
+                            <li><strong>تكامل الأنظمة:</strong> تحديات دمج الأنظمة الجديدة مع الأنظمة القديمة</li>
+                            <li><strong>جودة البيانات وأمنها:</strong> ضمان دقة البيانات وحمايتها من التهديدات</li>
+                            <li><strong>نقص الخبرات والمهارات:</strong> الحاجة إلى مهارات متخصصة في علم البيانات</li>
+                            <li><strong>مقاومة التغيير:</strong> تحديات تبني التقنيات الجديدة من قبل الموظفين</li>
+                            <li><strong>تعقيد التحليل:</strong> تفسير النتائج وتحديد الإجراءات الصحيحة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content-card">
+                        <h3>استراتيجيات التغلب على التحديات</h3>
+                        <ul>
+                            <li><strong>البدء صغيراً والتوسع تدريجياً:</strong> تطبيق النظام على نطاق محدود أولاً</li>
+                            <li><strong>الاستثمار في التدريب:</strong> تطوير مهارات الموظفين الحاليين</li>
+                            <li><strong>الشراكة مع الخبراء:</strong> التعاون مع شركات متخصصة</li>
+                            <li><strong>وضع خطة أمن بيانات قوية:</strong> تنفيذ بروتوكولات أمنية صارمة</li>
+                            <li><strong>إدارة التغيير الفعالة:</strong> إشراك الموظفين في عملية التخطيط</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="cases" class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title">دراسات حالة وأمثلة عملية</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3 class="feature-title">الصناعة التحويلية</h3>
+                        <p>استخدام أجهزة استشعار الاهتزاز ودرجة الحرارة لمراقبة المحركات والمضخات على خطوط الإنتاج، مما يمنع توقف الإنتاج</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="feature-title">الطاقة والمرافق</h3>
+                        <p>مراقبة التوربينات والمحولات باستخدام مستشعرات IoT للكشف عن التسربات والتغيرات في الأداء</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 class="feature-title">النقل واللوجستيات</h3>
+                        <p>مراقبة أداء المركبات الثقيلة والقطارات لتحديد المشاكل المحتملة قبل أن تتسبب في تأخيرات</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content-card">
+                        <h3>قصص نجاح الشركات</h3>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="p-3 border rounded">
+                                    <h5 style="color: var(--primary-color);">جنرال إلكتريك (GE)</h5>
+                                    <p class="small">تُعد GE من الرواد في تطبيق الصيانة التنبؤية من خلال منصتها Predix، مما أدى إلى تقليل وقت التوقف بنسبة 20%</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="p-3 border rounded">
+                                    <h5 style="color: var(--primary-color);">سيمنز (Siemens)</h5>
+                                    <p class="small">تطبيق الصيانة التنبؤية في قطاع السكك الحديدية أدى إلى تقليل الأعطال غير المخطط لها بنسبة 10-15%</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="p-3 border rounded">
+                                    <h5 style="color: var(--primary-color);">فولكس فاجن</h5>
+                                    <p class="small">استخدام الصيانة التنبؤية المدعومة بالذكاء الاصطناعي لمراقبة الروبوتات وآلات الإنتاج</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">مستقبل الصيانة: الابتكار المستمر</h2>
+            <div class="row mb-5">
+                <div class="col-lg-3 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clone"></i>
+                        </div>
+                        <h3 class="feature-title">التوائم الرقمية</h3>
+                        <p>نماذج افتراضية طبق الأصل من الأصول المادية تُحدث بياناتها في الوقت الفعلي</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-vr-cardboard"></i>
+                        </div>
+                        <h3 class="feature-title">الواقع المعزز</h3>
+                        <p>تمكين الفنيين من الوصول إلى معلومات الصيانة في الوقت الفعلي أثناء العمل</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="feature-title">الروبوتات والطائرات</h3>
+                        <p>إجراء عمليات الفحص في البيئات الخطرة وجمع البيانات المرئية والحرارية</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3 class="feature-title">الحوسبة الطرفية</h3>
+                        <p>معالجة البيانات بالقرب من مصدرها لتقليل زمن الاستجابة وتحسين الأمان</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content-card">
+                        <h3>التوجهات المستقبلية في مجال الصيانة الذكية</h3>
+                        <ul>
+                            <li><strong>الصيانة الذاتية:</strong> معدات قادرة على مراقبة حالتها وإجراء إصلاحات بسيطة بشكل مستقل</li>
+                            <li><strong>الصيانة التنبؤية الموجهة بالوصفات:</strong> تقديم إرشادات دقيقة حول ما يجب فعله ومتى وكيف</li>
+                            <li><strong>تكامل أعمق مع أنظمة ERP:</strong> إدارة متكاملة لسلاسل الإمداد والمالية والموارد البشرية</li>
+                            <li><strong>التركيز على الاستدامة:</strong> تحقيق أهداف الاستدامة من خلال إطالة عمر الأصول</li>
+                            <li><strong>التعاون بين الإنسان والآلة:</strong> تعزيز قدرات الفنيين بدلاً من استبدالهم</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="cta-title">ابدأ رحلتك نحو الصيانة الذكية اليوم</h2>
+                    <p class="cta-text">لا تنتظر حتى تتعطل معداتك. استثمر في المستقبل واجعل صيانتك أكثر ذكاءً وفعالية</p>
+                    <a href="#contact" class="cta-button">
+                        <i class="fas fa-rocket me-2"></i>
+                        ابدأ الآن
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Footer -->
+<footer class="bg-dark text-white py-5 px-3">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- معلومات الشركة -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="border-end border-4 border-danger pe-3 fw-bold mb-3">شركة نظرة الإبداع لأنظمة السلامة</h5>
+        <p class="text-light">نقدم حلولاً متكاملة في مجال أنظمة السلامة والوقاية من الحرائق بأعلى معايير الجودة والاحترافية.</p>
+        <p class="d-flex align-items-center mb-2"><i class="fas fa-map-marker-alt text-danger ms-2"></i> الرياض، المملكة العربية السعودية</p>
+        <p class="d-flex align-items-center mb-2"><i class="fas fa-phone-alt text-danger ms-2"></i> 0597212027</p>
+      </div>
+
+      <!-- روابط سريعة -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="border-end border-4 border-danger pe-3 fw-bold mb-3">روابط سريعة</h5>
+        <ul class="list-unstyled">
+          <li><a href=".././index.html" class="text-light text-decoration-none"><i class="fas fa-angle-left ms-1"></i> الرئيسية</a></li>
+          <li><a href=".././index.html#about" class="text-light text-decoration-none"><i class="fas fa-angle-left ms-1"></i> من نحن</a></li>
+          <li><a href=".././consultation/index.html" class="text-light text-decoration-none"><i class="fas fa-angle-left ms-1"></i> ارشادات</a></li>
+          <li><a href=".././blog/index.html" class="text-light text-decoration-none"><i class="fas fa-angle-left ms-1"></i> المدونة</a></li>
+          <li><a href=".././articles" class="text-light text-decoration-none"><i class="fas fa-angle-left ms-1"></i> خدمات عامة</a></li>
+        </ul>
+      </div>
+
+      <!-- خدماتنا -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="border-end border-4 border-danger pe-3 fw-bold mb-3">خدماتنا</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://nazretelebdaa.com/services/index.html" class="text-light text-decoration-none"><i class="fas fa-angle-left ms-1"></i> أنظمة إطفاء الحريق</a></li>
+          <li><a href="https://nazretelebdaa.com/consultation/index.html" class="text-light text-decoration-none"><i class="fas fa-angle-left ms-1"></i> أنظمة إنذار الحريق</a></li>
+          <li><a href="https://nazretelebdaa.com/blog/index.html" class="text-light text-decoration-none"><i class="fas fa-angle-left ms-1"></i> صيانة المكيفات</a></li>
+          <li><a href="https://nazretelebdaa.com/articles" class="text-light text-decoration-none"><i class="fas fa-angle-left ms-1"></i> خدمات النظافة</a></li>
+          <li><a href="https://nazretelebdaa.com/companies/index.html" class="text-light text-decoration-none"><i class="fas fa-angle-left ms-1"></i> الشركات</a></li>
+        </ul>
+      </div>
+
+      <!-- تواصل معنا -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="border-end border-4 border-danger pe-3 fw-bold mb-3">تواصل معنا</h5>
+        <div class="d-flex gap-2 flex-wrap">
+          <a href="https://www.facebook.com/nazretelebdaa/" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/nazret_elebdaa" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/nazret_elebdaa_contracting" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@nazret_elebdaa_contract" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary my-4">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="text-light mb-0">© 2024 شركة نظرة الإبداع لأنظمة السلامة. جميع الحقوق محفوظة.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Loading Animation
+        window.addEventListener('load', function() {
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            loadingOverlay.style.opacity = '0';
+            setTimeout(() => {
+                loadingOverlay.style.display = 'none';
+            }, 500);
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar Background Change on Scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            const scrollToTop = document.getElementById('scrollToTop');
+            
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                scrollToTop.classList.add('show');
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                scrollToTop.classList.remove('show');
+            }
+        });
+
+        // Scroll to Top Functionality
+        document.getElementById('scrollToTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate Elements on Scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all content cards and feature cards
+        document.querySelectorAll('.content-card, .feature-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease-out';
+            observer.observe(card);
+        });
+
+        // Counter Animation for Hero Stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent);
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target + '%';
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.ceil(current) + '%';
+                    }
+                }, 20);
+            });
+        }
+
+        // Trigger counter animation when hero section is visible
+        const heroObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    heroObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        heroObserver.observe(document.querySelector('.hero-section'));
+
+        // Add hover effects to cards
+        document.querySelectorAll('.content-card, .feature-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Add click effects to buttons
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Create ripple effect
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.style.position = 'absolute';
+                ripple.style.background = 'rgba(255,255,255,0.5)';
+                ripple.style.borderRadius = '50%';
+                ripple.style.transform = 'scale(0)';
+                ripple.style.animation = 'ripple 0.6s linear';
+                ripple.style.pointerEvents = 'none';
+                
+                this.style.position = 'relative';
+                this.style.overflow = 'hidden';
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Add CSS for ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
+
